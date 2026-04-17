@@ -1,0 +1,3 @@
+{{- $href := strings.TrimPrefix "/" (.Get "href") -}}
+{{- $text := .Get "text" | default $href -}}
+<a href="{{ $href | relURL }}">{{ $text }}</a>

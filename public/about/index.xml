@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on ನಮ್ಮ ಕನ್ನಡ ಶಾಲೆ</title>
+    <link>https://yourusername.github.io/kannada-school/about/</link>
+    <description>Recent content in About on ನಮ್ಮ ಕನ್ನಡ ಶಾಲೆ</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://yourusername.github.io/kannada-school/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Locations</title>
+      <link>https://yourusername.github.io/kannada-school/about/locations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yourusername.github.io/kannada-school/about/locations/</guid>
+      <description>&lt;h2 id=&#34;class-location&#34;&gt;Class Location&lt;/h2&gt;&#xA;&lt;p&gt;ನಮ್ಮ ಕನ್ನಡ ಶಾಲೆ currently meets in the local community classroom shared with enrolled families.&lt;/p&gt;&#xA;&lt;p&gt;Use this page to publish:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Classroom address&lt;/li&gt;&#xA;&lt;li&gt;Parking instructions&lt;/li&gt;&#xA;&lt;li&gt;Drop-off and pick-up guidance&lt;/li&gt;&#xA;&lt;li&gt;Accessibility notes&lt;/li&gt;&#xA;&lt;li&gt;Weather or cancellation updates&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;visiting-us&#34;&gt;Visiting Us&lt;/h2&gt;&#xA;&lt;p&gt;If you are visiting for the first time, please contact us before coming so we can confirm the current classroom, schedule, and visitor policy.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Teachers</title>
+      <link>https://yourusername.github.io/kannada-school/about/teachers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yourusername.github.io/kannada-school/about/teachers/</guid>
+      <description>&lt;h2 id=&#34;our-teaching-team&#34;&gt;Our Teaching Team&lt;/h2&gt;&#xA;&lt;p&gt;ನಮ್ಮ ಕನ್ನಡ ಶಾಲೆ is led by teachers and volunteers who care deeply about helping children build confidence, connection, and pride in Kannada.&lt;/p&gt;&#xA;&lt;p&gt;Use this page to introduce:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Lead teachers&lt;/li&gt;&#xA;&lt;li&gt;Classroom volunteers&lt;/li&gt;&#xA;&lt;li&gt;Curriculum coordinators&lt;/li&gt;&#xA;&lt;li&gt;Guest storytellers or cultural presenters&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;teaching-approach&#34;&gt;Teaching Approach&lt;/h2&gt;&#xA;&lt;p&gt;Our teachers use songs, stories, conversation, games, and structured practice. The goal is to make Kannada feel useful, joyful, and connected to family and community life.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

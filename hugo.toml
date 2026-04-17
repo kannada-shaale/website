@@ -1,0 +1,57 @@
+baseURL = "https://yourusername.github.io/kannada-school/"
+languageCode = "en-us"
+title = "ನಮ್ಮ ಕನ್ನಡ ಶಾಲೆ"
+theme = "kannada"
+
+[params]
+  description = "Helping Kannada kids abroad speak with family and confidence."
+  schoolYear = "2025–26"
+  contactEmail = "hello@kannadaschool.com"
+  location = "Your City"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Curriculum"
+    identifier = "curriculum"
+    pageRef = "/curriculum"
+    weight = 2
+  [[menu.main]]
+    name = "Presentation"
+    pageRef = "/curriculum/presentation"
+    parent = "curriculum"
+    weight = 1
+  [[menu.main]]
+    name = "Classes"
+    pageRef = "/classes"
+    weight = 3
+  [[menu.main]]
+    name = "Resources"
+    pageRef = "/resources"
+    weight = 4
+  [[menu.main]]
+    name = "For Parents"
+    pageRef = "/for-parents"
+    weight = 5
+  [[menu.main]]
+    name = "About Us"
+    identifier = "about-us"
+    pageRef = "/about"
+    weight = 6
+  [[menu.main]]
+    name = "Locations"
+    pageRef = "/about/locations"
+    parent = "about-us"
+    weight = 1
+  [[menu.main]]
+    name = "Teachers"
+    pageRef = "/about/teachers"
+    parent = "about-us"
+    weight = 2
+
+[taxonomies]
+  level = "levels"
+  tag = "tags"
