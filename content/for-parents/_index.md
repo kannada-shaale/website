@@ -4,6 +4,8 @@ subtitle: "Everything you need to support your child's Kannada learning at home.
 section_label: "Parent Hub"
 ---
 
+{{< static-link href="/printables/curriculum-one-pager.html" text="Print or share the curriculum one-pager" >}}
+
 ## How to Help at Home
 
 You do not need to speak fluent Kannada to support your child's learning. Here is what actually makes a difference:
