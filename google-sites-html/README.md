@@ -12,7 +12,9 @@ Included pages:
 - `level-2.html`
 - `level-3.html`
 - `level-4.html`
-- `level-5.html`
+- `teachers.html`
+- `students.html`
+- `collaborate.html`
 
 Shared styling lives in `styles.css`.
 

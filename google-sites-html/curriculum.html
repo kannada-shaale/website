@@ -69,10 +69,54 @@ a {
   align-items: center;
 }
 
-.nav a {
+.nav-item {
+  position: relative;
+}
+
+.nav a,
+.nav summary {
   color: #fff7ed;
   text-decoration: none;
   font-weight: 600;
+}
+
+.nav summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav summary::-webkit-details-marker {
+  display: none;
+}
+
+.submenu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 190px;
+  padding: 10px;
+  background: rgba(31, 41, 51, 0.96);
+  border: 1px solid rgba(255, 247, 237, 0.18);
+  border-radius: 14px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 20;
+}
+
+.submenu a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.submenu a:hover {
+  background: rgba(255, 247, 237, 0.08);
+}
+
+.nav-item:hover .submenu,
+.nav-item details[open] .submenu {
+  display: block;
 }
 
 .hero {
@@ -247,7 +291,16 @@ blockquote {
           <a href="index.html">Home</a>
           <a href="curriculum.html">Curriculum</a>
           <a href="resources.html">Resources</a>
-          <a href="contact.html">Contact</a>
+          <div class="nav-item">
+            <details>
+              <summary>Join Us</summary>
+              <div class="submenu">
+                <a href="teachers.html">Teachers</a>
+                <a href="students.html">Students</a>
+                <a href="collaborate.html">Collaborate</a>
+              </div>
+            </details>
+          </div>
         </nav>
       </div>
       <div class="nav-wrap hero">
@@ -287,11 +340,6 @@ blockquote {
             <h3>Level 4 — ವಾಕ್ಯ ಕಲಿ</h3>
             <p>Simple sentences mastered. Ottaksharas, paragraph reading, and fuller expression.</p>
             <a href="level-4.html">Open Level 4</a>
-          </article>
-          <article class="card">
-            <h3>Level 5 — ಕನ್ನಡ ಮಾತುಗಾರರು</h3>
-            <p>Paragraph-ready students build fluency through essays, storytelling, and presentations.</p>
-            <a href="level-5.html">Open Level 5</a>
           </article>
         </div>
       </section>

@@ -70,10 +70,54 @@ a {
   align-items: center;
 }
 
-.nav a {
+.nav-item {
+  position: relative;
+}
+
+.nav a,
+.nav summary {
   color: #fff7ed;
   text-decoration: none;
   font-weight: 600;
+}
+
+.nav summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav summary::-webkit-details-marker {
+  display: none;
+}
+
+.submenu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 190px;
+  padding: 10px;
+  background: rgba(31, 41, 51, 0.96);
+  border: 1px solid rgba(255, 247, 237, 0.18);
+  border-radius: 14px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 20;
+}
+
+.submenu a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.submenu a:hover {
+  background: rgba(255, 247, 237, 0.08);
+}
+
+.nav-item:hover .submenu,
+.nav-item details[open] .submenu {
+  display: block;
 }
 
 .hero {
@@ -248,7 +292,16 @@ blockquote {
           <a href="index.html">Home</a>
           <a href="curriculum.html">Curriculum</a>
           <a href="resources.html">Resources</a>
-          <a href="contact.html">Contact</a>
+          <div class="nav-item">
+            <details>
+              <summary>Join Us</summary>
+              <div class="submenu">
+                <a href="teachers.html">Teachers</a>
+                <a href="students.html">Students</a>
+                <a href="collaborate.html">Collaborate</a>
+              </div>
+            </details>
+          </div>
         </nav>
       </div>
       <div class="hero-wrap hero">
@@ -257,7 +310,7 @@ blockquote {
           <p>An in-person Kannada learning community helping children grow in language, confidence, and cultural connection.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="curriculum.html">View Curriculum</a>
-            <a class="button button-secondary" href="contact.html">Contact Us</a>
+            <a class="button button-secondary" href="teachers.html">Join Us</a>
           </div>
         </div>
       </div>
@@ -299,6 +352,12 @@ blockquote {
         </div>
       </section>
 
+      <section class="section">
+        <span class="eyebrow">Level 4 Outcome</span>
+        <h2>Students who complete Level 4 may be ready to pursue foreign language credit through local ISDs</h2>
+        <p>Our four-level pathway is designed to build toward real language confidence. By the end of Level 4, students may be prepared to explore foreign language credit options offered through their local school districts, depending on district policies and evaluation requirements.</p>
+      </section>
+
       <section class="section two-col">
         <div>
           <span class="eyebrow">How Learning Happens</span>
@@ -332,7 +391,7 @@ blockquote {
         <span class="eyebrow">Get in Touch</span>
         <h2>Questions about placement or curriculum?</h2>
         <p>If you have questions about student placement, schedules, resources, or how the program works, we would be happy to help.</p>
-        <p><a class="button button-primary" href="contact.html">Contact Us</a></p>
+        <p><a class="button button-primary" href="teachers.html">Join Us</a></p>
       </section>
     </main>
 

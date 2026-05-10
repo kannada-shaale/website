@@ -69,10 +69,54 @@ a {
   align-items: center;
 }
 
-.nav a {
+.nav-item {
+  position: relative;
+}
+
+.nav a,
+.nav summary {
   color: #fff7ed;
   text-decoration: none;
   font-weight: 600;
+}
+
+.nav summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav summary::-webkit-details-marker {
+  display: none;
+}
+
+.submenu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 190px;
+  padding: 10px;
+  background: rgba(31, 41, 51, 0.96);
+  border: 1px solid rgba(255, 247, 237, 0.18);
+  border-radius: 14px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 20;
+}
+
+.submenu a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.submenu a:hover {
+  background: rgba(255, 247, 237, 0.08);
+}
+
+.nav-item:hover .submenu,
+.nav-item details[open] .submenu {
+  display: block;
 }
 
 .hero {
@@ -247,7 +291,16 @@ blockquote {
           <a href="index.html">Home</a>
           <a href="curriculum.html">Curriculum</a>
           <a href="resources.html">Resources</a>
-          <a href="contact.html">Contact</a>
+          <div class="nav-item">
+            <details>
+              <summary>Join Us</summary>
+              <div class="submenu">
+                <a href="teachers.html">Teachers</a>
+                <a href="students.html">Students</a>
+                <a href="collaborate.html">Collaborate</a>
+              </div>
+            </details>
+          </div>
         </nav>
       </div>
       <div class="nav-wrap hero">
@@ -320,13 +373,19 @@ blockquote {
       </section>
 
       <section class="section">
-        <h2>Ready for Level 5 When</h2>
+        <h2>Growth Goals in Level 4</h2>
         <ul class="quick-list">
           <li>Reads short paragraphs with familiar vocabulary</li>
           <li>Writes 4–6 connected sentences</li>
           <li>Uses ottaksharas in reading and writing with support</li>
           <li>Can describe events, experiences, or stories in Kannada</li>
         </ul>
+      </section>
+
+      <section class="section">
+        <span class="eyebrow">Highlight</span>
+        <h2>Level 4 may open the door to foreign language credit</h2>
+        <p>Students who complete Level 4 may be ready to pursue foreign language credit opportunities through their local ISDs. Specific requirements can vary by district, but this level is intended to build the reading, writing, speaking, and comprehension foundation students may need before taking that next step.</p>
       </section>
     </main>
 
