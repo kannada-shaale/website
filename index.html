@@ -7,398 +7,82 @@
     <style>
 :root {
   --bg: #f6f7f8;
-  --panel: #ffffff;
   --ink: #1f2933;
-  --muted: #5f6b76;
-  --accent: #d97706;
-  --accent-dark: #b45309;
-  --border: #d9dee3;
+  --muted: #f7efe3;
+  --accent: #fff7ed;
   --hero-a: #1f2933;
   --hero-b: #31424f;
   --hero-c: #3b5362;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
+  min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--bg);
-  color: var(--ink);
-  line-height: 1.65;
-}
-
-a {
-  color: var(--accent-dark);
-}
-
-.hero-shell {
   background:
     linear-gradient(120deg, rgba(255, 255, 255, 0.04) 15%, transparent 15%, transparent 45%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.03) 60%, transparent 60%),
     linear-gradient(135deg, var(--hero-a), var(--hero-b) 55%, var(--hero-c));
-  color: #fff7ed;
+  color: var(--accent);
+  display: grid;
+  place-items: center;
 }
 
-.nav-wrap,
-.hero-wrap,
-.page-wrap,
-.footer-wrap {
-  width: min(1100px, calc(100% - 48px));
+.shell {
+  width: min(860px, calc(100% - 48px));
+  text-align: center;
+  padding: 48px 0;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.1;
+}
+
+p {
   margin: 0 auto;
-}
-
-.nav-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 24px 0 12px;
-  gap: 20px;
-}
-
-.brand {
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-}
-
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  align-items: center;
-}
-
-.nav-item {
-  position: relative;
-}
-
-.nav a,
-.nav summary {
-  color: #fff7ed;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.nav summary {
-  list-style: none;
-  cursor: pointer;
-}
-
-.nav summary::-webkit-details-marker {
-  display: none;
-}
-
-.submenu {
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
-  min-width: 190px;
-  padding: 10px;
-  background: rgba(31, 41, 51, 0.96);
-  border: 1px solid rgba(255, 247, 237, 0.18);
-  border-radius: 14px;
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
-  display: none;
-  z-index: 20;
-}
-
-.submenu a {
-  display: block;
-  padding: 8px 10px;
-  border-radius: 10px;
-  white-space: nowrap;
-}
-
-.submenu a:hover {
-  background: rgba(255, 247, 237, 0.08);
-}
-
-.nav-item:hover .submenu,
-.nav-item details[open] .submenu {
-  display: block;
-}
-
-.hero {
-  padding: 72px 0 96px;
-}
-
-.hero h1 {
-  margin: 0 0 14px;
-  font-size: clamp(2rem, 4vw, 3.4rem);
-  line-height: 1.15;
-}
-
-.hero p {
-  margin: 0;
   max-width: 720px;
-  font-size: 1.12rem;
-  color: #f7efe3;
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: var(--muted);
 }
 
-.hero-actions {
+.actions {
   display: flex;
+  justify-content: center;
+  gap: 18px;
   flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 28px;
+  margin-top: 36px;
 }
 
 .button {
   display: inline-block;
-  padding: 12px 18px;
+  min-width: 180px;
+  padding: 14px 24px;
   border-radius: 999px;
+  border: 1px solid rgba(255, 247, 237, 0.45);
+  color: var(--accent);
   text-decoration: none;
   font-weight: 700;
+  font-size: 1.05rem;
 }
 
 .button-primary {
-  background: #fff7ed;
-  color: #1f2933;
+  background: var(--accent);
+  color: var(--hero-a);
 }
-
-.button-secondary {
-  border: 1px solid rgba(255, 247, 237, 0.55);
-  color: #fff7ed;
-}
-
-.page-wrap {
-  padding: 48px 0 72px;
-}
-
-.section {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 28px;
-  margin-bottom: 28px;
-  box-shadow: 0 10px 30px rgba(31, 41, 51, 0.05);
-}
-
-.section h2 {
-  margin: 0 0 14px;
-  font-size: 1.6rem;
-}
-
-.section p:first-of-type,
-.section ul:first-of-type,
-.section table:first-of-type {
-  margin-top: 0;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-}
-
-.card {
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 18px;
-  background: #fffdfa;
-}
-
-.card h3 {
-  margin: 0 0 10px;
-  font-size: 1.12rem;
-}
-
-.card p {
-  margin: 0 0 12px;
-  color: var(--muted);
-}
-
-.eyebrow {
-  display: inline-block;
-  margin-bottom: 12px;
-  font-size: 0.82rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--accent-dark);
-}
-
-.two-col {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 24px;
-}
-
-.quick-list {
-  padding-left: 20px;
-  margin: 12px 0 0;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 16px;
-  font-size: 0.97rem;
-}
-
-th,
-td {
-  border: 1px solid var(--border);
-  padding: 10px 12px;
-  text-align: left;
-  vertical-align: top;
-}
-
-th {
-  background: #f8fafb;
-}
-
-blockquote {
-  margin: 18px 0 0;
-  padding: 16px 18px;
-  background: #fff8eb;
-  border-left: 4px solid var(--accent);
-  border-radius: 12px;
-}
-
-.footer {
-  border-top: 1px solid var(--border);
-  color: var(--muted);
-}
-
-.footer-wrap {
-  padding: 24px 0 40px;
-}
-
-@media (max-width: 760px) {
-  .nav-wrap {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .two-col {
-    grid-template-columns: 1fr;
-  }
-
-  .page-wrap,
-  .hero {
-    padding-top: 36px;
-  }
-}
-
     </style>
   </head>
   <body>
-    <section class="hero-shell">
-      <div class="nav-wrap">
-        <div class="brand">Nudi Kannada Shaale</div>
-        <nav class="nav" aria-label="Main navigation">
-          <a href="index.html">Home</a>
-          <a href="curriculum.html">Curriculum</a>
-          <a href="resources.html">Resources</a>
-          <div class="nav-item">
-            <details>
-              <summary>Join Us</summary>
-              <div class="submenu">
-                <a href="teachers.html">Teachers</a>
-                <a href="students.html">Students</a>
-                <a href="collaborate.html">Collaborate</a>
-              </div>
-            </details>
-          </div>
-        </nav>
+    <main class="shell">
+      <h1>Nudi Kannada Shaale</h1>
+      <p>Nudi is an in-person Kannada learning community for children. We believe language grows best through real conversation, shared activities, classroom participation, and cultural connection.</p>
+      <div class="actions">
+        <a class="button button-primary" href="en/index.html">English</a>
+        <a class="button" href="kn/index.html">ಕನ್ನಡ</a>
       </div>
-      <div class="hero-wrap hero">
-        <div>
-          <h1>Nudi Kannada Shaale</h1>
-          <p>An in-person Kannada learning community helping children grow in language, confidence, and cultural connection.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="curriculum.html">View Curriculum</a>
-            <a class="button button-secondary" href="teachers.html">Join Us</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <main class="page-wrap">
-      <section class="section">
-        <span class="eyebrow">Why Nudi</span>
-        <h2>Language grows best through connection, participation, and community</h2>
-        <p>Nudi exists to help children build a lasting connection to Kannada language and the culture of Karnataka. We want children to feel comfortable hearing Kannada, speaking it with confidence, and experiencing it as a living part of family and community life.</p>
-        <p>Our model is intentionally in person. Language learning at this stage depends on shared attention, group routines, songs, stories, games, classroom energy, and real conversation. Those experiences help children participate naturally, build confidence, and form positive associations with the language in ways that are difficult to recreate in a virtual-only setting.</p>
-      </section>
-
-      <section class="section">
-        <span class="eyebrow">Curriculum Overview</span>
-        <h2>Skill-based learning across four levels</h2>
-        <p>Our curriculum is organized by skill and readiness so families can quickly understand where a child may fit best and what growth to expect at each stage.</p>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Level 1</h3>
-            <p>Introduction to Kannada through sounds, simple words, songs, and everyday conversation.</p>
-            <a href="level-1.html">Explore Level 1</a>
-          </article>
-          <article class="card">
-            <h3>Level 2</h3>
-            <p>Building vocabulary, early literacy, and confidence in listening and speaking.</p>
-            <a href="level-2.html">Explore Level 2</a>
-          </article>
-          <article class="card">
-            <h3>Level 3</h3>
-            <p>Developing stronger reading, writing, and conversational ability.</p>
-            <a href="level-3.html">Explore Level 3</a>
-          </article>
-          <article class="card">
-            <h3>Level 4</h3>
-            <p>Reading and writing with greater independence and more expressive speaking.</p>
-            <a href="level-4.html">Explore Level 4</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <span class="eyebrow">Level 4 Outcome</span>
-        <h2>Students who complete Level 4 may be ready to pursue foreign language credit through local ISDs</h2>
-        <p>Our four-level pathway is designed to build toward real language confidence. By the end of Level 4, students may be prepared to explore foreign language credit options offered through their local school districts, depending on district policies and evaluation requirements.</p>
-      </section>
-
-      <section class="section two-col">
-        <div>
-          <span class="eyebrow">How Learning Happens</span>
-          <h2>Structured, joyful, and designed for real participation</h2>
-          <p>Students are grouped by level so instruction can match their current skills and confidence. Lessons include conversation, stories, songs, games, cultural learning, reading, and writing based on the learner’s stage. The goal is to make Kannada feel approachable, useful, and enjoyable while steadily building skill over time.</p>
-        </div>
-        <div>
-          <ul class="quick-list">
-            <li>Skill-based placement, not age alone</li>
-            <li>Interactive, in-person lessons with repetition and routine</li>
-            <li>Language and culture taught together</li>
-            <li>Support for confidence-building at every stage</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section">
-        <span class="eyebrow">Who We Are</span>
-        <h2>A parent and educator community committed to heritage learning</h2>
-        <p>We are a community of parents and educators working together to help children stay connected to Kannada with warmth, consistency, and purpose. Our focus is not only on language skills, but also on identity, belonging, and a sense of pride in cultural heritage.</p>
-      </section>
-
-      <section class="section">
-        <span class="eyebrow">Resources for Families</span>
-        <h2>Support for learning beyond the classroom</h2>
-        <p>Families can explore curriculum materials, learning resources, and parent information to support Kannada learning at home between classes.</p>
-        <p><a href="resources.html">Browse resources and recommendations</a></p>
-      </section>
-
-      <section class="section">
-        <span class="eyebrow">Get in Touch</span>
-        <h2>Questions about placement or curriculum?</h2>
-        <p>If you have questions about student placement, schedules, resources, or how the program works, we would be happy to help.</p>
-        <p><a class="button button-primary" href="teachers.html">Join Us</a></p>
-      </section>
     </main>
-
-    <footer class="footer">
-      <div class="footer-wrap">
-        Nudi
-      </div>
-    </footer>
   </body>
 </html>

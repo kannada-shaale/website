@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="kn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ಹಂತ 2 | ನುಡಿ</title>
+    <style>
+:root {
+  --bg: #f6f7f8;
+  --panel: #ffffff;
+  --ink: #1f2933;
+  --muted: #5f6b76;
+  --accent: #d97706;
+  --accent-dark: #b45309;
+  --border: #d9dee3;
+  --hero-a: #1f2933;
+  --hero-b: #31424f;
+  --hero-c: #3b5362;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent-dark);
+}
+
+.site-header {
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.04) 15%, transparent 15%, transparent 45%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.03) 60%, transparent 60%),
+    linear-gradient(135deg, var(--hero-a), var(--hero-b) 55%, var(--hero-c));
+  color: #fff7ed;
+}
+
+.nav-wrap,
+.page-wrap,
+.footer-wrap {
+  width: min(1100px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0 12px;
+  gap: 20px;
+}
+
+.brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav a,
+.nav summary {
+  color: #fff7ed;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav summary::-webkit-details-marker {
+  display: none;
+}
+
+.submenu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 190px;
+  padding: 10px;
+  background: rgba(31, 41, 51, 0.96);
+  border: 1px solid rgba(255, 247, 237, 0.18);
+  border-radius: 14px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 20;
+}
+
+.submenu a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.submenu a:hover {
+  background: rgba(255, 247, 237, 0.08);
+}
+
+.nav-item:hover .submenu,
+.nav-item details[open] .submenu {
+  display: block;
+}
+
+.hero {
+  padding: 72px 0 96px;
+}
+
+.hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.15;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 720px;
+  font-size: 1.12rem;
+  color: #f7efe3;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button-primary {
+  background: #fff7ed;
+  color: #1f2933;
+}
+
+.button-secondary {
+  border: 1px solid rgba(255, 247, 237, 0.55);
+  color: #fff7ed;
+}
+
+.page-wrap {
+  padding: 48px 0 72px;
+}
+
+.section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 30px rgba(31, 41, 51, 0.05);
+}
+
+.section h2 {
+  margin: 0 0 14px;
+  font-size: 1.6rem;
+}
+
+.section p:first-of-type,
+.section ul:first-of-type,
+.section table:first-of-type {
+  margin-top: 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  background: #fffdfa;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 1.12rem;
+}
+
+.card p {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-dark);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+}
+
+.quick-list {
+  padding-left: 20px;
+  margin: 12px 0 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 0.97rem;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #f8fafb;
+}
+
+blockquote {
+  margin: 18px 0 0;
+  padding: 16px 18px;
+  background: #fff8eb;
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.footer-wrap {
+  padding: 24px 0 40px;
+}
+
+@media (max-width: 760px) {
+  .nav-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .page-wrap,
+  .hero {
+    padding-top: 36px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <div class="brand">ನುಡಿ</div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">ಮುಖ್ಯಪುಟ</a>
+          <a href="curriculum.html">ಪಠ್ಯಕ್ರಮ</a>
+          <a href="resources.html">ಸಂಪನ್ಮೂಲಗಳು</a>
+          <div class="nav-item">
+            <details>
+              <summary>ನಮ್ಮೊಡನೆ ಸೇರಿ</summary>
+              <div class="submenu">
+                <a href="teachers.html">ಶಿಕ್ಷಕರು</a>
+                <a href="students.html">ವಿದ್ಯಾರ್ಥಿಗಳು</a>
+                <a href="collaborate.html">ಸಹಯೋಗ</a>
+              </div>
+            </details>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-wrap hero">
+        <div>
+          <h1>ಹಂತ 2 — ಅಕ್ಷರ ಕಲಿ</h1>
+          <p>ಅಕ್ಷರಗಳು, ಸ್ವರಗಳು, ವ್ಯಂಜನಗಳು ಮತ್ತು ಮೂಲ ಪದಸಂಪತ್ತಿ ನಿರ್ಮಾಣಕ್ಕೆ ಸಿದ್ಧತೆ.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-wrap">
+      <section class="section">
+        <h2>ಕಲಿಯುವವರ ರೂಪರೇಖೆ</h2>
+        <p>ಸರಳ ಮಾತಿನ ಕನ್ನಡದ ರೂಢಿಗಳಲ್ಲಿ ಭಾಗವಹಿಸಲು ಬಲ್ಲ ಮತ್ತು ಕನ್ನಡದ ಧ್ವನಿಗಳನ್ನು ಬರಹದ ಅಕ್ಷರಗಳಿಗೆ ಜೋಡಿಸಲು ಸಿದ್ಧವಾಗಿರುವ ವಿದ್ಯಾರ್ಥಿಗಳಿಗಾಗಿ ಈ ಹಂತ.</p>
+      </section>
+
+      <section class="section two-col">
+        <div>
+          <h2>ಪೂರ್ವಸಿದ್ಧತೆ</h2>
+          <ul class="quick-list">
+            <li>Can follow basic classroom instructions with support</li>
+            <li>Can repeat familiar Kannada words and short phrases</li>
+            <li>Shows readiness for pencil work, tracing, and letter recognition</li>
+          </ul>
+        </div>
+        <div>
+          <h2>ಗುರಿ</h2>
+          <p>ಕನ್ನಡ ಅಕ್ಷರಗಳ ಪರಿಚಯ ಮತ್ತು ಮೂಲ ಪದಸಂಪತ್ತಿ ನಿರ್ಮಾಣ.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>ಓದು ಮತ್ತು ಬರಹ</h2>
+        <ul class="quick-list">
+          <li>Swaras: ಅ to ಅಃ</li>
+          <li>Vyanjanas: ಕ to ಳ</li>
+          <li>ಪ್ರತಿ ಅಕ್ಷರಕ್ಕೆ 10 ಸರಳ ಪದಗಳ ಅಭ್ಯಾಸ</li>
+          <li>ಈ ಹಂತದಲ್ಲಿ ಕಾಗುಣಿತ ಮತ್ತು ಒತ್ತಕ್ಷರ ಇಲ್ಲ</li>
+        </ul>
+      </section>
+
+      <section class="section two-col">
+        <div>
+          <h2>ಮಾತನಾಡುವಿಕೆ ಮತ್ತು ಕೇಳುವಿಕೆ</h2>
+          <p>Pronouns: <strong>ನೀನು, ನಿನ್ನ, ನೀವು, ನಿಮ್ಮ</strong></p>
+          <p>Action words: ಓದು, ಬರಿ, ನೋಡು, ಕೇಳು, ಮಲಗು, ಮಾತಾಡು</p>
+        </div>
+        <div>
+          <h2>ಕೌಶಲ್ಯಗಳು</h2>
+          <ul class="quick-list">
+            <li>ಸರಳ ಕಥೆಗಳು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದು</li>
+            <li>1–2 ವಾಕ್ಯಗಳಲ್ಲಿ ಉತ್ತರಿಸುವುದು</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>ಪದಸಂಪತ್ತಿ ವಿಷಯಗಳು</h2>
+        <ul class="quick-list">
+          <li>Numbers 1–20</li>
+          <li>Time</li>
+          <li>Colors</li>
+          <li>Tastes</li>
+          <li>Family members</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>ತರಗತಿ ವಿನ್ಯಾಸ — 45 ನಿಮಿಷ</h2>
+        <table>
+          <thead>
+            <tr><th>ಘಟ್ಟ</th><th>ಅವಧಿ</th><th>ಚಟುವಟಿಕೆ</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>20 ನಿಮಿಷ</td><td>ಮಾತನಾಡುವಿಕೆ ಮತ್ತು ಕೇಳುವಿಕೆ</td></tr>
+            <tr><td>2</td><td>20 ನಿಮಿಷ</td><td>ಓದು ಮತ್ತು ಬರಹ</td></tr>
+            <tr><td>3</td><td>5 ನಿಮಿಷ</td><td>ಆಟಗಳು ಮತ್ತು ಚಟುವಟಿಕೆಗಳು</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>ಹಂತ 3ಕ್ಕೆ ಸಿದ್ಧರಾಗುವಾಗ</h2>
+        <ul class="quick-list">
+          <li>Recognizes most swaras and vyanjanas</li>
+          <li>Can read and write simple letters and familiar words with support</li>
+          <li>Can use basic pronouns and action words in short phrases</li>
+          <li>Can respond to simple story or picture prompts in 1–2 sentences</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrap">ನುಡಿ</div>
+    </footer>
+  </body>
+</html>

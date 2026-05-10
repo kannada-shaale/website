@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="kn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ಶಿಕ್ಷಕರು | ನುಡಿ</title>
+    <style>
+:root {
+  --bg: #f6f7f8;
+  --panel: #ffffff;
+  --ink: #1f2933;
+  --muted: #5f6b76;
+  --accent: #d97706;
+  --accent-dark: #b45309;
+  --border: #d9dee3;
+  --hero-a: #1f2933;
+  --hero-b: #31424f;
+  --hero-c: #3b5362;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.65; }
+a { color: var(--accent-dark); }
+.site-header { background: linear-gradient(120deg, rgba(255, 255, 255, 0.04) 15%, transparent 15%, transparent 45%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.03) 60%, transparent 60%), linear-gradient(135deg, var(--hero-a), var(--hero-b) 55%, var(--hero-c)); color: #fff7ed; }
+.nav-wrap, .page-wrap, .footer-wrap { width: min(1100px, calc(100% - 48px)); margin: 0 auto; }
+.nav-wrap { display: flex; align-items: center; justify-content: space-between; padding: 24px 0 12px; gap: 20px; }
+.brand { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.01em; }
+.nav { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+.nav-item { position: relative; }
+.nav a, .nav summary { color: #fff7ed; text-decoration: none; font-weight: 600; }
+.nav summary { list-style: none; cursor: pointer; }
+.nav summary::-webkit-details-marker { display: none; }
+.submenu { position: absolute; top: calc(100% + 10px); left: 0; min-width: 190px; padding: 10px; background: rgba(31, 41, 51, 0.96); border: 1px solid rgba(255, 247, 237, 0.18); border-radius: 14px; box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); display: none; z-index: 20; }
+.submenu a { display: block; padding: 8px 10px; border-radius: 10px; white-space: nowrap; }
+.submenu a:hover { background: rgba(255, 247, 237, 0.08); }
+.nav-item:hover .submenu, .nav-item details[open] .submenu { display: block; }
+.hero { padding: 72px 0 96px; }
+.hero h1 { margin: 0 0 14px; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.15; }
+.hero p { margin: 0; max-width: 720px; font-size: 1.12rem; color: #f7efe3; }
+.page-wrap { padding: 48px 0 72px; }
+.section { background: var(--panel); border: 1px solid var(--border); border-radius: 20px; padding: 28px; margin-bottom: 28px; box-shadow: 0 10px 30px rgba(31, 41, 51, 0.05); }
+.section h2 { margin: 0 0 14px; font-size: 1.6rem; }
+.eyebrow { display: inline-block; margin-bottom: 12px; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-dark); }
+.two-col { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; }
+.quick-list { padding-left: 20px; margin: 12px 0 0; }
+.footer { border-top: 1px solid var(--border); color: var(--muted); }
+.footer-wrap { padding: 24px 0 40px; }
+@media (max-width: 760px) { .nav-wrap { flex-direction: column; align-items: flex-start; } .two-col { grid-template-columns: 1fr; } .page-wrap, .hero { padding-top: 36px; } }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <div class="brand">ನುಡಿ</div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">ಮುಖ್ಯಪುಟ</a>
+          <a href="curriculum.html">ಪಠ್ಯಕ್ರಮ</a>
+          <a href="resources.html">ಸಂಪನ್ಮೂಲಗಳು</a>
+          <div class="nav-item">
+            <details open>
+              <summary>ನಮ್ಮೊಡನೆ ಸೇರಿ</summary>
+              <div class="submenu">
+                <a href="teachers.html">ಶಿಕ್ಷಕರು</a>
+                <a href="students.html">ವಿದ್ಯಾರ್ಥಿಗಳು</a>
+                <a href="collaborate.html">ಸಹಯೋಗ</a>
+              </div>
+            </details>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-wrap hero">
+        <div>
+          <h1>ಶಿಕ್ಷಕರು</h1>
+          <p>ಸ್ನೇಹಪೂರ್ಣ ಸಮ್ಮುಖ ಕಲಿಕಾ ಸಮುದಾಯಕ್ಕೆ ಸೇರಿ, ಮಕ್ಕಳಲ್ಲಿ ಕನ್ನಡದ ದೀರ್ಘಕಾಲದ ಆತ್ಮವಿಶ್ವಾಸವನ್ನು ಬೆಳೆಸಲು ಕೈಜೋಡಿಸಿ.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-wrap">
+      <section class="section">
+        <span class="eyebrow">ನಮ್ಮೊಡನೆ ಬೋಧಿಸಿ</span>
+        <h2>ಕನ್ನಡವನ್ನು ಜೀವಂತ, ಹರ್ಷಭರಿತ ಮತ್ತು ಹತ್ತಿರದ ಅನುಭವವನ್ನಾಗಿ ಮಾಡಲು ಸಹಕರಿಸಿ</h2>
+        <p>ಮಕ್ಕಳು ಕನ್ನಡ ಭಾಷೆ ಮತ್ತು ಸಂಸ್ಕೃತಿಯೊಂದಿಗೆ ನಂಟು ಉಳಿಸಿಕೊಳ್ಳಲಿ ಎಂದು ಕಾಳಜಿ ವಹಿಸುವ ಪೋಷಕರು, ಸ್ವಯಂಸೇವಕರು ಮತ್ತು ಶಿಕ್ಷಕರ ಶ್ರಮದಿಂದ ನುಡಿ ನಿರ್ಮಿತವಾಗಿದೆ. ಮಕ್ಕಳೊಂದಿಗೆ ಕೆಲಸ ಮಾಡುವುದು, ಕಥೆ ಹೇಳುವುದು, ಹಾಡುಗಳು, ಮಾತುಕತೆ ಅಥವಾ ಸಮುದಾಯ ಕಲಿಕೆ ನಿಮಗೆ ಇಷ್ಟವಿದ್ದರೆ, ನಿಮ್ಮಿಂದ ಕೇಳಲು ನಾವು ಖುಷಿಪಡುತ್ತೇವೆ.</p>
+        <p>ಎಲ್ಲವನ್ನೂ ಒಬ್ಬರೇ ಮಾಡುವ ಅವಶ್ಯಕತೆ ಇಲ್ಲ. ನಾವು ಬೆಚ್ಚಗಿನ ಮಾನವೀಯತೆ, ನಿರಂತರತೆ ಮತ್ತು ಮಕ್ಕಳಲ್ಲಿ ಆತ್ಮವಿಶ್ವಾಸದೊಂದಿಗೆ ಭಾಗವಹಿಸುವ ಮನಸ್ಸನ್ನು ಮೌಲ್ಯೀಕರಿಸುತ್ತೇವೆ. ಇದು ನಿಮಗೆ ಹೊಂದಿಕೆಯಾಗುತ್ತದೆ ಅನಿಸಿದರೆ, ದಯವಿಟ್ಟು ಸಂಪರ್ಕಿಸಿ.</p>
+      </section>
+
+      <section class="section two-col">
+        <div>
+          <span class="eyebrow">ಸ್ಥಳ</span>
+          <h2>ನಾವು ಭೇಟಿ ಮಾಡುವ ಸ್ಥಳ</h2>
+          <p>Karya Siddhi Hanuman Temple<br>12030 Independence Pkwy Building B<br>Frisco, TX 75035</p>
+        </div>
+        <div>
+          <span class="eyebrow">ಸಂಪರ್ಕ</span>
+          <h2>ನಮಗೆ ಇಮೇಲ್ ಮಾಡಿ</h2>
+          <p>ಬೋಧನೆ, ಸ್ವಯಂಸೇವಕತ್ವ ಅಥವಾ ತರಗತಿಗಳ ಕಾರ್ಯವಿಧಾನದ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಲು ಆಸಕ್ತಿ ಇದ್ದರೆ, <a href="mailto:nudi.shaale@gmail.com">nudi.shaale@gmail.com</a> ಗೆ ಇಮೇಲ್ ಮಾಡಿ.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrap">ನುಡಿ</div>
+    </footer>
+  </body>
+</html>

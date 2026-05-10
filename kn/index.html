@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="kn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ನುಡಿ ಕನ್ನಡ ಶಾಲೆ</title>
+    <style>
+:root {
+  --bg: #f6f7f8;
+  --panel: #ffffff;
+  --ink: #1f2933;
+  --muted: #5f6b76;
+  --accent: #d97706;
+  --accent-dark: #b45309;
+  --border: #d9dee3;
+  --hero-a: #1f2933;
+  --hero-b: #31424f;
+  --hero-c: #3b5362;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent-dark);
+}
+
+.hero-shell {
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.04) 15%, transparent 15%, transparent 45%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.03) 60%, transparent 60%),
+    linear-gradient(135deg, var(--hero-a), var(--hero-b) 55%, var(--hero-c));
+  color: #fff7ed;
+}
+
+.nav-wrap,
+.hero-wrap,
+.page-wrap,
+.footer-wrap {
+  width: min(1100px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0 12px;
+  gap: 20px;
+}
+
+.brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav a,
+.nav summary {
+  color: #fff7ed;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav summary::-webkit-details-marker {
+  display: none;
+}
+
+.submenu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 190px;
+  padding: 10px;
+  background: rgba(31, 41, 51, 0.96);
+  border: 1px solid rgba(255, 247, 237, 0.18);
+  border-radius: 14px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 20;
+}
+
+.submenu a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.submenu a:hover {
+  background: rgba(255, 247, 237, 0.08);
+}
+
+.nav-item:hover .submenu,
+.nav-item details[open] .submenu {
+  display: block;
+}
+
+.hero {
+  padding: 72px 0 96px;
+}
+
+.hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.15;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 720px;
+  font-size: 1.12rem;
+  color: #f7efe3;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button-primary {
+  background: #fff7ed;
+  color: #1f2933;
+}
+
+.button-secondary {
+  border: 1px solid rgba(255, 247, 237, 0.55);
+  color: #fff7ed;
+}
+
+.page-wrap {
+  padding: 48px 0 72px;
+}
+
+.section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 30px rgba(31, 41, 51, 0.05);
+}
+
+.section h2 {
+  margin: 0 0 14px;
+  font-size: 1.6rem;
+}
+
+.section p:first-of-type,
+.section ul:first-of-type,
+.section table:first-of-type {
+  margin-top: 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  background: #fffdfa;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 1.12rem;
+}
+
+.card p {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-dark);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+}
+
+.quick-list {
+  padding-left: 20px;
+  margin: 12px 0 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 0.97rem;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #f8fafb;
+}
+
+blockquote {
+  margin: 18px 0 0;
+  padding: 16px 18px;
+  background: #fff8eb;
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.footer-wrap {
+  padding: 24px 0 40px;
+}
+
+@media (max-width: 760px) {
+  .nav-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .page-wrap,
+  .hero {
+    padding-top: 36px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <section class="hero-shell">
+      <div class="nav-wrap">
+        <div class="brand">ನುಡಿ ಕನ್ನಡ ಶಾಲೆ</div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">ಮುಖ್ಯಪುಟ</a>
+          <a href="curriculum.html">ಪಠ್ಯಕ್ರಮ</a>
+          <a href="resources.html">ಸಂಪನ್ಮೂಲಗಳು</a>
+          <div class="nav-item">
+            <details>
+              <summary>ನಮ್ಮೊಡನೆ ಸೇರಿ</summary>
+              <div class="submenu">
+                <a href="teachers.html">ಶಿಕ್ಷಕರು</a>
+                <a href="students.html">ವಿದ್ಯಾರ್ಥಿಗಳು</a>
+                <a href="collaborate.html">ಸಹಯೋಗ</a>
+              </div>
+            </details>
+          </div>
+        </nav>
+      </div>
+      <div class="hero-wrap hero">
+        <div>
+          <h1>ನುಡಿ ಕನ್ನಡ ಶಾಲೆ</h1>
+          <p>ಮಕ್ಕಳಿಗೆ ಭಾಷೆ, ಆತ್ಮವಿಶ್ವಾಸ ಮತ್ತು ಸಂಸ್ಕೃತಿಯ ನಂಟು ಬೆಳೆಸಲು ರೂಪಿಸಿದ ಸಮ್ಮುಖ ಕನ್ನಡ ಕಲಿಕಾ ಸಮುದಾಯ.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="curriculum.html">ಪಠ್ಯಕ್ರಮ ನೋಡಿ</a>
+            <a class="button button-secondary" href="teachers.html">ನಮ್ಮೊಡನೆ ಸೇರಿ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="page-wrap">
+      <section class="section">
+        <span class="eyebrow">ನುಡಿ ಯಾಕೆ</span>
+        <h2>ಭಾಷೆ ಬೆಳೆವದು ನಂಟು, ಭಾಗವಹಿಸುವಿಕೆ ಮತ್ತು ಸಮುದಾಯದ ಮೂಲಕ</h2>
+        <p>ಮಕ್ಕಳು ಕನ್ನಡ ಭಾಷೆ ಮತ್ತು ಕರ್ನಾಟಕದ ಸಂಸ್ಕೃತಿಯೊಂದಿಗೆ ದೀರ್ಘಕಾಲದ ನಂಟು ಬೆಳೆಸಿಕೊಳ್ಳಲು ನೆರವಾಗುವುದೇ ನುಡಿಯ ಉದ್ದೇಶ. ಮಕ್ಕಳು ಕನ್ನಡವನ್ನು ಕೇಳಲು, ಧೈರ್ಯದಿಂದ ಮಾತನಾಡಲು, ಕುಟುಂಬ ಮತ್ತು ಸಮುದಾಯದ ಬದುಕಿನ ಭಾಗವಾಗಿ ಅನುಭವಿಸಲು ಸುಲಭವಾಗಬೇಕು ಎಂಬುದು ನಮ್ಮ ಆಶಯ.</p>
+        <p>ನಮ್ಮ ಕಲಿಕಾ ಮಾದರಿ ಉದ್ದೇಶಪೂರ್ವಕವಾಗಿ ಸಮ್ಮುಖದಲ್ಲಿಯೇ ನಡೆಯುತ್ತದೆ. ಈ ಹಂತದಲ್ಲಿ ಭಾಷಾ ಕಲಿಕೆ ಹಂಚಿಕೊಂಡ ಗಮನ, ಗುಂಪಿನ ರೂಢಿಗಳು, ಹಾಡುಗಳು, ಕಥೆಗಳು, ಆಟಗಳು, ತರಗತಿಯ ಉತ್ಸಾಹ ಮತ್ತು ನೈಜ ಸಂಭಾಷಣೆಗಳ ಮೇಲೆ ಅವಲಂಬಿತವಾಗಿದೆ. ಇವು ಮಕ್ಕಳು ಸಹಜವಾಗಿ ಪಾಲ್ಗೊಳ್ಳಲು, ಆತ್ಮವಿಶ್ವಾಸ ಬೆಳೆಸಲು ಮತ್ತು ಭಾಷೆಯೊಂದಿಗೆ ಒಳ್ಳೆಯ ನಂಟು ಕಟ್ಟಲು ನೆರವಾಗುತ್ತವೆ. ಇಂಥ ಅನುಭವಗಳನ್ನು ಕೇವಲ ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಸಂಪೂರ್ಣವಾಗಿ ಪುನರಾವರ್ತಿಸುವುದು ಕಷ್ಟ.</p>
+      </section>
+
+      <section class="section">
+        <span class="eyebrow">ಪಠ್ಯಕ್ರಮದ ಚಿತ್ರಣ</span>
+        <h2>ನಾಲ್ಕು ಹಂತಗಳಲ್ಲಿ ಕೌಶಲ್ಯ ಆಧಾರಿತ ಕಲಿಕೆ</h2>
+        <p>ನಮ್ಮ ಪಠ್ಯಕ್ರಮವನ್ನು ಕೌಶಲ್ಯ ಮತ್ತು ಸಿದ್ಧತೆಯ ಆಧಾರದ ಮೇಲೆ ರೂಪಿಸಿದ್ದೇವೆ. ಹಾಗಾಗಿ, ಮಗು ಯಾವ ಹಂತದಲ್ಲಿ ಉತ್ತಮವಾಗಿ ಹೊಂದಿಕೊಳ್ಳಬಹುದು ಮತ್ತು ಪ್ರತಿ ಹಂತದಲ್ಲಿ ಯಾವ ಬೆಳವಣಿಗೆ ನಿರೀಕ್ಷಿಸಬಹುದು ಎಂಬುದನ್ನು ಕುಟುಂಬಗಳು ಸುಲಭವಾಗಿ ಅರ್ಥಮಾಡಿಕೊಳ್ಳಬಹುದು.</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>ಹಂತ 1</h3>
+            <p>ಧ್ವನಿಗಳು, ಸರಳ ಪದಗಳು, ಹಾಡುಗಳು ಮತ್ತು ದಿನನಿತ್ಯದ ಮಾತುಕತೆಗಳ ಮೂಲಕ ಕನ್ನಡದ ಪರಿಚಯ.</p>
+            <a href="level-1.html">ಹಂತ 1 ನೋಡಿ</a>
+          </article>
+          <article class="card">
+            <h3>ಹಂತ 2</h3>
+            <p>ಪದಸಂಪತ್ತಿ, ಪ್ರಾಥಮಿಕ ಅಕ್ಷರಜ್ಞಾನ, ಕೇಳುವಿಕೆ ಮತ್ತು ಮಾತಿನ ಆತ್ಮವಿಶ್ವಾಸದ ಬೆಳವಣಿಗೆ.</p>
+            <a href="level-2.html">ಹಂತ 2 ನೋಡಿ</a>
+          </article>
+          <article class="card">
+            <h3>ಹಂತ 3</h3>
+            <p>ಓದು, ಬರಹ ಮತ್ತು ಮಾತುಕತೆ ಸಾಮರ್ಥ್ಯವನ್ನು ಮತ್ತಷ್ಟು ಬಲಪಡಿಸುವ ಹಂತ.</p>
+            <a href="level-3.html">ಹಂತ 3 ನೋಡಿ</a>
+          </article>
+          <article class="card">
+            <h3>ಹಂತ 4</h3>
+            <p>ಸ್ವತಂತ್ರ ಓದು-ಬರಹ ಮತ್ತು ಹೆಚ್ಚು ವ್ಯಕ್ತಪರವಾದ ಕನ್ನಡ ಮಾತನಾಡುವ ಸಾಮರ್ಥ್ಯ.</p>
+            <a href="level-4.html">ಹಂತ 4 ನೋಡಿ</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <span class="eyebrow">ಹಂತ 4 ಫಲಿತಾಂಶ</span>
+        <h2>ಹಂತ 4 ಪೂರ್ಣಗೊಳಿಸಿದ ವಿದ್ಯಾರ್ಥಿಗಳು ಸ್ಥಳೀಯ ISDಗಳಲ್ಲಿ ವಿದೇಶಿ ಭಾಷಾ ಕ್ರೆಡಿಟ್‌ಗಾಗಿ ಸಿದ್ಧರಾಗಿರಬಹುದು</h2>
+        <p>ನಮ್ಮ ನಾಲ್ಕು ಹಂತಗಳ ಪಯಣ ನೈಜ ಭಾಷಾ ಆತ್ಮವಿಶ್ವಾಸವನ್ನು ನಿರ್ಮಿಸುವಂತೆ ರೂಪಿಸಲಾಗಿದೆ. ಹಂತ 4 ಕೊನೆಯಲ್ಲಿ, ಜಿಲ್ಲೆಯ ನೀತಿ ಮತ್ತು ಮೌಲ್ಯಮಾಪನ ಅವಶ್ಯಕತೆಗಳ ಆಧಾರದ ಮೇಲೆ, ವಿದ್ಯಾರ್ಥಿಗಳು ತಮ್ಮ ಸ್ಥಳೀಯ ಶಾಲಾ ಜಿಲ್ಲೆಗಳಲ್ಲಿನ ವಿದೇಶಿ ಭಾಷಾ ಕ್ರೆಡಿಟ್ ಆಯ್ಕೆಗಳನ್ನು ಪರಿಶೀಲಿಸಲು ಸಿದ್ಧರಾಗಿರಬಹುದು.</p>
+      </section>
+
+      <section class="section two-col">
+        <div>
+          <span class="eyebrow">ಕಲಿಕೆ ಹೇಗೆ ನಡೆಯುತ್ತದೆ</span>
+          <h2>ಸಂರಚಿತ, ಸಂತೋಷಕರ ಮತ್ತು ನೈಜ ಭಾಗವಹಿಸುವಿಕೆಗೆ ಹೊಂದುವ ಕಲಿಕೆ</h2>
+          <p>ವಿದ್ಯಾರ್ಥಿಗಳನ್ನು ಅವರ ಕೌಶಲ್ಯ ಮತ್ತು ಆತ್ಮವಿಶ್ವಾಸಕ್ಕೆ ತಕ್ಕಂತೆ ಹಂತವಾರು ಗುಂಪು ಮಾಡಲಾಗುತ್ತದೆ. ಪಾಠಗಳಲ್ಲಿ ಮಾತುಕತೆ, ಕಥೆಗಳು, ಹಾಡುಗಳು, ಆಟಗಳು, ಸಂಸ್ಕೃತಿ ಪರಿಚಯ, ಓದು ಮತ್ತು ಬರಹ ಇರುತ್ತವೆ. ಕನ್ನಡವು ಸುಲಭ, ಉಪಯುಕ್ತ ಮತ್ತು ಆನಂದಕರವಾಗಿರಲಿ ಎಂಬುದೇ ನಮ್ಮ ಧ್ಯೇಯ; ಜೊತೆಗೆ ಕಾಲಕ್ರಮೇಣ ಕೌಶಲ್ಯವೂ ಬೆಳೆಸುತ್ತೇವೆ.</p>
+        </div>
+        <div>
+          <ul class="quick-list">
+            <li>ವಯಸ್ಸಿಗಿಂತಲೂ ಕೌಶಲ್ಯ ಆಧಾರಿತ ಮಟ್ಟವಿಂಗಡಣೆ</li>
+            <li>ಪುನರವೃತ್ತಿ ಮತ್ತು ರೂಢಿಗಳೊಂದಿಗೆ ಸಂವಹನಾತ್ಮಕ ಸಮ್ಮುಖ ತರಗತಿಗಳು</li>
+            <li>ಭಾಷೆ ಮತ್ತು ಸಂಸ್ಕೃತಿ ಒಂದಾಗಿ ಕಲಿಕೆ</li>
+            <li>ಪ್ರತಿ ಹಂತದಲ್ಲೂ ಆತ್ಮವಿಶ್ವಾಸ ಬೆಳೆಸುವ ಬೆಂಬಲ</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <span class="eyebrow">ನಾವು ಯಾರು</span>
+        <h2>ಪಾರಂಪರಿಕ ಕಲಿಕೆಗೆ ಬದ್ಧವಾದ ಪೋಷಕರು ಮತ್ತು ಶಿಕ್ಷಕರ ಸಮುದಾಯ</h2>
+        <p>ಮಕ್ಕಳು ಕನ್ನಡದೊಂದಿಗೆ ಸ್ನೇಹಪೂರ್ವಕ, ನಿರಂತರ ಮತ್ತು ಅರ್ಥಪೂರ್ಣ ನಂಟು ಉಳಿಸಿಕೊಳ್ಳಲು ಸಹಕರಿಸುವ ಪೋಷಕರು ಮತ್ತು ಶಿಕ್ಷಕರ ಸಮುದಾಯವೇ ನುಡಿ. ನಮ್ಮ ಗಮನ ಭಾಷಾ ಕೌಶಲ್ಯಗಳಷ್ಟೇ ಅಲ್ಲ; ವ್ಯಕ್ತಿತ್ವ, ಸೇರಿದ ಭಾವನೆ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಹೆಮ್ಮೆಯ ಮೇಲೂ ಇದೆ.</p>
+      </section>
+
+      <section class="section">
+        <span class="eyebrow">ಕುಟುಂಬಗಳಿಗೆ ಸಂಪನ್ಮೂಲಗಳು</span>
+        <h2>ತರಗತಿಯ ಹೊರಗೂ ಕಲಿಕೆಗೆ ಬೆಂಬಲ</h2>
+        <p>ಕುಟುಂಬಗಳು ಪಠ್ಯಕ್ರಮದ ವಸ್ತುಗಳು, ಕಲಿಕಾ ಸಂಪನ್ಮೂಲಗಳು ಮತ್ತು ಪೋಷಕರ ಮಾಹಿತಿಯನ್ನು ನೋಡಿ ಮನೆಯಲ್ಲಿಯೇ ಕನ್ನಡ ಕಲಿಕೆಗೆ ಬೆಂಬಲ ನೀಡಬಹುದು.</p>
+        <p><a href="resources.html">ಸಂಪನ್ಮೂಲಗಳು ಮತ್ತು ಶಿಫಾರಸುಗಳನ್ನು ನೋಡಿ</a></p>
+      </section>
+
+      <section class="section">
+        <span class="eyebrow">ಸಂಪರ್ಕಿಸಿ</span>
+        <h2>ಮಟ್ಟವಿಂಗಡಣೆ ಅಥವಾ ಪಠ್ಯಕ್ರಮದ ಬಗ್ಗೆ ಪ್ರಶ್ನೆಗಳಿವೆಯೆ?</h2>
+        <p>ವಿದ್ಯಾರ್ಥಿ ಮಟ್ಟವಿಂಗಡಣೆ, ವೇಳಾಪಟ್ಟಿ, ಸಂಪನ್ಮೂಲಗಳು ಅಥವಾ ಕಾರ್ಯಕ್ರಮದ ಕುರಿತು ನಿಮಗೆ ಪ್ರಶ್ನೆಗಳಿದ್ದರೆ, ನಾವು ಸಂತೋಷದಿಂದ ನೆರವಾಗುತ್ತೇವೆ.</p>
+        <p><a class="button button-primary" href="teachers.html">ನಮ್ಮೊಡನೆ ಸೇರಿ</a></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrap">
+        ನುಡಿ
+      </div>
+    </footer>
+  </body>
+</html>

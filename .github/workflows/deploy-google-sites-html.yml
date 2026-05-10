@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - '*.html'
+      - 'en/**'
+      - 'kn/**'
       - '.nojekyll'
       - '.github/workflows/deploy-google-sites-html.yml'
       - 'README.md'

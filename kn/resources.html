@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="kn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ಸಂಪನ್ಮೂಲಗಳು | ನುಡಿ</title>
+    <style>
+:root {
+  --bg: #f6f7f8;
+  --panel: #ffffff;
+  --ink: #1f2933;
+  --muted: #5f6b76;
+  --accent: #d97706;
+  --accent-dark: #b45309;
+  --border: #d9dee3;
+  --hero-a: #1f2933;
+  --hero-b: #31424f;
+  --hero-c: #3b5362;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent-dark);
+}
+
+.site-header {
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.04) 15%, transparent 15%, transparent 45%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.03) 60%, transparent 60%),
+    linear-gradient(135deg, var(--hero-a), var(--hero-b) 55%, var(--hero-c));
+  color: #fff7ed;
+}
+
+.nav-wrap,
+.page-wrap,
+.footer-wrap {
+  width: min(1100px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0 12px;
+  gap: 20px;
+}
+
+.brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav a,
+.nav summary {
+  color: #fff7ed;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav summary::-webkit-details-marker {
+  display: none;
+}
+
+.submenu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 190px;
+  padding: 10px;
+  background: rgba(31, 41, 51, 0.96);
+  border: 1px solid rgba(255, 247, 237, 0.18);
+  border-radius: 14px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 20;
+}
+
+.submenu a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.submenu a:hover {
+  background: rgba(255, 247, 237, 0.08);
+}
+
+.nav-item:hover .submenu,
+.nav-item details[open] .submenu {
+  display: block;
+}
+
+.hero {
+  padding: 72px 0 96px;
+}
+
+.hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.15;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 720px;
+  font-size: 1.12rem;
+  color: #f7efe3;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button-primary {
+  background: #fff7ed;
+  color: #1f2933;
+}
+
+.button-secondary {
+  border: 1px solid rgba(255, 247, 237, 0.55);
+  color: #fff7ed;
+}
+
+.page-wrap {
+  padding: 48px 0 72px;
+}
+
+.section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 30px rgba(31, 41, 51, 0.05);
+}
+
+.section h2 {
+  margin: 0 0 14px;
+  font-size: 1.6rem;
+}
+
+.section p:first-of-type,
+.section ul:first-of-type,
+.section table:first-of-type {
+  margin-top: 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  background: #fffdfa;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 1.12rem;
+}
+
+.card p {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-dark);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+}
+
+.quick-list {
+  padding-left: 20px;
+  margin: 12px 0 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 0.97rem;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #f8fafb;
+}
+
+blockquote {
+  margin: 18px 0 0;
+  padding: 16px 18px;
+  background: #fff8eb;
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.footer-wrap {
+  padding: 24px 0 40px;
+}
+
+@media (max-width: 760px) {
+  .nav-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .page-wrap,
+  .hero {
+    padding-top: 36px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <div class="brand">ನುಡಿ</div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">ಮುಖ್ಯಪುಟ</a>
+          <a href="curriculum.html">ಪಠ್ಯಕ್ರಮ</a>
+          <a href="resources.html">ಸಂಪನ್ಮೂಲಗಳು</a>
+          <div class="nav-item">
+            <details>
+              <summary>ನಮ್ಮೊಡನೆ ಸೇರಿ</summary>
+              <div class="submenu">
+                <a href="teachers.html">ಶಿಕ್ಷಕರು</a>
+                <a href="students.html">ವಿದ್ಯಾರ್ಥಿಗಳು</a>
+                <a href="collaborate.html">ಸಹಯೋಗ</a>
+              </div>
+            </details>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-wrap hero">
+        <div>
+          <h1>ಕಲಿಕಾ ಸಂಪನ್ಮೂಲಗಳು</h1>
+          <p>ಮನೆಯಲ್ಲೇ ಕನ್ನಡ ಕಲಿಕೆಗೆ ಸಹಾಯ ಮಾಡುವ ಪುಸ್ತಕಗಳು, ಆಪ್‌ಗಳು, ವೀಡಿಯೊಗಳು ಮತ್ತು ಧ್ವನಿ ಸಂಪನ್ಮೂಲಗಳು.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-wrap">
+      <section class="section">
+        <h2>ಪುಸ್ತಕಗಳು</h2>
+        <h3>ಅಕ್ಷರಾಭ್ಯಾಸ</h3>
+        <ul class="quick-list">
+          <li><strong>ಸ್ವರ ಬಲ್ಲ ಪುಸ್ತಕ</strong> — ಸ್ವರಗಳನ್ನು ಕಲಿಯಲು ಅತ್ಯುತ್ತಮ</li>
+          <li>ಭಾರತೀಯ ಪುಸ್ತಕ ಅಂಗಡಿಗಳಲ್ಲಿ ಲಭ್ಯವಿರುವ ಕನ್ನಡ ಅಕ್ಷರ ಮತ್ತು ಪದಾಭ್ಯಾಸ ಪುಸ್ತಕಗಳು</li>
+        </ul>
+
+        <h3>ಕಥೆ ಪುಸ್ತಕಗಳು</h3>
+        <ul class="quick-list">
+          <li><a href="https://harivubooks.com/collections/kids-books-kannada">Harivu Books</a> — ಚಿತ್ರಗಳೊಂದಿಗೆ ಸುಂದರ ಕನ್ನಡ ಮಕ್ಕಳ ಪುಸ್ತಕಗಳು</li>
+          <li><a href="https://www.totalkannada.com/catalogue/6e9c8ec6-bb25-4c80-8ffb-628268d5ae9f.html?ref=menu">Total Kannada</a> — ಮಕ್ಕಳಿಗಾಗಿ ಆಯ್ದ ಕನ್ನಡ ಪುಸ್ತಕಗಳ ಸಂಗ್ರಹ</li>
+          <li><a href="https://moggubooks.com/">Moggu Books</a> — ಬಾಲ ಓದುಗರಿಗಾಗಿ ಕನ್ನಡ ಪುಸ್ತಕಗಳು</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>ಆಪ್‌ಗಳು</h2>
+        <ul class="quick-list">
+          <li><strong>Learn Kannada App</strong> — ತರಗತಿಗಳ ನಡುವೆ ದೈನಂದಿನ ಅಭ್ಯಾಸಕ್ಕೆ ಪದಗಳು, ಪದಸಂಪತ್ತಿ ಮತ್ತು ಸಾಮಾನ್ಯ ವಾಕ್ಯಗಳು</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>ವೀಡಿಯೊಗಳು</h2>
+        <ul class="quick-list">
+          <li><a href="https://www.youtube.com/@infobellskannadarhymes">InfoBells Kannada Rhymes</a> — ಸರಳ ಕನ್ನಡ ಹಾಡುಗಳು ಮತ್ತು ಪದ್ಯಗಳು; ಹಂತ 1 ಮತ್ತು ಹಂತ 2 ಮಕ್ಕಳಿಗೆ ತುಂಬಾ ಉಪಯುಕ್ತ</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>ಧ್ವನಿ ಸಂಪನ್ಮೂಲಗಳು</h2>
+        <ul class="quick-list">
+          <li><a href="https://open.spotify.com/show/6qYK4IOdAxvshf7g8M8YAU">ಕೇಳಿರೊಂದು ಕಥೆಯ</a> — Spotifyಯಲ್ಲಿ ಮಕ್ಕಳಿಗಾಗಿ ಕನ್ನಡ ಧ್ವನಿ ಕಥೆಗಳು</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>ಮನೆಯಲ್ಲಿ ಅಭ್ಯಾಸದ ಬಗ್ಗೆ</h2>
+        <p>ದಿನಕ್ಕೆ 10 ನಿಮಿಷಗಳಾದರೂ ಮಹತ್ವದ ಬದಲಾವಣೆಯನ್ನು ತರುತ್ತದೆ. ಪೋಷಕರು ಮಾಡಬಹುದಾದ ಪರಿಣಾಮಕಾರಿ ಅಭ್ಯಾಸಗಳು:</p>
+        <ul class="quick-list">
+          <li>ಕಾರು ಪ್ರಯಾಣದ ವೇಳೆ ಕನ್ನಡ ಹಾಡುಗಳನ್ನು ಹಾಕಿ</li>
+          <li>ವಾರಕ್ಕೆ ಕನಿಷ್ಠ ಒಂದು ಧ್ವನಿ ಕಥೆಯನ್ನು ಮಲಗುವ ಮುನ್ನ ಕೇಳಿಸಿ</li>
+          <li>ತರಗತಿಯಲ್ಲಿ ಕಲಿತ ಪದಗಳನ್ನು ನಿಮಗೆ ಮಗು ಕಲಿಸಲಿ ಎಂದು ಕೇಳಿ</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrap">ನುಡಿ</div>
+    </footer>
+  </body>
+</html>

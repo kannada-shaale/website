@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="kn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ವಿದ್ಯಾರ್ಥಿಗಳು | ನುಡಿ</title>
+    <style>
+:root { --bg: #f6f7f8; --panel: #ffffff; --ink: #1f2933; --muted: #5f6b76; --accent: #d97706; --accent-dark: #b45309; --border: #d9dee3; --hero-a: #1f2933; --hero-b: #31424f; --hero-c: #3b5362; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.65; }
+a { color: var(--accent-dark); }
+.site-header { background: linear-gradient(120deg, rgba(255, 255, 255, 0.04) 15%, transparent 15%, transparent 45%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.03) 60%, transparent 60%), linear-gradient(135deg, var(--hero-a), var(--hero-b) 55%, var(--hero-c)); color: #fff7ed; }
+.nav-wrap, .page-wrap, .footer-wrap { width: min(1100px, calc(100% - 48px)); margin: 0 auto; }
+.nav-wrap { display: flex; align-items: center; justify-content: space-between; padding: 24px 0 12px; gap: 20px; }
+.brand { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.01em; }
+.nav { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+.nav-item { position: relative; }
+.nav a, .nav summary { color: #fff7ed; text-decoration: none; font-weight: 600; }
+.nav summary { list-style: none; cursor: pointer; }
+.nav summary::-webkit-details-marker { display: none; }
+.submenu { position: absolute; top: calc(100% + 10px); left: 0; min-width: 190px; padding: 10px; background: rgba(31, 41, 51, 0.96); border: 1px solid rgba(255, 247, 237, 0.18); border-radius: 14px; box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); display: none; z-index: 20; }
+.submenu a { display: block; padding: 8px 10px; border-radius: 10px; white-space: nowrap; }
+.submenu a:hover { background: rgba(255, 247, 237, 0.08); }
+.nav-item:hover .submenu, .nav-item details[open] .submenu { display: block; }
+.hero { padding: 72px 0 96px; }
+.hero h1 { margin: 0 0 14px; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.15; }
+.hero p { margin: 0; max-width: 720px; font-size: 1.12rem; color: #f7efe3; }
+.page-wrap { padding: 48px 0 72px; }
+.section { background: var(--panel); border: 1px solid var(--border); border-radius: 20px; padding: 28px; margin-bottom: 28px; box-shadow: 0 10px 30px rgba(31, 41, 51, 0.05); }
+.section h2 { margin: 0 0 14px; font-size: 1.6rem; }
+.eyebrow { display: inline-block; margin-bottom: 12px; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-dark); }
+.quick-list { padding-left: 20px; margin: 12px 0 0; }
+.footer { border-top: 1px solid var(--border); color: var(--muted); }
+.footer-wrap { padding: 24px 0 40px; }
+@media (max-width: 760px) { .nav-wrap { flex-direction: column; align-items: flex-start; } .page-wrap, .hero { padding-top: 36px; } }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <div class="brand">ನುಡಿ</div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">ಮುಖ್ಯಪುಟ</a>
+          <a href="curriculum.html">ಪಠ್ಯಕ್ರಮ</a>
+          <a href="resources.html">ಸಂಪನ್ಮೂಲಗಳು</a>
+          <div class="nav-item">
+            <details open>
+              <summary>ನಮ್ಮೊಡನೆ ಸೇರಿ</summary>
+              <div class="submenu">
+                <a href="teachers.html">ಶಿಕ್ಷಕರು</a>
+                <a href="students.html">ವಿದ್ಯಾರ್ಥಿಗಳು</a>
+                <a href="collaborate.html">ಸಹಯೋಗ</a>
+              </div>
+            </details>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-wrap hero">
+        <div>
+          <h1>ವಿದ್ಯಾರ್ಥಿಗಳು</h1>
+          <p>ಸರಿಯಾದ ಹಂತವನ್ನು ಆಯ್ದುಕೊಂಡು, ಕನ್ನಡದಲ್ಲಿ ಆರಾಮ, ಆತ್ಮವಿಶ್ವಾಸ ಮತ್ತು ನಂಟನ್ನು ಕಟ್ಟಲು ಆರಂಭಿಸಿ.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-wrap">
+      <section class="section">
+        <span class="eyebrow">ಇದು ಯಾರಿಗಾಗಿ</span>
+        <h2>ಕನ್ನಡದೊಳಗೆ ಬೆಳೆಯುತ್ತಿರುವ ಮಕ್ಕಳಿಗಾಗಿ ಸಮ್ಮುಖ ಕಲಿಕೆ</h2>
+        <p>ಸಮುದಾಯ ವಾತಾವರಣದಲ್ಲಿ ಕನ್ನಡ ಕಲಿಯುತ್ತಿರುವ ಮಕ್ಕಳಿಗಾಗಿ ನುಡಿ ರೂಪಿಸಲಾಗಿದೆ. ಪಾಠಗಳು ಭಾಗವಹಿಸುವಿಕೆ, ಮಾತುಕತೆ, ಕಥೆಗಳು, ಹಾಡುಗಳು, ರೂಢಿಗಳು, ಓದು ಮತ್ತು ಬರಹಗಳನ್ನು ಆಧರಿಸಿವೆ. ವಿದ್ಯಾರ್ಥಿಗಳ ಮಟ್ಟವಿಂಗಡಣೆ ವಯಸ್ಸಿನ ಆಧಾರದ ಮೇಲೆ ಮಾತ್ರವಲ್ಲ, ಕೌಶಲ್ಯ ಮತ್ತು ಸಿದ್ಧತೆಯ ಆಧಾರದಲ್ಲಿಯೂ ನಡೆಯುತ್ತದೆ.</p>
+      </section>
+
+      <section class="section">
+        <span class="eyebrow">ಕುಟುಂಬಗಳು ಏನು ನಿರೀಕ್ಷಿಸಬಹುದು</span>
+        <ul class="quick-list">
+          <li>ನಾಲ್ಕು ಹಂತಗಳಲ್ಲಿ ಕೌಶಲ್ಯ ಆಧಾರಿತ ಮಟ್ಟವಿಂಗಡಣೆ</li>
+          <li>ಬೆಚ್ಚಗಿನ, ಸಂರಚಿತ, ಸಮ್ಮುಖ ತರಗತಿಗಳು</li>
+          <li>ಭಾಷೆ ಮತ್ತು ಸಂಸ್ಕೃತಿ ಒಂದಾಗಿ ಕಲಿಕೆ</li>
+          <li>ಕಾಲಕ್ರಮೇಣ ಸ್ಥಿರ ಆತ್ಮವಿಶ್ವಾಸದ ಬೆಳವಣಿಗೆ</li>
+        </ul>
+        <p>ನಿಮ್ಮ ಮಗು ಯಾವ ಹಂತದಲ್ಲಿ ಉತ್ತಮವಾಗಿ ಹೊಂದಿಕೊಳ್ಳಬಹುದು ಎಂಬುದನ್ನು ತಿಳಿಯಲು <a href="curriculum.html">ಪಠ್ಯಕ್ರಮವನ್ನು ನೋಡಿ</a>.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrap">ನುಡಿ</div>
+    </footer>
+  </body>
+</html>
