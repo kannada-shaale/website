@@ -1,114 +1,38 @@
-# ನಮ್ಮ ಕನ್ನಡ ಶಾಲೆ — Website
+# Nudi Kannada Shaale Website
 
-A Hugo-based website for ನಮ್ಮ ಕನ್ನಡ ಶಾಲೆ, hosting curriculum information, session notes, homework, and learning resources for Kannada families abroad.
+This repository now hosts a plain static HTML website for Nudi Kannada Shaale.
 
-## Project Structure
+## Site Files
 
-```
-kannada-school/
-├── content/                  # All markdown content
-│   ├── _index.md            # Home page
-│   ├── about/               # About the school
-│   ├── curriculum/          # Curriculum pages (one per level)
-│   │   ├── level-1/
-│   │   ├── level-2/
-│   │   ├── level-3/
-│   │   ├── level-4/
-│   │   └── level-5/
-│   ├── classes/             # Session notes (updated weekly)
-│   │   ├── level-1/
-│   │   ├── level-2/
-│   │   ├── level-3/
-│   │   ├── level-4/
-│   │   └── level-5/
-│   ├── resources/           # Books, apps, links
-│   ├── for-parents/         # Parent hub
-│   └── showcase/            # Year-end showcase
-├── static/
-│   ├── presentations/       # Reveal.js presentation files
-│   └── take-home-cards/     # PDF take-home cards
-├── themes/kannada/          # Custom theme
-│   ├── layouts/             # HTML templates
-│   └── static/css/          # Stylesheet
-├── .github/workflows/       # GitHub Actions auto-deploy
-└── hugo.toml                # Site configuration
-```
+Main pages live at the repository root:
 
-## Getting Started Locally
+- `index.html`
+- `curriculum.html`
+- `resources.html`
+- `teachers.html`
+- `students.html`
+- `collaborate.html`
+- `level-1.html`
+- `level-2.html`
+- `level-3.html`
+- `level-4.html`
 
-1. Install Hugo (version 0.123.7 or later, extended version):
-   - Mac: `brew install hugo`
-   - Windows: `choco install hugo-extended`
-   - Linux: see https://gohugo.io/installation/linux/
+Each page is self-contained with its own embedded CSS.
 
-2. Clone this repo and run:
-   ```bash
-   hugo server --buildDrafts
-   ```
+## GitHub Pages
 
-3. Visit `http://localhost:1313` to preview the site.
+This repo is configured to deploy directly to GitHub Pages with:
 
-## Adding a New Session
+- `.github/workflows/deploy-google-sites-html.yml`
 
-Create a new markdown file in the relevant level folder:
+To enable it in GitHub:
 
-```bash
-# Example: Level 3, Session 5
-touch content/classes/level-3/session-5.md
-```
+1. Push this repo to the `main` branch.
+2. Go to `Settings -> Pages`.
+3. Set `Source` to `GitHub Actions`.
 
-Use this template:
+The site will publish from the repository root and use `index.html` as the homepage.
 
-```markdown
----
-title: "Session 5 — [Title]"
-subtitle: "[Brief description]"
-section_label: "Classes · Level 3"
-level: "3"
-session_number: 5
-date: 2026-03-01
-homework: true
----
+## Local Preview
 
-## What We Covered
-
-[Summary of the session]
-
-### Vocabulary
-
-| Kannada | Pronunciation | English |
-|---------|--------------|---------|
-| ಮನೆ | mane | home |
-
-## Homework
-
-1. [Task 1]
-2. [Task 2]
-
-## Notes for Parents
-
-[Parent-facing notes]
-```
-
-## Deploying to GitHub Pages
-
-1. Create a new GitHub repository
-2. Push this project to the `main` branch
-3. Go to **Settings → Pages → Source** and select **GitHub Actions**
-4. The site will automatically build and deploy on every push to `main`
-5. Update `baseURL` in `hugo.toml` to match your GitHub Pages URL:
-   ```
-   baseURL = "https://yourusername.github.io/kannada-school/"
-   ```
-
-## Updating Site Config
-
-Edit `hugo.toml` to update:
-- `baseURL` — your GitHub Pages URL
-- `params.schoolYear` — current school year
-- `params.contactEmail` — contact email
-- `params.location` — your city
-
-## Theme Customisation
-
-The custom theme lives in `themes/kannada/`. The main stylesheet is at `themes/kannada/static/css/main.css`. Level colours, fonts, and spacing are all controlled via CSS variables at the top of that file.
+Because this is a plain static site, you can preview it by opening `index.html` in a browser or by serving the folder with any simple static file server.

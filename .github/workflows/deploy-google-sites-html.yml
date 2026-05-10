@@ -5,8 +5,10 @@ on:
     branches:
       - main
     paths:
-      - 'google-sites-html/**'
+      - '*.html'
+      - '.nojekyll'
       - '.github/workflows/deploy-google-sites-html.yml'
+      - 'README.md'
   workflow_dispatch:
 
 permissions:
@@ -35,7 +37,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./google-sites-html
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
