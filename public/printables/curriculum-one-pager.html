@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kannada Weekend School Parent One-Pager</title>
+  <style>
+    :root {
+      --saffron: #e8720c;
+      --gold: #c89010;
+      --ink: #20140b;
+      --text: #352619;
+      --muted: #6f5c48;
+      --paper: #fffdf8;
+      --line: #e6dac7;
+      --level1: #e8720c;
+      --level2: #2e7d6b;
+      --level3: #c89010;
+      --level4: #c0392b;
+      --level5: #5b3fa0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #efe8db;
+      color: var(--text);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      line-height: 1.4;
+    }
+
+    .sheet {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 24px auto;
+      background: var(--paper);
+      padding: 0.5in 0.55in;
+      box-shadow: 0 12px 40px rgba(32, 20, 11, 0.12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sheet::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at top right, rgba(232, 114, 12, 0.08), transparent 30%),
+        radial-gradient(circle at bottom left, rgba(200, 144, 16, 0.05), transparent 28%);
+      pointer-events: none;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--saffron);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    h1, h2, h3, p { margin: 0; }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: 29px;
+      line-height: 1.1;
+      color: var(--ink);
+      margin-bottom: 10px;
+      max-width: 6.7in;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: var(--muted);
+      max-width: 6.8in;
+    }
+
+    .hero {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+    }
+
+    .hero strong {
+      color: var(--saffron);
+      font-weight: 700;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.55fr 1fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .section {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 16px;
+    }
+
+    .section h2 {
+      font-family: Georgia, serif;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+
+    .section p {
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    .section p + p {
+      margin-top: 8px;
+    }
+
+    .mini-list {
+      margin-top: 10px;
+    }
+
+    .mini-list div {
+      font-size: 12.5px;
+      padding: 7px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .mini-list div:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .mini-list strong {
+      color: var(--ink);
+    }
+
+    .levels {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .level {
+      border: 1px solid var(--line);
+      border-top-width: 5px;
+      border-radius: 12px;
+      padding: 12px 10px;
+      background: rgba(255, 255, 255, 0.82);
+      min-height: 175px;
+    }
+
+    .level h3 {
+      font-size: 13px;
+      margin-bottom: 5px;
+      color: var(--ink);
+    }
+
+    .level .age {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .level p {
+      font-size: 11.5px;
+      color: var(--text);
+    }
+
+    .level p + p {
+      margin-top: 6px;
+    }
+
+    .l1 { border-top-color: var(--level1); }
+    .l2 { border-top-color: var(--level2); }
+    .l3 { border-top-color: var(--level3); }
+    .l4 { border-top-color: var(--level4); }
+    .l5 { border-top-color: var(--level5); }
+
+    .support {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li {
+      font-size: 12.5px;
+      margin-bottom: 7px;
+      color: var(--text);
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .footer-quote {
+      font-family: Georgia, serif;
+      font-size: 17px;
+      line-height: 1.35;
+      color: var(--ink);
+      max-width: 4.8in;
+    }
+
+    .footer-quote strong {
+      color: var(--saffron);
+    }
+
+    .footer-note {
+      font-size: 11px;
+      color: var(--muted);
+      text-align: right;
+      max-width: 2in;
+    }
+
+    @page {
+      size: letter;
+      margin: 0.35in;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .sheet {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <div class="content">
+      <section class="hero">
+        <div class="eyebrow">Kannada Weekend School</div>
+        <h1>A Simple Guide for Parents: Our Kannada Learning Journey</h1>
+        <p class="subtitle">
+          Our goal is not perfect fluency overnight. It is to help children build confidence in Kannada,
+          connect with family, and feel <strong>proud of where they come from</strong>.
+        </p>
+      </section>
+
+      <section class="grid">
+        <div class="section">
+          <h2>What makes this program different?</h2>
+          <p>Children learning Kannada abroad need a different approach from children growing up in Karnataka.</p>
+          <p>We teach through stories, songs, conversation, culture, and consistent routines, not just drills and worksheets.</p>
+          <div class="mini-list">
+            <div><strong>Placement is skill-based:</strong> age matters, but confidence and readiness matter more.</div>
+            <div><strong>Sessions are weekly:</strong> most levels meet on Saturdays for 45 to 75 minutes.</div>
+            <div><strong>Progress is gradual:</strong> steady attendance and small amounts of home support make the biggest difference.</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>What children build over time</h2>
+          <div class="mini-list">
+            <div><strong>Level 1:</strong> listening, speaking, songs, and joyful first exposure</div>
+            <div><strong>Level 2:</strong> alphabets and foundational vocabulary</div>
+            <div><strong>Level 3:</strong> kagunitas, word formation, and short conversations</div>
+            <div><strong>Level 4:</strong> ottaksharas, paragraphs, and confident expression</div>
+            <div><strong>Level 5:</strong> presentations, essays, storytelling, and free expression</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="levels">
+        <div class="level l1">
+          <h3>Level 1<br>Kannada Explorers</h3>
+          <div class="age">Ages 4-6</div>
+          <p>Play-based Kannada through rhymes, stories, action words, and theme vocabulary.</p>
+          <p>No reading or writing yet. The focus is comfort, rhythm, and participation.</p>
+        </div>
+        <div class="level l2">
+          <h3>Level 2<br>Akshara Learners</h3>
+          <div class="age">Ages 6-9</div>
+          <p>Introduction to swaras, vyanjanas, and simple words with everyday vocabulary.</p>
+          <p>Children begin reading, writing, listening, and giving 1-2 sentence responses.</p>
+        </div>
+        <div class="level l3">
+          <h3>Level 3<br>Word Builders</h3>
+          <div class="age">Ages 9-11</div>
+          <p>Kagunitas, word-building, simple sentence writing, and short conversations.</p>
+          <p>Students begin using Kannada more actively, not just recognizing it.</p>
+        </div>
+        <div class="level l4">
+          <h3>Level 4<br>Sentence Builders</h3>
+          <div class="age">Ages 11-13</div>
+          <p>Ottaksharas, paragraph writing, story retelling, and stronger reading confidence.</p>
+          <p>Students describe events and express ideas in connected sentences.</p>
+        </div>
+        <div class="level l5">
+          <h3>Level 5<br>Fluent Speakers</h3>
+          <div class="age">Ages 13-15</div>
+          <p>Reading short texts, writing reflections and essays, and speaking with confidence.</p>
+          <p>The goal is independent expression through presentations, conversation, and debate.</p>
+        </div>
+      </section>
+
+      <section class="support">
+        <div class="section">
+          <h2>How parents can help at home</h2>
+          <ul>
+            <li>Ask your child to teach you one new word or phrase after class.</li>
+            <li>Play Kannada songs or stories in the background during car rides or bedtime.</li>
+            <li>Use the weekly take-home card for a short 5-10 minute practice moment.</li>
+            <li>Show curiosity about Karnataka, family stories, festivals, and food.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>What to expect</h2>
+          <ul>
+            <li>Consistency matters more than intensity.</li>
+            <li>Children progress at different speeds, especially in a heritage-language setting.</li>
+            <li>It is normal for speaking confidence to grow before reading and writing do.</li>
+            <li>If placement feels off, we can adjust after observing your child in class.</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-quote">
+          Ten hours a term may not create fluent speakers, but it <strong>is enough</strong> to help children
+          feel connected to family, culture, and language.
+        </div>
+        <div class="footer-note">
+          Kannada Weekend School<br>
+          Parent One-Pager<br>
+          2025-26
+        </div>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>

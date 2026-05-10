@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>For Parents on ನಮ್ಮ ಕನ್ನಡ ಶಾಲೆ</title>
-    <link>https://yourusername.github.io/kannada-school/for-parents/</link>
+    <link>http://localhost:1313/kannada-school/for-parents/</link>
     <description>Recent content in For Parents on ನಮ್ಮ ಕನ್ನಡ ಶಾಲೆ</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://yourusername.github.io/kannada-school/for-parents/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/kannada-school/for-parents/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Parent One-Pager</title>
-      <link>https://yourusername.github.io/kannada-school/for-parents/curriculum-one-pager/</link>
+      <link>http://localhost:1313/kannada-school/for-parents/curriculum-one-pager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yourusername.github.io/kannada-school/for-parents/curriculum-one-pager/</guid>
-      <description>&lt;p&gt;This one-page handout turns the curriculum presentation into a format that is easier to print, email, or share with new families.&lt;/p&gt;&#xA;&lt;p&gt;It includes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;the purpose of the program&lt;/li&gt;&#xA;&lt;li&gt;a quick summary of all five levels&lt;/li&gt;&#xA;&lt;li&gt;what parents should expect&lt;/li&gt;&#xA;&lt;li&gt;simple ways to support Kannada at home&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;a href=&#34;https://yourusername.github.io/kannada-school/printables/curriculum-one-pager.html&#34;&gt;Open the printable parent one-pager&lt;/a&gt;</description>
+      <guid>http://localhost:1313/kannada-school/for-parents/curriculum-one-pager/</guid>
+      <description>&lt;p&gt;This one-page handout turns the curriculum presentation into a format that is easier to print, email, or share with new families.&lt;/p&gt;&#xA;&lt;p&gt;It includes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;the purpose of the program&lt;/li&gt;&#xA;&lt;li&gt;a quick summary of all five levels&lt;/li&gt;&#xA;&lt;li&gt;what parents should expect&lt;/li&gt;&#xA;&lt;li&gt;simple ways to support Kannada at home&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;a href=&#34;http://localhost:1313/kannada-school/printables/curriculum-one-pager.html&#34;&gt;Open the printable parent one-pager&lt;/a&gt;</description>
     </item>
   </channel>
 </rss>
