@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nudi Flyer</title>
+    <style>
+:root {
+  --cream: #fff8ef;
+  --paper: #fffdf8;
+  --ink: #1f2933;
+  --muted: #52606d;
+  --gold: #d97706;
+  --gold-deep: #b45309;
+  --forest: #16302b;
+  --teal: #29434e;
+  --line: #e8ddd0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #f5efe6, #efe7db);
+  color: var(--ink);
+  padding: 24px;
+}
+
+.flyer {
+  width: min(820px, 100%);
+  margin: 0 auto;
+  background: var(--paper);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 22px 60px rgba(31, 41, 51, 0.12);
+  border: 1px solid rgba(22, 48, 43, 0.08);
+}
+
+.hero {
+  padding: 40px 36px 28px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 247, 237, 0.14), transparent 34%),
+    linear-gradient(135deg, var(--forest), var(--teal));
+  color: #fff8ef;
+}
+
+.kicker {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 248, 239, 0.12);
+  border: 1px solid rgba(255, 248, 239, 0.2);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 18px 0 10px;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.08;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #f7efe3;
+  max-width: 660px;
+}
+
+.body {
+  padding: 30px 30px 34px;
+}
+
+.callout {
+  background: linear-gradient(180deg, #fff9f1, #fff4e6);
+  border: 1px solid #f4dcc0;
+  color: var(--gold-deep);
+  padding: 16px 18px;
+  border-radius: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.panel {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px 20px;
+}
+
+.panel h2 {
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+}
+
+.panel p {
+  margin: 0 0 12px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.panel ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+.stripe {
+  margin-top: 18px;
+  padding: 18px 20px;
+  background: #fff;
+  border: 1px dashed #d7b48a;
+  border-radius: 18px;
+}
+
+.stripe h3 {
+  margin: 0 0 8px;
+  font-size: 1.12rem;
+}
+
+.stripe p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.details {
+  margin-top: 22px;
+  display: grid;
+  gap: 12px;
+}
+
+.detail {
+  padding: 15px 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.detail strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.link {
+  color: var(--gold-deep);
+  word-break: break-word;
+}
+
+.footer {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 720px) {
+  body { padding: 12px; }
+  .hero { padding: 28px 22px 22px; }
+  .body { padding: 20px 18px 24px; }
+  .grid { grid-template-columns: 1fr; }
+}
+    </style>
+  </head>
+  <body>
+    <main class="flyer">
+      <section class="hero">
+        <span class="kicker">In-Person Kannada Learning</span>
+        <h1>Nudi Kannada Shaale</h1>
+        <p>Nudi is an in-person Kannada learning community for children. We believe language grows best through real conversation, shared activities, classroom participation, and cultural connection.</p>
+      </section>
+
+      <section class="body">
+        <div class="callout">
+          Now welcoming student enrollment and teacher interest for our in-person Kannada program in Frisco.
+        </div>
+
+        <div class="grid">
+          <section class="panel">
+            <h2>For Students</h2>
+            <p>Children learn Kannada through conversation, stories, songs, games, reading, writing, and cultural connection in a warm community setting.</p>
+            <ul>
+              <li>Four skill-based levels</li>
+              <li>In-person classes</li>
+              <li>Confidence-building through participation</li>
+              <li>Level 4 may help students explore foreign language credit through local ISDs</li>
+            </ul>
+          </section>
+
+          <section class="panel">
+            <h2>For Teachers</h2>
+            <p>If you enjoy working with children and want to help keep Kannada alive through stories, songs, conversation, and community, we would love to hear from you.</p>
+            <ul>
+              <li>Warm, collaborative teaching environment</li>
+              <li>In-person classroom community</li>
+              <li>Opportunity to shape heritage language learning</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="stripe">
+          <h3>Location</h3>
+          <p>Karya Siddhi Hanuman Temple<br>12030 Independence Pkwy Building B<br>Frisco, TX 75035</p>
+        </div>
+
+        <div class="details">
+          <div class="detail">
+            <strong>Student Registration</strong>
+            <span class="link">https://www.dallashanuman.org/classes/bala-datta</span>
+          </div>
+          <div class="detail">
+            <strong>Teacher / Volunteer Contact</strong>
+            <span class="link">nudi.shaale@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="footer">
+          <p>Nudi Kannada Shaale<br>Language. Confidence. Culture. Community.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

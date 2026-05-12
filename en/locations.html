@@ -3,37 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Teachers | Nudi</title>
+    <title>Locations | Nudi</title>
     <style>
-:root {
-  --bg: #f6f7f8;
-  --panel: #ffffff;
-  --ink: #1f2933;
-  --muted: #5f6b76;
-  --accent: #d97706;
-  --accent-dark: #b45309;
-  --border: #d9dee3;
-  --hero-a: #1f2933;
-  --hero-b: #31424f;
-  --hero-c: #3b5362;
-}
-
+:root { --bg: #f6f7f8; --panel: #ffffff; --ink: #1f2933; --muted: #5f6b76; --accent: #d97706; --accent-dark: #b45309; --border: #d9dee3; --hero-a: #1f2933; --hero-b: #31424f; --hero-c: #3b5362; }
 * { box-sizing: border-box; }
 body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.65; }
 a { color: var(--accent-dark); }
 .site-header { background: linear-gradient(120deg, rgba(255, 255, 255, 0.04) 15%, transparent 15%, transparent 45%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.03) 60%, transparent 60%), linear-gradient(135deg, var(--hero-a), var(--hero-b) 55%, var(--hero-c)); color: #fff7ed; }
 .nav-wrap, .page-wrap, .footer-wrap { width: min(1100px, calc(100% - 48px)); margin: 0 auto; }
 .nav-wrap { display: flex; align-items: center; justify-content: space-between; padding: 24px 0 12px; gap: 20px; }
-.brand { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.01em; }
+.brand { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.01em; color: #fff7ed; text-decoration: none; }
 .nav { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
-.nav-item { position: relative; }
-.nav a, .nav summary { color: #fff7ed; text-decoration: none; font-weight: 600; }
-.nav summary { list-style: none; cursor: pointer; }
-.nav summary::-webkit-details-marker { display: none; }
-.submenu { position: absolute; top: calc(100% + 10px); left: 0; min-width: 190px; padding: 10px; background: rgba(31, 41, 51, 0.96); border: 1px solid rgba(255, 247, 237, 0.18); border-radius: 14px; box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); display: none; z-index: 20; }
-.submenu a { display: block; padding: 8px 10px; border-radius: 10px; white-space: nowrap; }
-.submenu a:hover { background: rgba(255, 247, 237, 0.08); }
-.nav-item:hover .submenu, .nav-item details[open] .submenu { display: block; }
+.nav a { color: #fff7ed; text-decoration: none; font-weight: 600; }
 .hero { padding: 72px 0 96px; }
 .hero h1 { margin: 0 0 14px; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.15; }
 .hero p { margin: 0; max-width: 720px; font-size: 1.12rem; color: #f7efe3; }
@@ -41,7 +22,7 @@ a { color: var(--accent-dark); }
 .section { background: var(--panel); border: 1px solid var(--border); border-radius: 20px; padding: 28px; margin-bottom: 28px; box-shadow: 0 10px 30px rgba(31, 41, 51, 0.05); }
 .section h2 { margin: 0 0 14px; font-size: 1.6rem; }
 .eyebrow { display: inline-block; margin-bottom: 12px; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-dark); }
-.two-col { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .quick-list { padding-left: 20px; margin: 12px 0 0; }
 .footer { border-top: 1px solid var(--border); color: var(--muted); }
 .footer-wrap { padding: 24px 0 40px; }
@@ -62,31 +43,44 @@ a { color: var(--accent-dark); }
       </div>
       <div class="nav-wrap hero">
         <div>
-          <h1>Teachers</h1>
-          <p>Help bring the Nudi curriculum to life and support children in building lasting confidence in Kannada.</p>
+          <h1>Locations</h1>
+          <p>Nudi is designed for community adoption, with Frisco serving as the first location to use the curriculum in person.</p>
         </div>
       </div>
     </header>
 
     <main class="page-wrap">
       <section class="section">
-        <span class="eyebrow">Teach With Us</span>
-        <h2>Help communities deliver joyful, structured Kannada learning</h2>
-        <p>Nudi is built by parents, volunteers, and educators who care deeply about helping children stay connected to Kannada language and culture. If you enjoy working with children, storytelling, songs, conversation, or community learning, we would love to hear from you.</p>
-        <p>You do not need to invent a program from scratch. Nudi is meant to provide a thoughtful curriculum foundation that teachers and local communities can bring to life with warmth, consistency, and care.</p>
+        <span class="eyebrow">Current Locations</span>
+        <h2>Frisco is the first Nudi location</h2>
+        <p>The Bala Datta program at Karya Siddhi Hanuman Temple is the first community to adopt and use the Nudi curriculum. Frisco is the first real-world implementation of the model we hope other communities can adopt over time.</p>
       </section>
 
       <section class="section two-col">
         <div>
           <span class="eyebrow">First Location</span>
-          <h2>First adoption site</h2>
+          <h2>Frisco, Texas</h2>
           <p>Karya Siddhi Hanuman Temple<br>12030 Independence Pkwy Building B<br>Frisco, TX 75035</p>
         </div>
         <div>
-          <span class="eyebrow">Contact</span>
-          <h2>Email us</h2>
-          <p>If you are interested in teaching, volunteering, or learning more about how your community can use the curriculum, email us at <a href="mailto:nudi.shaale@gmail.com">nudi.shaale@gmail.com</a>.</p>
+          <span class="eyebrow">Student Enrollment</span>
+          <h2>Register for Bala Datta</h2>
+          <p>Families interested in the Frisco location can register through the Bala Datta program page.</p>
+          <p><a href="https://www.dallashanuman.org/classes/bala-datta">Register for classes</a></p>
         </div>
+      </section>
+
+      <section class="section">
+        <span class="eyebrow">For Teachers</span>
+        <h2>Bring the curriculum to life locally</h2>
+        <p>If you enjoy working with children and want to help keep Kannada alive through stories, songs, conversation, and community, we would love to hear from you. Teachers and volunteers help make the curriculum real in the classroom.</p>
+        <p>Email us at <a href="mailto:nudi.shaale@gmail.com">nudi.shaale@gmail.com</a>.</p>
+      </section>
+
+      <section class="section">
+        <span class="eyebrow">Looking Ahead</span>
+        <h2>More locations may follow</h2>
+        <p>Nudi is designed as a curriculum model that communities can adopt in person. As additional groups begin using the curriculum, new locations can be added here over time.</p>
       </section>
     </main>
 

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nudi Poster</title>
+    <style>
+:root {
+  --cream: #fff8ef;
+  --paper: #fffdf8;
+  --ink: #1f2933;
+  --muted: #4f5d6b;
+  --gold: #d97706;
+  --gold-deep: #b45309;
+  --forest: #16302b;
+  --teal: #29434e;
+  --line: #ecdcc8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eee5d8, #e7dccf);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  padding: 18px;
+}
+
+.poster {
+  width: min(820px, 100%);
+  margin: 0 auto;
+  background: var(--paper);
+  border-radius: 34px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(31, 41, 51, 0.16);
+  border: 1px solid rgba(22, 48, 43, 0.08);
+}
+
+.hero {
+  padding: 42px 34px 30px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 248, 239, 0.16), transparent 34%),
+    linear-gradient(135deg, var(--forest), var(--teal));
+  color: #fff8ef;
+}
+
+.pill {
+  display: inline-block;
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: rgba(255, 248, 239, 0.12);
+  border: 1px solid rgba(255, 248, 239, 0.2);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 18px 0 10px;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.02;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 680px;
+  font-size: 1.12rem;
+  line-height: 1.75;
+  color: #f7efe3;
+}
+
+.body {
+  padding: 28px 28px 34px;
+}
+
+.banner {
+  background: linear-gradient(180deg, #fff8f0, #fff1df);
+  border: 1px solid #f0d9bd;
+  border-radius: 22px;
+  padding: 18px 18px;
+  color: var(--gold-deep);
+  font-weight: 800;
+  font-size: 1.08rem;
+  line-height: 1.55;
+}
+
+.split {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.panel {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 22px 20px;
+}
+
+.panel h2 {
+  margin: 0 0 10px;
+  font-size: 1.42rem;
+}
+
+.panel p {
+  margin: 0 0 12px;
+  line-height: 1.72;
+  color: var(--muted);
+}
+
+.panel ul {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.72;
+}
+
+.focus {
+  margin-top: 18px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #fff7ed, #fffdf8);
+  border: 1px solid #f2dfc9;
+  padding: 22px 20px;
+}
+
+.focus h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.focus p {
+  margin: 0;
+  line-height: 1.72;
+}
+
+.info-grid {
+  margin-top: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.info {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 16px 16px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+
+.value {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.value a {
+  color: var(--gold-deep);
+  word-break: break-word;
+}
+
+.footer {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+.footer strong {
+  display: block;
+  font-size: 1.05rem;
+}
+
+.footer span {
+  color: var(--muted);
+}
+
+@media (max-width: 720px) {
+  body { padding: 10px; }
+  .hero { padding: 28px 22px 22px; }
+  .body { padding: 18px 16px 24px; }
+  .split { grid-template-columns: 1fr; }
+}
+    </style>
+  </head>
+  <body>
+    <main class="poster">
+      <section class="hero">
+        <span class="pill">Frisco • In Person • Kannada</span>
+        <h1>Nudi Kannada Shaale</h1>
+        <p>An in-person Kannada learning community for children. Language grows best through real conversation, shared activities, classroom participation, and cultural connection.</p>
+      </section>
+
+      <section class="body">
+        <div class="banner">
+          Now enrolling students and welcoming teacher interest for our in-person Kannada program.
+        </div>
+
+        <div class="split">
+          <section class="panel">
+            <h2>For Students</h2>
+            <p>Children learn through stories, songs, conversation, reading, writing, and cultural connection in a warm classroom setting.</p>
+            <ul>
+              <li>Four skill-based levels</li>
+              <li>In-person classes</li>
+              <li>Confidence-building through participation</li>
+              <li>Level 4 may help students explore foreign language credit through local ISDs</li>
+            </ul>
+          </section>
+
+          <section class="panel">
+            <h2>For Teachers</h2>
+            <p>If you enjoy working with children and want to help keep Kannada alive through stories, songs, conversation, and community, we would love to hear from you.</p>
+            <ul>
+              <li>Warm and collaborative environment</li>
+              <li>In-person classroom community</li>
+              <li>A meaningful way to support heritage language learning</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="focus">
+          <h3>Why In Person Matters</h3>
+          <p>Nudi is intentionally built around in-person learning. Children build confidence best when they can sing, respond, participate, and connect in a shared classroom environment.</p>
+        </section>
+
+        <div class="info-grid">
+          <div class="info">
+            <span class="label">Location</span>
+            <div class="value">Karya Siddhi Hanuman Temple<br>12030 Independence Pkwy Building B<br>Frisco, TX 75035</div>
+          </div>
+
+          <div class="info">
+            <span class="label">Student Registration</span>
+            <div class="value"><a href="https://www.dallashanuman.org/classes/bala-datta">https://www.dallashanuman.org/classes/bala-datta</a></div>
+          </div>
+
+          <div class="info">
+            <span class="label">Teacher / Volunteer Contact</span>
+            <div class="value"><a href="mailto:nudi.shaale@gmail.com">nudi.shaale@gmail.com</a></div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <strong>Nudi Kannada Shaale</strong>
+          <span>Language • Confidence • Culture • Community</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

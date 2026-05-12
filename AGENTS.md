@@ -33,10 +33,9 @@ This repository hosts the static website for **Nudi Kannada Shaale**.
   - `Home` / `ಮುಖ್ಯಪುಟ`
   - `Curriculum` / `ಪಠ್ಯಕ್ರಮ`
   - `Resources` / `ಸಂಪನ್ಮೂಲಗಳು`
-  - `Join Us` / `ನಮ್ಮೊಡನೆ ಸೇರಿ`
-    - `Teachers` / `ಶಿಕ್ಷಕರು`
-    - `Students` / `ವಿದ್ಯಾರ್ಥಿಗಳು`
-    - `Collaborate` / `ಸಹಯೋಗ`
+  - `Locations` / `ಸ್ಥಳಗಳು`
+  - `Partner` / `ಸಹಭಾಗಿ`
+- Teacher information and student enrollment for the first adoption site live on the `Locations` page.
 
 ## Styling rules
 
