@@ -1,6 +1,6 @@
-# Nudi Kannada Shaale Website
+# ಹೊಸ ಚಿಗುರು Website
 
-This repository now hosts a plain static HTML website for Nudi Kannada Shaale.
+This repository now hosts a plain static HTML website for ಹೊಸ ಚಿಗುರು.
 
 ## Site Files
 

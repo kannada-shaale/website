@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This repository hosts the static website for **Nudi Kannada Shaale**.
+This repository hosts the static website for **ಹೊಸ ಚಿಗುರು**.
 
 ## Site model
 
