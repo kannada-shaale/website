@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Level 2 Weekly Plan | ಹೊಸ ಚಿಗುರು</title>
+    <style>
+:root {
+  --bg: #f6f7f8;
+  --panel: #ffffff;
+  --soft: #fffdfa;
+  --ink: #1f2933;
+  --muted: #5f6b76;
+  --accent: #d97706;
+  --accent-dark: #b45309;
+  --border: #d9dee3;
+  --hero-a: #1f2933;
+  --hero-b: #31424f;
+  --hero-c: #3b5362;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+}
+a { color: var(--accent-dark); }
+.site-header {
+  background:
+    linear-gradient(120deg, rgba(255,255,255,0.04) 15%, transparent 15%, transparent 45%, rgba(255,255,255,0.03) 45%, rgba(255,255,255,0.03) 60%, transparent 60%),
+    linear-gradient(135deg, var(--hero-a), var(--hero-b) 55%, var(--hero-c));
+  color: #fff7ed;
+}
+.nav-wrap, .page-wrap, .footer-wrap {
+  width: min(1100px, calc(100% - 48px));
+  margin: 0 auto;
+}
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0 12px;
+  gap: 20px;
+}
+.brand { font-size: 1.1rem; font-weight: 700; }
+.nav { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+.nav a { color: #fff7ed; text-decoration: none; font-weight: 600; }
+.hero { padding: 72px 0 96px; }
+.hero h1 { margin: 0 0 14px; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.15; }
+.hero p { margin: 0; max-width: 760px; font-size: 1.08rem; color: #f7efe3; }
+.page-wrap { padding: 48px 0 72px; }
+.section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 30px rgba(31,41,51,0.05);
+}
+.section h2 { margin: 0 0 14px; font-size: 1.6rem; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.mini-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  background: var(--soft);
+}
+.mini-card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+.mini-card p,
+.mini-card ul {
+  margin: 0;
+  color: var(--muted);
+}
+.mini-card ul,
+.checklist {
+  padding-left: 20px;
+}
+.week-card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+  background: var(--soft);
+  margin-top: 18px;
+}
+.week-card h3 { margin: 0 0 10px; font-size: 1.3rem; }
+.label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-dark);
+}
+.theme {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.lesson-block {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  background: #ffffff;
+}
+.lesson-block h4 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+.lesson-block p,
+.lesson-block ul,
+.lesson-block ol {
+  margin: 0;
+}
+.lesson-block ul,
+.lesson-block ol {
+  padding-left: 20px;
+}
+.footer { border-top: 1px solid var(--border); color: var(--muted); }
+.footer-wrap { padding: 24px 0 40px; }
+@media (max-width: 760px) {
+  .nav-wrap { flex-direction: column; align-items: flex-start; }
+  .page-wrap, .hero { padding-top: 36px; }
+}
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html">ಹೊಸ ಚಿಗುರು</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="curriculum.html">Curriculum</a>
+          <a href="resources.html">Resources</a>
+          <a href="locations.html">Locations</a>
+          <a href="partner.html">Partner</a>
+        </nav>
+      </div>
+      <div class="nav-wrap hero">
+        <div>
+          <h1>Level 2 Weekly Plan</h1>
+          <p>A teacher-ready 8-week plan for ಅಕ್ಷರ ಕಲಿ, combining spoken Kannada with swaras, vyanjanas, simple words, and beginning kagunita awareness.</p>
+        </div>
+      </div>
+    </header>
+    <main class="page-wrap">
+      <section class="section">
+        <h2>Teacher Snapshot</h2>
+        <div class="grid">
+          <article class="mini-card">
+            <h3>Who This Is For</h3>
+            <ul class="checklist">
+              <li>Children who can follow simple Kannada routines</li>
+              <li>Children ready to connect sounds to letters</li>
+            </ul>
+          </article>
+          <article class="mini-card">
+            <h3>Teaching Focus</h3>
+            <ul class="checklist">
+              <li>Keep speaking confidence active</li>
+              <li>Connect sound, symbol, and meaning</li>
+              <li>Prioritize patterns over memorizing shapes</li>
+            </ul>
+          </article>
+          <article class="mini-card">
+            <h3>Suggested Class Flow</h3>
+            <ul class="checklist">
+              <li>8 min spoken warm-up</li>
+              <li>12 min letter introduction</li>
+              <li>10 min tracing or matching</li>
+              <li>10 min simple reading game</li>
+              <li>5-10 min recap and home task</li>
+            </ul>
+          </article>
+          <article class="mini-card">
+            <h3>Keep Ready</h3>
+            <ul class="checklist">
+              <li>Alphabet cards</li>
+              <li>Picture cards</li>
+              <li>Tracing tray or sheet</li>
+              <li>Pocket chart or floor cards</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Weeks 1-8</h2>
+
+        <article class="week-card">
+          <span class="label">Week 1</span>
+          <h3>Welcome Back to Kannada + First Letters</h3>
+          <p class="theme">Theme: classroom routines and first swaras</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Recognize <strong>ಅ</strong> and <strong>ಆ</strong></li>
+                <li>Say the sounds clearly</li>
+                <li>Connect each letter to one anchor word</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Letters and Words</h4>
+              <p><strong>ಅ</strong>, <strong>ಆ</strong><br>ಅಮ್ಮ, ಆನೆ</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Begin with greetings and spoken review.</li>
+                <li>Introduce <strong>ಅ</strong> and <strong>ಆ</strong>.</li>
+                <li>Connect each one to a picture word.</li>
+                <li>Air-write or finger-trace both letters.</li>
+                <li>Match letter cards to pictures.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ಇದು ಯಾವ ಅಕ್ಷರ?</strong><br><strong>ಅ ಅಮ್ಮ</strong><br><strong>ಆ ಆನೆ</strong></p>
+              <p><strong>Quick check:</strong> child distinguishes <strong>ಅ</strong> and <strong>ಆ</strong>.</p>
+              <p><strong>Home practice:</strong> find both letters on the alphabet page.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <span class="label">Week 2</span>
+          <h3>More Swarās</h3>
+          <p class="theme">Theme: short and long vowel pairs</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Recognize <strong>ಇ</strong>, <strong>ಈ</strong>, <strong>ಉ</strong>, <strong>ಊ</strong></li>
+                <li>Hear short and long sounds</li>
+                <li>Match letters to familiar words</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Letters and Words</h4>
+              <p>ಇ, ಈ, ಉ, ಊ<br>ಇಲಿ, ಈಚೆ, ಉಪ್ಪು, ಊರು</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Review <strong>ಅ</strong> and <strong>ಆ</strong>.</li>
+                <li>Teach <strong>ಇ/ಈ</strong> and <strong>ಉ/ಊ</strong> as pairs.</li>
+                <li>Model short and long sounds clearly.</li>
+                <li>Sort pictures under the correct letter.</li>
+                <li>Echo-read all four letters in rhythm.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ಚಿಕ್ಕ ಧ್ವನಿ</strong><br><strong>ಉದ್ದ ಧ್ವನಿ</strong></p>
+              <p><strong>Quick check:</strong> child repeats all four sounds and matches two pictures.</p>
+              <p><strong>Home practice:</strong> say one word for each letter.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <span class="label">Week 3</span>
+          <h3>E and O Family Swarās</h3>
+          <p class="theme">Theme: expanding the swara family</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Recognize <strong>ಎ</strong>, <strong>ಏ</strong>, <strong>ಐ</strong>, <strong>ಒ</strong>, <strong>ಓ</strong>, <strong>ಔ</strong></li>
+                <li>Listen carefully to related sound groups</li>
+                <li>Review older swaras</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Letters and Words</h4>
+              <p>ಎಲೆ, ಏಣಿ, ಐದು, ಒಂಟೆ, ಓಟ, ಔಷಧ</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Review all earlier swaras.</li>
+                <li>Teach new swaras in small related groups.</li>
+                <li>Do listen-and-point activities.</li>
+                <li>Match pictures to first sounds.</li>
+                <li>Read the swara strip together.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ಕೇಳಿ ಮತ್ತು ತೋರಿಸು</strong><br><strong>ಯಾವ ಧ್ವನಿ ಕೇಳಿದೆ?</strong></p>
+              <p><strong>Quick check:</strong> child points to the right swara when hearing the sound.</p>
+              <p><strong>Home practice:</strong> review all swaras for 3-5 minutes.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <span class="label">Week 4</span>
+          <h3>First Consonants</h3>
+          <p class="theme">Theme: beginning vyanjanas with familiar words</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Identify <strong>ಕ</strong> and <strong>ಗ</strong></li>
+                <li>Connect consonants to known words</li>
+                <li>Notice beginning sounds</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Letters and Words</h4>
+              <p>ಕ, ಗ<br>ಕಮಲ, ಕಾಯಿ, ಗಿಡ, ಗಜ</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Review swaras briefly.</li>
+                <li>Introduce <strong>ಕ</strong> and <strong>ಗ</strong>.</li>
+                <li>Repeat sound, then word.</li>
+                <li>Match pictures by first sound.</li>
+                <li>Trace both letters.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ಇದು ಕ</strong><br><strong>ಇದು ಗ</strong><br><strong>ಗ ಎಲ್ಲಿ ಇದೆ?</strong></p>
+              <p><strong>Quick check:</strong> child identifies both letters side by side.</p>
+              <p><strong>Home practice:</strong> find words beginning with <strong>ಕ</strong> and <strong>ಗ</strong>.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <span class="label">Week 5</span>
+          <h3>More Consonants</h3>
+          <p class="theme">Theme: adding ಚ, ಜ, ಟ, ಡ</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Identify four new consonants</li>
+                <li>Hear the first sound in familiar words</li>
+                <li>Keep earlier consonants active</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Letters and Words</h4>
+              <p>ಚ, ಜ, ಟ, ಡ<br>ಚಪ್ಪಲಿ, ಜಮಖಾನ, ಟಮೋಟ, ಡಬ್ಬಿ</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Review <strong>ಕ</strong> and <strong>ಗ</strong>.</li>
+                <li>Teach the four new letters with picture anchors.</li>
+                <li>Repeat sound and word together.</li>
+                <li>Play a first-sound matching game.</li>
+                <li>Mix old and new letters for quick review.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ಮೊದಲ ಅಕ್ಷರ ಯಾವುದು?</strong><br><strong>ಕೇಳಿ ಮತ್ತು ಹೊಂದಿಸು</strong></p>
+              <p><strong>Quick check:</strong> child identifies at least 2 of the 4 new letters.</p>
+              <p><strong>Home practice:</strong> bring one matching word next class.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <span class="label">Week 6</span>
+          <h3>Everyday Consonants</h3>
+          <p class="theme">Theme: high-use consonants in common words</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Identify <strong>ತ</strong>, <strong>ದ</strong>, <strong>ನ</strong>, <strong>ಪ</strong>, <strong>ಬ</strong>, <strong>ಮ</strong></li>
+                <li>Say the first sound before the full word</li>
+                <li>Build confidence with common beginnings</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Letters and Words</h4>
+              <p>ತಾತ, ದೋಸೆ, ನಾಯಿ, ಪುಸ್ತಕ, ಬಾಳೆಹಣ್ಣು, ಮಣ್ಣು</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Review earlier consonants.</li>
+                <li>Teach new letters in small groups.</li>
+                <li>Say the sound, then the word.</li>
+                <li>Match pictures to first letters.</li>
+                <li>Run a rapid review at the end.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ಮೊದಲು ಅಕ್ಷರ ಹೇಳು</strong><br><strong>ಈಗ ಸಂಪೂರ್ಣ ಪದ ಹೇಳು</strong></p>
+              <p><strong>Quick check:</strong> child identifies at least 3 of the 6 letters.</p>
+              <p><strong>Home practice:</strong> say 3 words and identify the first letter.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <span class="label">Week 7</span>
+          <h3>Bringing Letters Together</h3>
+          <p class="theme">Theme: reading simple familiar words</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Review all taught letters</li>
+                <li>Build faster recognition</li>
+                <li>Experience success reading simple words</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Practice Words</h4>
+              <p>ಅಮ್ಮ, ಆನೆ, ನಾಯಿ, ಗಿಡ</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Review letters with a flash round.</li>
+                <li>Show how letters combine into a word.</li>
+                <li>Read simple words slowly as a group.</li>
+                <li>Rebuild one word with cards.</li>
+                <li>Support each child through one word attempt.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ಅಕ್ಷರಗಳನ್ನು ಸೇರಿಸೋಣ</strong><br><strong>ನಿಧಾನವಾಗಿ ಓದು</strong></p>
+              <p><strong>Quick check:</strong> child reads or repeats one simple word.</p>
+              <p><strong>Home practice:</strong> read 5 letter cards and 3 simple words.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <span class="label">Week 8</span>
+          <h3>Beginning Kagunita Awareness</h3>
+          <p class="theme">Theme: noticing the ಕ row pattern</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Understand that one consonant changes with vowel sounds</li>
+                <li>Say the <strong>ಕ</strong> row with support</li>
+                <li>Notice the visual pattern without pressure</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Focus Row</h4>
+              <p><strong>ಕ ಕಾ ಕಿ ಕೀ ಕು ಕೂ ಕೆ ಕೇ</strong></p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Review the base letter <strong>ಕ</strong>.</li>
+                <li>Show the row one form at a time.</li>
+                <li>Say the row together in rhythm.</li>
+                <li>Ask what stays the same and what changes.</li>
+                <li>Match spoken forms to written cards.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ಬದಲಾದ ಆಕಾರ ನೋಡಿ</strong><br><strong>ಒಂದೇ ಅಕ್ಷರ, ಬೇರೆ ಧ್ವನಿ</strong></p>
+              <p><strong>Quick check:</strong> child understands that the base letter stays the same.</p>
+              <p><strong>Home practice:</strong> review the <strong>ಕ</strong> row with a parent.</p>
+            </section>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrap">ಹೊಸ ಚಿಗುರು</div>
+    </footer>
+  </body>
+</html>
