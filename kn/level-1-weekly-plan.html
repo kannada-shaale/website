@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="kn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ಹಂತ 1 ವಾರವಾರದ ಯೋಜನೆ | ಹೊಸ ಚಿಗುರು</title>
+    <style>
+:root {
+  --bg: #f6f7f8;
+  --panel: #ffffff;
+  --ink: #1f2933;
+  --muted: #5f6b76;
+  --accent: #d97706;
+  --accent-dark: #b45309;
+  --border: #d9dee3;
+  --hero-a: #1f2933;
+  --hero-b: #31424f;
+  --hero-c: #3b5362;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+}
+a { color: var(--accent-dark); }
+.site-header {
+  background:
+    linear-gradient(120deg, rgba(255,255,255,0.04) 15%, transparent 15%, transparent 45%, rgba(255,255,255,0.03) 45%, rgba(255,255,255,0.03) 60%, transparent 60%),
+    linear-gradient(135deg, var(--hero-a), var(--hero-b) 55%, var(--hero-c));
+  color: #fff7ed;
+}
+.nav-wrap, .page-wrap, .footer-wrap {
+  width: min(1100px, calc(100% - 48px));
+  margin: 0 auto;
+}
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0 12px;
+  gap: 20px;
+}
+.brand { font-size: 1.1rem; font-weight: 700; }
+.nav { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+.nav a { color: #fff7ed; text-decoration: none; font-weight: 600; }
+.hero { padding: 72px 0 96px; }
+.hero h1 { margin: 0 0 14px; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.15; }
+.hero p { margin: 0; max-width: 760px; font-size: 1.08rem; color: #f7efe3; }
+.page-wrap { padding: 48px 0 72px; }
+.section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 30px rgba(31,41,51,0.05);
+}
+.section h2 { margin: 0 0 14px; font-size: 1.6rem; }
+.week-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  background: #fffdfa;
+  margin-top: 18px;
+}
+.week-card h3 { margin: 0 0 12px; font-size: 1.25rem; }
+.quick-list { padding-left: 20px; margin: 12px 0 0; }
+.label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-dark);
+}
+.footer { border-top: 1px solid var(--border); color: var(--muted); }
+.footer-wrap { padding: 24px 0 40px; }
+@media (max-width: 760px) {
+  .nav-wrap { flex-direction: column; align-items: flex-start; }
+  .page-wrap, .hero { padding-top: 36px; }
+}
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html">ಹೊಸ ಚಿಗುರು</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">ಮುಖ್ಯಪುಟ</a>
+          <a href="curriculum.html">ಪಠ್ಯಕ್ರಮ</a>
+          <a href="resources.html">ಸಂಪನ್ಮೂಲಗಳು</a>
+          <a href="locations.html">ಸ್ಥಳಗಳು</a>
+          <a href="partner.html">ಸಹಭಾಗಿ</a>
+        </nav>
+      </div>
+      <div class="nav-wrap hero">
+        <div>
+          <h1>ಹಂತ 1 ವಾರವಾರದ ಯೋಜನೆ</h1>
+          <p>ಮಾತು ಕಲಿ ಹಂತದ ಮೊದಲ 8 ವಾರಗಳ ತರಗತಿ ಯೋಜನೆ — ಕೇಳುವಿಕೆ, ಮಾತನಾಡುವಿಕೆ, ಹಾಡುಗಳು, ಚಲನೆ, ರೂಢಿಗಳು ಮತ್ತು ಪುನರವೃತ್ತಿಗೆ ಆದ್ಯತೆ.</p>
+        </div>
+      </div>
+    </header>
+    <main class="page-wrap">
+      <section class="section">
+        <h2>ತರಗತಿ ವಿನ್ಯಾಸ</h2>
+        <ul class="quick-list">
+          <li>10 ನಿಮಿಷ: ಸ್ವಾಗತ ಹಾಡು, ಶುಭಾಶಯ, ಸಿದ್ಧತೆ</li>
+          <li>10 ನಿಮಿಷ: ವಿಷಯಾಧಾರಿತ ಪದಗಳು ಮತ್ತು ಚಲನೆ</li>
+          <li>10 ನಿಮಿಷ: ಆಟಗಳ ಮೂಲಕ ಮಾತಿನ ಅಭ್ಯಾಸ</li>
+          <li>10 ನಿಮಿಷ: ಕಥೆ, ಪದ್ಯ, ಅಥವಾ ಹಾಡು</li>
+          <li>5 ನಿಮಿಷ: ಪುನರವಲೋಕನ ಮತ್ತು ಮನೆಗೆ ಅಭ್ಯಾಸ</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>1ರಿಂದ 8ನೇ ವಾರ</h2>
+
+        <article class="week-card"><span class="label">ವಾರ 1</span><h3>Hello Kannada</h3><p><strong>ಗುರಿ:</strong> ಮಕ್ಕಳು ತರಗತಿಯಲ್ಲಿ ಆರಾಮವಾಗಲಿ, ಶುಭಾಶಯಗಳನ್ನು ಕೇಳಿ ಪುನರಾವರ್ತಿಸಲಿ, ತಮ್ಮ ಹೆಸರಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಲಿ.</p><p><strong>ಪದಗಳು:</strong> ನಮಸ್ಕಾರ, ಹಾಯ್, ಬಾ, ಕುಳಿತುಕೋ, ಎದ್ದು ನಿಲ್ಲು, ಹೆಸರು</p></article>
+        <article class="week-card"><span class="label">ವಾರ 2</span><h3>Colors Around Us</h3><p><strong>ಗುರಿ:</strong> 4-5 ಬಣ್ಣಗಳನ್ನು ಗುರುತಿಸಿ ಹೇಳುವುದು.</p><p><strong>ಪದಗಳು:</strong> ಕೆಂಪು, ನೀಲಿ, ಹಳದಿ, ಹಸಿರು, ಬಿಳಿ</p></article>
+        <article class="week-card"><span class="label">ವಾರ 3</span><h3>Family Words</h3><p><strong>ಗುರಿ:</strong> ಮನೆಯವರ ಪದಗಳನ್ನು ಕಲಿಯುವುದು.</p><p><strong>ಪದಗಳು:</strong> ಅಮ್ಮ, ಅಪ್ಪ, ಅಣ್ಣ, ಅಕ್ಕ, ಅಜ್ಜಿ, ತಾತ</p></article>
+        <article class="week-card"><span class="label">ವಾರ 4</span><h3>Fruits We Know</h3><p><strong>ಗುರಿ:</strong> ಪರಿಚಿತ ಹಣ್ಣುಗಳನ್ನು ಹೆಸರಿಸಿ <strong>ನನಗೆ ... ಇಷ್ಟ</strong> ಬಳಸುವುದು.</p><p><strong>ಪದಗಳು:</strong> ಸೇಬು, ಬಾಳೆಹಣ್ಣು, ದ್ರಾಕ್ಷಿ, ಮಾವು, ಕಿತ್ತಳೆ</p></article>
+        <article class="week-card"><span class="label">ವಾರ 5</span><h3>Animals and Sounds</h3><p><strong>ಗುರಿ:</strong> ಸಾಮಾನ್ಯ ಪ್ರಾಣಿಗಳನ್ನು ಗುರುತಿಸುವುದು ಮತ್ತು ಧ್ವನಿಗಳ ಆಟಗಳ ಮೂಲಕ ಮಾತನಾಡುವುದು.</p><p><strong>ಪದಗಳು:</strong> ನಾಯಿ, ಬೆಕ್ಕು, ಆನೆ, ಹಸು, ಹಕ್ಕಿ, ಮೀನು</p></article>
+        <article class="week-card"><span class="label">ವಾರ 6</span><h3>Body Parts</h3><p><strong>ಗುರಿ:</strong> ದೇಹದ ಭಾಗಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಂಡು ಹೇಳುವುದು.</p><p><strong>ಪದಗಳು:</strong> ಕಣ್ಣು, ಮೂಗು, ಬಾಯಿ, ಕಿವಿ, ಕೈ, ಕಾಲು</p></article>
+        <article class="week-card"><span class="label">ವಾರ 7</span><h3>Food and Tastes</h3><p><strong>ಗುರಿ:</strong> ಇಷ್ಟದ ಆಹಾರದ ಬಗ್ಗೆ ಮಾತನಾಡುವುದು.</p><p><strong>ಪದಗಳು:</strong> ಊಟ, ಹಾಲು, ಅನ್ನ, ದೋಸೆ, ಸಿಹಿ, ಖಾರ</p></article>
+        <article class="week-card"><span class="label">ವಾರ 8</span><h3>Review and Celebration</h3><p><strong>ಗುರಿ:</strong> ಹಿಂದಿನ ವಾರಗಳ ಪದಗಳು ಮತ್ತು ವಾಕ್ಯಗಳನ್ನು ಸಂತೋಷದಿಂದ ಪುನರವಲೋಕನ ಮಾಡುವುದು.</p></article>
+      </section>
+    </main>
+    <footer class="footer"><div class="footer-wrap">ಹೊಸ ಚಿಗುರು</div></footer>
+  </body>
+</html>
