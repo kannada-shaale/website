@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="kn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ಕಾಗುಣಿತ ಮಾದರಿಗಳು | ಹೊಸ ಚಿಗುರು</title>
+    <style>
+:root {
+  --bg: #f6f7f8;
+  --panel: #ffffff;
+  --ink: #1f2933;
+  --muted: #5f6b76;
+  --accent: #d97706;
+  --accent-dark: #b45309;
+  --border: #d9dee3;
+  --hero-a: #1f2933;
+  --hero-b: #31424f;
+  --hero-c: #3b5362;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+a { color: var(--accent-dark); }
+
+.site-header {
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.04) 15%, transparent 15%, transparent 45%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.03) 60%, transparent 60%),
+    linear-gradient(135deg, var(--hero-a), var(--hero-b) 55%, var(--hero-c));
+  color: #fff7ed;
+}
+
+.nav-wrap,
+.page-wrap,
+.footer-wrap {
+  width: min(1100px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0 12px;
+  gap: 20px;
+}
+
+.brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+}
+
+.nav a {
+  color: #fff7ed;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  padding: 72px 0 96px;
+}
+
+.hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.15;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 760px;
+  font-size: 1.08rem;
+  color: #f7efe3;
+}
+
+.page-wrap {
+  padding: 48px 0 72px;
+}
+
+.section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 30px rgba(31, 41, 51, 0.05);
+}
+
+.section h2 {
+  margin: 0 0 14px;
+  font-size: 1.6rem;
+}
+
+.pattern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.pattern-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #fffdfa;
+  padding: 18px;
+}
+
+.pattern-card h3 {
+  margin: 0 0 10px;
+}
+
+.big-example {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 12px 0 8px;
+}
+
+.mini-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 0.97rem;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #f8fafb;
+}
+
+.kid-tip {
+  margin-top: 16px;
+  padding: 16px 18px;
+  background: #fff8eb;
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.footer-wrap {
+  padding: 24px 0 40px;
+}
+
+@media (max-width: 760px) {
+  .nav-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-wrap,
+  .hero {
+    padding-top: 36px;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html">ಹೊಸ ಚಿಗುರು</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">ಮುಖ್ಯಪುಟ</a>
+          <a href="curriculum.html">ಪಠ್ಯಕ್ರಮ</a>
+          <a href="resources.html">ಸಂಪನ್ಮೂಲಗಳು</a>
+          <a href="locations.html">ಸ್ಥಳಗಳು</a>
+          <a href="partner.html">ಸಹಭಾಗಿ</a>
+        </nav>
+      </div>
+      <div class="nav-wrap hero">
+        <div>
+          <h1>ಕಾಗುಣಿತ ಮಾದರಿಗಳು</h1>
+          <p>ವ್ಯಂಜನಕ್ಕೆ ಸ್ವರ ಸೇರಿಸಿದಾಗ ಆಗುವ ಬದಲಾವಣೆಯನ್ನು ಸುಲಭವಾಗಿ ಗುರುತಿಸಲು ಮಕ್ಕಳಿಗೆ ಸಹಾಯ ಮಾಡುವ ಪುಟ. ಎಲ್ಲವನ್ನೂ ಒಮ್ಮೆಲೆ ಕಣ್ಮರೆ ಮಾಡಲು ಬೇಡ — ಮೊದಲು ಮಾದರಿಯನ್ನು ಗಮನಿಸಿ.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-wrap">
+      <section class="section">
+        <h2>ಕಾಗುಣಿತ ಅಂದರೆ ಏನು?</h2>
+        <p>ಒಂದು ವ್ಯಂಜನಕ್ಕೆ ಸ್ವರದ ಧ್ವನಿ ಸೇರಿಸಿದಾಗ ಕಾಗುಣಿತ ರೂಪ ಬರುತ್ತದೆ. ಉದಾಹರಣೆಗೆ <strong>ಕ</strong> ಎನ್ನುವ ಮೂಲ ಅಕ್ಷರಕ್ಕೆ ಸ್ವಲ್ಪ ಆಕಾರ ಬದಲಿಸಿದರೆ ಹೊಸ ಧ್ವನಿ ಬರುತ್ತದೆ.</p>
+        <div class="kid-tip">
+          <strong>ಮಕ್ಕಳಿಗೆ ಸುಲಭ ಟಿಪ್:</strong> <strong>ಕ</strong> ಅನ್ನು ಮನೆಯ ಅಕ್ಷರ ಎಂದುಕೊಳ್ಳಿ. ಪ್ರತಿ ಸ್ವರ ಅದಕ್ಕೆ ಹೊಸ “ಟೋಪಿ”, “ಬಾಲ”, ಅಥವಾ “ಸಣ್ಣ ಗೆಳೆಯ” ಸೇರಿಸಿ ಹೊಸ ಧ್ವನಿ ಮಾಡುತ್ತದೆ.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>ಕ ಅಕ್ಷರದಿಂದ ಮಾದರಿ ನೋಡಿ</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ಧ್ವನಿ</th>
+              <th>ರೂಪ</th>
+              <th>ಸುಲಭ ಸೂಚನೆ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>a</td><td>ಕ</td><td>ಮೂಲ ಅಕ್ಷರ</td></tr>
+            <tr><td>aa</td><td>ಕಾ</td><td>ಬಲಭಾಗದಲ್ಲಿ ಉದ್ದವಾದ ಬಾಲ</td></tr>
+            <tr><td>i</td><td>ಕಿ</td><td>ಎಡ/ಮೇಲ್ಭಾಗದಲ್ಲಿ ಸಣ್ಣ ಗುರುತು</td></tr>
+            <tr><td>ii</td><td>ಕೀ</td><td>ಉದ್ದವಾದ i ಗುರುತು</td></tr>
+            <tr><td>u</td><td>ಕು</td><td>ಕೆಳಭಾಗದಲ್ಲಿ ಸಣ್ಣ ಮಡಚು</td></tr>
+            <tr><td>uu</td><td>ಕೂ</td><td>ಕೆಳಭಾಗದಲ್ಲಿ ಉದ್ದವಾದ ಮಡಚು</td></tr>
+            <tr><td>e</td><td>ಕೆ</td><td>ಅಕ್ಷರದ ಮೊದಲು e ಗುರುತು</td></tr>
+            <tr><td>ee</td><td>ಕೇ</td><td>ಅಕ್ಷರದ ಮೊದಲು ಉದ್ದ e ಗುರುತು</td></tr>
+            <tr><td>ai</td><td>ಕೈ</td><td>ಅಕ್ಷರದ ಮೊದಲು ಎರಡು ಭಾಗದ ಗುರುತು</td></tr>
+            <tr><td>o</td><td>ಕೊ</td><td>ಮೊದಲು e ಗುರುತು + ನಂತರ aa ಬಾಲ</td></tr>
+            <tr><td>oo</td><td>ಕೋ</td><td>ಉದ್ದ e ಗುರುತು + ನಂತರ aa ಬಾಲ</td></tr>
+            <tr><td>au</td><td>ಕೌ</td><td>o ಮಾದರಿ + ಹೆಚ್ಚುವರಿ ಕೆಳ ಗುರುತು</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>ಗಮನಿಸಬೇಕಾದ ಮಾದರಿಗಳು</h2>
+        <div class="pattern-grid">
+          <div class="pattern-card">
+            <h3>ಬಲಭಾಗದ ಗೆಳೆಯ</h3>
+            <div class="big-example">ಕ → ಕಾ</div>
+            <p class="mini-note">ಉದ್ದವಾದ <strong>aa</strong> ಧ್ವನಿ ಕೇಳಿದರೆ ಬಲಭಾಗದ ಬಾಲವನ್ನು ಹುಡುಕಿ.</p>
+          </div>
+          <div class="pattern-card">
+            <h3>ಕೆಳಭಾಗದ ಗೆಳೆಯ</h3>
+            <div class="big-example">ಕ → ಕು / ಕೂ</div>
+            <p class="mini-note"><strong>u</strong> ಮತ್ತು <strong>uu</strong> ಧ್ವನಿಗಳಿಗೆ ಕೆಳಭಾಗವನ್ನು ನೋಡಿ.</p>
+          </div>
+          <div class="pattern-card">
+            <h3>ಮುಂಚೆ ಬರುವ ಗೆಳೆಯ</h3>
+            <div class="big-example">ಕ → ಕೆ / ಕೇ / ಕೈ</div>
+            <p class="mini-note"><strong>e</strong>, <strong>ee</strong>, <strong>ai</strong> ಧ್ವನಿಗಳಿಗೆ ಗುರುತು ಅಕ್ಷರದ ಮೊದಲು ಕಾಣಿಸುತ್ತದೆ.</p>
+          </div>
+          <div class="pattern-card">
+            <h3>ಎರಡು ಕಡೆಗಳ ಗೆಳೆಯ</h3>
+            <div class="big-example">ಕ → ಕೊ / ಕೋ / ಕೌ</div>
+            <p class="mini-note"><strong>o</strong>, <strong>oo</strong>, <strong>au</strong> ಧ್ವನಿಗಳಿಗೆ ಅಕ್ಷರದ ಎರಡೂ ಕಡೆ ಗಮನಿಸಿ.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>ಅಭ್ಯಾಸ ಸಾಲು</h2>
+        <p>ಇವುಗಳನ್ನು ನಿಧಾನವಾಗಿ ಓದಿ: ಮೊದಲು ಮೂಲ ಧ್ವನಿ, ನಂತರ ಸ್ವರದಿಂದ ಬರುವ ಆಕಾರ ಬದಲಾವಣೆಯನ್ನು ಗಮನಿಸಿ.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>ಸಾಲು</th>
+              <th>ರೂಪಗಳು</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>ಕ ಸಾಲು</td><td>ಕ ಕಾ ಕಿ ಕೀ ಕು ಕೂ ಕೆ ಕೇ ಕೈ ಕೊ ಕೋ ಕೌ</td></tr>
+            <tr><td>ಗ ಸಾಲು</td><td>ಗ ಗಾ ಗಿ ಗೀ ಗು ಗೂ ಗೆ ಗೇ ಗೈ ಗೊ ಗೋ ಗೌ</td></tr>
+            <tr><td>ಮ ಸಾಲು</td><td>ಮ ಮಾ ಮಿ ಮೀ ಮು ಮೂ ಮೆ ಮೇ ಮೈ ಮೊ ಮೋ ಮೌ</td></tr>
+          </tbody>
+        </table>
+        <div class="kid-tip">
+          <strong>ಮಕ್ಕಳಿಗೆ ಟಿಪ್:</strong> ಒಂದು ಪೂರ್ಣ ಸಾಲು, ಉದಾಹರಣೆಗೆ <strong>ಕ</strong> ಸಾಲು ಓದಲು ಬಂದರೆ, ಇದೇ ಮಾದರಿಯನ್ನು ಬೇರೆ ಅಕ್ಷರಗಳಿಗೂ ಬಳಸಬಹುದು.
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrap">ಹೊಸ ಚಿಗುರು</div>
+    </footer>
+  </body>
+</html>
