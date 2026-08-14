@@ -92,6 +92,34 @@ a {
   color: #f7efe3;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  background: #fff7ed;
+  color: #1f2933;
+}
+
+.button-secondary {
+  border: 1px solid rgba(255, 247, 237, 0.55);
+  color: #fff7ed;
+  background: transparent;
+}
+
 .page-wrap {
   padding: 48px 0 72px;
 }
@@ -158,6 +186,39 @@ a {
     padding-top: 36px;
   }
 }
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+
+  .site-header {
+    background: #ffffff !important;
+    color: #1f2933;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav,
+  .hero-actions,
+  .footer {
+    display: none !important;
+  }
+
+  .nav-wrap,
+  .page-wrap {
+    width: 100%;
+  }
+
+  .section {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  a {
+    color: #1f2933;
+    text-decoration: none;
+  }
+}
     </style>
   </head>
   <body>
@@ -176,6 +237,10 @@ a {
         <div>
           <h1>ಕನ್ನಡ ಅಕ್ಷರಮಾಲೆ</h1>
           <p>ಮಕ್ಕಳು, ಪೋಷಕರು ಮತ್ತು ಸ್ವಯಂಸೇವಕರು ಬೇಗನೆ ನೋಡಿಕೊಳ್ಳಲು ಕನ್ನಡ ಸ್ವರಗಳು ಮತ್ತು ವ್ಯಂಜನಗಳ ಸರಳ ಉಲ್ಲೇಖ ಪುಟ.</p>
+          <div class="hero-actions">
+            <button class="button button-primary" onclick="window.print()">ಮುದ್ರಿಸಿ / PDF ಆಗಿ ಉಳಿಸಿ</button>
+            <a class="button button-secondary" href="resources.html">ಸಂಪನ್ಮೂಲಗಳಿಗೆ ಹಿಂತಿರುಗಿ</a>
+          </div>
         </div>
       </div>
     </header>
