@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kannada Alphabet | ಹೊಸ ಚಿಗುರು</title>
+    <style>
+:root {
+  --bg: #f6f7f8;
+  --panel: #ffffff;
+  --ink: #1f2933;
+  --muted: #5f6b76;
+  --accent: #d97706;
+  --accent-dark: #b45309;
+  --border: #d9dee3;
+  --hero-a: #1f2933;
+  --hero-b: #31424f;
+  --hero-c: #3b5362;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent-dark);
+}
+
+.site-header {
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.04) 15%, transparent 15%, transparent 45%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.03) 60%, transparent 60%),
+    linear-gradient(135deg, var(--hero-a), var(--hero-b) 55%, var(--hero-c));
+  color: #fff7ed;
+}
+
+.nav-wrap,
+.page-wrap,
+.footer-wrap {
+  width: min(1100px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0 12px;
+  gap: 20px;
+}
+
+.brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+}
+
+.nav a {
+  color: #fff7ed;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  padding: 72px 0 96px;
+}
+
+.hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.15;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 760px;
+  font-size: 1.08rem;
+  color: #f7efe3;
+}
+
+.page-wrap {
+  padding: 48px 0 72px;
+}
+
+.section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 30px rgba(31, 41, 51, 0.05);
+}
+
+.section h2 {
+  margin: 0 0 14px;
+  font-size: 1.6rem;
+}
+
+.alphabet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.letter-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #fffdfa;
+  padding: 14px 10px;
+  text-align: center;
+}
+
+.glyph {
+  display: block;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.label {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.group-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  background: #fffdfa;
+}
+
+.group-card h3 {
+  margin: 0 0 12px;
+}
+
+.letter-line {
+  font-size: 1.2rem;
+  line-height: 1.9;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.footer-wrap {
+  padding: 24px 0 40px;
+}
+
+@media (max-width: 760px) {
+  .nav-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-wrap,
+  .hero {
+    padding-top: 36px;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html">ಹೊಸ ಚಿಗುರು</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="curriculum.html">Curriculum</a>
+          <a href="resources.html">Resources</a>
+          <a href="locations.html">Locations</a>
+          <a href="partner.html">Partner</a>
+        </nav>
+      </div>
+      <div class="nav-wrap hero">
+        <div>
+          <h1>Kannada Alphabet Reference</h1>
+          <p>A simple page with Kannada swaras and vyanjanas that families, volunteers, and students can use for quick review and pronunciation practice.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-wrap">
+      <section class="section">
+        <h2>Swaras (Vowels)</h2>
+        <p>These are the basic Kannada vowel forms.</p>
+        <div class="alphabet-grid">
+          <div class="letter-card"><span class="glyph">ಅ</span><span class="label">a</span></div>
+          <div class="letter-card"><span class="glyph">ಆ</span><span class="label">aa</span></div>
+          <div class="letter-card"><span class="glyph">ಇ</span><span class="label">i</span></div>
+          <div class="letter-card"><span class="glyph">ಈ</span><span class="label">ii</span></div>
+          <div class="letter-card"><span class="glyph">ಉ</span><span class="label">u</span></div>
+          <div class="letter-card"><span class="glyph">ಊ</span><span class="label">uu</span></div>
+          <div class="letter-card"><span class="glyph">ಋ</span><span class="label">ru</span></div>
+          <div class="letter-card"><span class="glyph">ೠ</span><span class="label">roo</span></div>
+          <div class="letter-card"><span class="glyph">ಎ</span><span class="label">e</span></div>
+          <div class="letter-card"><span class="glyph">ಏ</span><span class="label">ee</span></div>
+          <div class="letter-card"><span class="glyph">ಐ</span><span class="label">ai</span></div>
+          <div class="letter-card"><span class="glyph">ಒ</span><span class="label">o</span></div>
+          <div class="letter-card"><span class="glyph">ಓ</span><span class="label">oo</span></div>
+          <div class="letter-card"><span class="glyph">ಔ</span><span class="label">au</span></div>
+          <div class="letter-card"><span class="glyph">ಅಂ</span><span class="label">am</span></div>
+          <div class="letter-card"><span class="glyph">ಅಃ</span><span class="label">aha</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Vyanjanas (Consonants)</h2>
+        <p>These are grouped in a way that is commonly used when learning Kannada script.</p>
+        <div class="group-grid">
+          <div class="group-card">
+            <h3>ಕ ವರ್ಗ</h3>
+            <div class="letter-line">ಕ ಖ ಗ ಘ ಙ</div>
+          </div>
+          <div class="group-card">
+            <h3>ಚ ವರ್ಗ</h3>
+            <div class="letter-line">ಚ ಛ ಜ ಝ ಞ</div>
+          </div>
+          <div class="group-card">
+            <h3>ಟ ವರ್ಗ</h3>
+            <div class="letter-line">ಟ ಠ ಡ ಢ ಣ</div>
+          </div>
+          <div class="group-card">
+            <h3>ತ ವರ್ಗ</h3>
+            <div class="letter-line">ತ ಥ ದ ಧ ನ</div>
+          </div>
+          <div class="group-card">
+            <h3>ಪ ವರ್ಗ</h3>
+            <div class="letter-line">ಪ ಫ ಬ ಭ ಮ</div>
+          </div>
+          <div class="group-card">
+            <h3>ಅಂತಸ್ಥ ಮತ್ತು ಊಷ್ಮ</h3>
+            <div class="letter-line">ಯ ರ ಲ ವ ಶ ಷ ಸ ಹ ಳ ಕ್ಷ ಜ್ಞ</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>How Volunteers Can Use This Page</h2>
+        <ul>
+          <li>Ask the child to name any letters they recognize.</li>
+          <li>Point to 5-10 random letters to check familiarity.</li>
+          <li>Use it alongside the placement rubric to estimate whether the child is ready for <strong>ಅಕ್ಷರ ಕಲಿ</strong> or <strong>ಪದ ಕಲಿ</strong>.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrap">ಹೊಸ ಚಿಗುರು</div>
+    </footer>
+  </body>
+</html>
