@@ -138,28 +138,6 @@ a {
   color: var(--muted);
 }
 
-.group-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-}
-
-.group-card {
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 18px;
-  background: #fffdfa;
-}
-
-.group-card h3 {
-  margin: 0 0 12px;
-}
-
-.letter-line {
-  font-size: 1.2rem;
-  line-height: 1.9;
-}
-
 .footer {
   border-top: 1px solid var(--border);
   color: var(--muted);
@@ -228,32 +206,44 @@ a {
 
       <section class="section">
         <h2>Vyanjanas (Consonants)</h2>
-        <p>These are grouped in a way that is commonly used when learning Kannada script.</p>
-        <div class="group-grid">
-          <div class="group-card">
-            <h3>ಕ ವರ್ಗ</h3>
-            <div class="letter-line">ಕ ಖ ಗ ಘ ಙ</div>
-          </div>
-          <div class="group-card">
-            <h3>ಚ ವರ್ಗ</h3>
-            <div class="letter-line">ಚ ಛ ಜ ಝ ಞ</div>
-          </div>
-          <div class="group-card">
-            <h3>ಟ ವರ್ಗ</h3>
-            <div class="letter-line">ಟ ಠ ಡ ಢ ಣ</div>
-          </div>
-          <div class="group-card">
-            <h3>ತ ವರ್ಗ</h3>
-            <div class="letter-line">ತ ಥ ದ ಧ ನ</div>
-          </div>
-          <div class="group-card">
-            <h3>ಪ ವರ್ಗ</h3>
-            <div class="letter-line">ಪ ಫ ಬ ಭ ಮ</div>
-          </div>
-          <div class="group-card">
-            <h3>ಅಂತಸ್ಥ ಮತ್ತು ಊಷ್ಮ</h3>
-            <div class="letter-line">ಯ ರ ಲ ವ ಶ ಷ ಸ ಹ ಳ ಕ್ಷ ಜ್ಞ</div>
-          </div>
+        <p>Each consonant includes a simple English pronunciation hint.</p>
+        <div class="alphabet-grid">
+          <div class="letter-card"><span class="glyph">ಕ</span><span class="label">ka</span></div>
+          <div class="letter-card"><span class="glyph">ಖ</span><span class="label">kha</span></div>
+          <div class="letter-card"><span class="glyph">ಗ</span><span class="label">ga</span></div>
+          <div class="letter-card"><span class="glyph">ಘ</span><span class="label">gha</span></div>
+          <div class="letter-card"><span class="glyph">ಙ</span><span class="label">nga</span></div>
+          <div class="letter-card"><span class="glyph">ಚ</span><span class="label">cha</span></div>
+          <div class="letter-card"><span class="glyph">ಛ</span><span class="label">chha</span></div>
+          <div class="letter-card"><span class="glyph">ಜ</span><span class="label">ja</span></div>
+          <div class="letter-card"><span class="glyph">ಝ</span><span class="label">jha</span></div>
+          <div class="letter-card"><span class="glyph">ಞ</span><span class="label">nya</span></div>
+          <div class="letter-card"><span class="glyph">ಟ</span><span class="label">ta</span></div>
+          <div class="letter-card"><span class="glyph">ಠ</span><span class="label">tha</span></div>
+          <div class="letter-card"><span class="glyph">ಡ</span><span class="label">da</span></div>
+          <div class="letter-card"><span class="glyph">ಢ</span><span class="label">dha</span></div>
+          <div class="letter-card"><span class="glyph">ಣ</span><span class="label">na</span></div>
+          <div class="letter-card"><span class="glyph">ತ</span><span class="label">tha</span></div>
+          <div class="letter-card"><span class="glyph">ಥ</span><span class="label">thha</span></div>
+          <div class="letter-card"><span class="glyph">ದ</span><span class="label">dha</span></div>
+          <div class="letter-card"><span class="glyph">ಧ</span><span class="label">dhha</span></div>
+          <div class="letter-card"><span class="glyph">ನ</span><span class="label">na</span></div>
+          <div class="letter-card"><span class="glyph">ಪ</span><span class="label">pa</span></div>
+          <div class="letter-card"><span class="glyph">ಫ</span><span class="label">pha</span></div>
+          <div class="letter-card"><span class="glyph">ಬ</span><span class="label">ba</span></div>
+          <div class="letter-card"><span class="glyph">ಭ</span><span class="label">bha</span></div>
+          <div class="letter-card"><span class="glyph">ಮ</span><span class="label">ma</span></div>
+          <div class="letter-card"><span class="glyph">ಯ</span><span class="label">ya</span></div>
+          <div class="letter-card"><span class="glyph">ರ</span><span class="label">ra</span></div>
+          <div class="letter-card"><span class="glyph">ಲ</span><span class="label">la</span></div>
+          <div class="letter-card"><span class="glyph">ವ</span><span class="label">va</span></div>
+          <div class="letter-card"><span class="glyph">ಶ</span><span class="label">sha</span></div>
+          <div class="letter-card"><span class="glyph">ಷ</span><span class="label">ssha</span></div>
+          <div class="letter-card"><span class="glyph">ಸ</span><span class="label">sa</span></div>
+          <div class="letter-card"><span class="glyph">ಹ</span><span class="label">ha</span></div>
+          <div class="letter-card"><span class="glyph">ಳ</span><span class="label">la</span></div>
+          <div class="letter-card"><span class="glyph">ಕ್ಷ</span><span class="label">ksha</span></div>
+          <div class="letter-card"><span class="glyph">ಜ್ಞ</span><span class="label">gnya</span></div>
         </div>
       </section>
 
