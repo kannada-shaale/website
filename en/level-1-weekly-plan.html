@@ -8,6 +8,7 @@
 :root {
   --bg: #f6f7f8;
   --panel: #ffffff;
+  --soft: #fffdfa;
   --ink: #1f2933;
   --muted: #5f6b76;
   --accent: #d97706;
@@ -59,15 +60,39 @@ a { color: var(--accent-dark); }
   box-shadow: 0 10px 30px rgba(31,41,51,0.05);
 }
 .section h2 { margin: 0 0 14px; font-size: 1.6rem; }
-.week-card {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.mini-card {
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 20px;
-  background: #fffdfa;
+  padding: 18px;
+  background: var(--soft);
+}
+.mini-card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+.mini-card p,
+.mini-card ul {
+  margin: 0;
+  color: var(--muted);
+}
+.mini-card ul,
+.checklist,
+.week-list {
+  padding-left: 20px;
+}
+.week-card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+  background: var(--soft);
   margin-top: 18px;
 }
-.week-card h3 { margin: 0 0 12px; font-size: 1.25rem; }
-.quick-list { padding-left: 20px; margin: 12px 0 0; }
+.week-card h3 { margin: 0 0 10px; font-size: 1.3rem; }
 .label {
   display: inline-block;
   margin-bottom: 10px;
@@ -76,6 +101,35 @@ a { color: var(--accent-dark); }
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--accent-dark);
+}
+.theme {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.lesson-block {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  background: #ffffff;
+}
+.lesson-block h4 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+.lesson-block p,
+.lesson-block ul,
+.lesson-block ol {
+  margin: 0;
+}
+.lesson-block ul,
+.lesson-block ol {
+  padding-left: 20px;
 }
 .footer { border-top: 1px solid var(--border); color: var(--muted); }
 .footer-wrap { padding: 24px 0 40px; }
@@ -100,20 +154,50 @@ a { color: var(--accent-dark); }
       <div class="nav-wrap hero">
         <div>
           <h1>Level 1 Weekly Plan</h1>
-          <p>First 8 weeks for ಮಾತು ಕಲಿ, focused on listening, speaking, songs, movement, routines, and joyful repetition.</p>
+          <p>A teacher-ready 8-week plan for ಮಾತು ಕಲಿ, designed for children who are building listening comfort and early spoken Kannada.</p>
         </div>
       </div>
     </header>
     <main class="page-wrap">
       <section class="section">
-        <h2>Class Structure</h2>
-        <ul class="quick-list">
-          <li>10 min: welcome song, greetings, settling in</li>
-          <li>10 min: theme vocabulary with actions or objects</li>
-          <li>10 min: speaking practice through games</li>
-          <li>10 min: story, rhyme, or song</li>
-          <li>5 min: goodbye review and parent handoff</li>
-        </ul>
+        <h2>Teacher Snapshot</h2>
+        <div class="grid">
+          <article class="mini-card">
+            <h3>Who This Is For</h3>
+            <ul class="week-list">
+              <li>Children new to Kannada</li>
+              <li>Children who understand a little but rarely speak</li>
+            </ul>
+          </article>
+          <article class="mini-card">
+            <h3>Teaching Focus</h3>
+            <ul class="week-list">
+              <li>Listening first</li>
+              <li>Speaking next</li>
+              <li>Joyful repetition over perfect recall</li>
+            </ul>
+          </article>
+          <article class="mini-card">
+            <h3>Suggested Class Flow</h3>
+            <ul class="week-list">
+              <li>5 min arrival routine</li>
+              <li>8 min song and spoken warm-up</li>
+              <li>10 min new words</li>
+              <li>10 min speaking game</li>
+              <li>7 min story or rhyme</li>
+              <li>5 min wrap-up and parent handoff</li>
+            </ul>
+          </article>
+          <article class="mini-card">
+            <h3>Keep Ready</h3>
+            <ul class="week-list">
+              <li>Name tags</li>
+              <li>Picture cards</li>
+              <li>Soft ball or bean bag</li>
+              <li>Crayons and paper</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       <section class="section">
@@ -122,64 +206,289 @@ a { color: var(--accent-dark); }
         <article class="week-card">
           <span class="label">Week 1</span>
           <h3>Hello Kannada</h3>
-          <p><strong>Goal:</strong> help children feel safe, hear greetings, and respond to their own name.</p>
-          <p><strong>Vocabulary:</strong> ನಮಸ್ಕಾರ, ಹಾಯ್, ಬಾ, ಕುಳಿತುಕೋ, ಎದ್ದು ನಿಲ್ಲು, ಹೆಸರು</p>
-          <p><strong>Home practice:</strong> greet family with <strong>ನಮಸ್ಕಾರ</strong> and say their name in Kannada.</p>
+          <p class="theme">Theme: greetings and classroom comfort</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Children feel safe entering class</li>
+                <li>Children respond to their own name</li>
+                <li>Children repeat basic greetings</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Vocabulary</h4>
+              <p>ನಮಸ್ಕಾರ, ಹಾಯ್, ಬಾ, ಕುಳಿತುಕೋ, ಎದ್ದು ನಿಲ್ಲು, ಹೆಸರು</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Welcome each child with <strong>ನಮಸ್ಕಾರ</strong>.</li>
+                <li>Sing a hello song and wave to each child.</li>
+                <li>Model <strong>ನನ್ನ ಹೆಸರು ...</strong> and repeat.</li>
+                <li>Play a ball toss name game.</li>
+                <li>Give simple action commands.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ನಿನ್ನ ಹೆಸರು ಏನು?</strong><br><strong>ನನ್ನ ಹೆಸರು ...</strong></p>
+              <p><strong>Quick check:</strong> child responds to name and repeats one greeting.</p>
+              <p><strong>Home practice:</strong> greet family with <strong>ನಮಸ್ಕಾರ</strong>.</p>
+            </section>
+          </div>
         </article>
 
         <article class="week-card">
           <span class="label">Week 2</span>
           <h3>Colors Around Us</h3>
-          <p><strong>Goal:</strong> identify 4-5 colors and answer <strong>ಇದು ಯಾವ ಬಣ್ಣ?</strong></p>
-          <p><strong>Vocabulary:</strong> ಕೆಂಪು, ನೀಲಿ, ಹಳದಿ, ಹಸಿರು, ಬಿಳಿ</p>
-          <p><strong>Home practice:</strong> point to objects at home and name the color in Kannada.</p>
+          <p class="theme">Theme: colors in familiar objects</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Say 4-5 colors</li>
+                <li>Answer <strong>ಇದು ಯಾವ ಬಣ್ಣ?</strong></li>
+                <li>Connect colors to real objects</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Vocabulary</h4>
+              <p>ಕೆಂಪು, ನೀಲಿ, ಹಳದಿ, ಹಸಿರು, ಬಿಳಿ</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Review greetings from Week 1.</li>
+                <li>Teach each color with a real object.</li>
+                <li>Run a classroom color hunt.</li>
+                <li>Sort cards or objects by color.</li>
+                <li>End with each child naming one object color.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ಇದು ಯಾವ ಬಣ್ಣ?</strong><br><strong>ಇದು ಕೆಂಪು</strong></p>
+              <p><strong>Quick check:</strong> child points correctly and says 2 color words.</p>
+              <p><strong>Home practice:</strong> name colors of toys or clothes at home.</p>
+            </section>
+          </div>
         </article>
 
         <article class="week-card">
           <span class="label">Week 3</span>
           <h3>Family Words</h3>
-          <p><strong>Goal:</strong> learn familiar family words and answer simple family questions.</p>
-          <p><strong>Vocabulary:</strong> ಅಮ್ಮ, ಅಪ್ಪ, ಅಣ್ಣ, ಅಕ್ಕ, ಅಜ್ಜಿ, ತಾತ</p>
-          <p><strong>Home practice:</strong> name 3 family members in Kannada.</p>
+          <p class="theme">Theme: people children speak to most</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Identify close family members in Kannada</li>
+                <li>Answer simple family questions</li>
+                <li>Use <strong>ನನ್ನ ...</strong> with support</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Vocabulary</h4>
+              <p>ಅಮ್ಮ, ಅಪ್ಪ, ಅಣ್ಣ, ಅಕ್ಕ, ಅಜ್ಜಿ, ತಾತ</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Warm up with greetings and color review.</li>
+                <li>Show family picture cards and name each one.</li>
+                <li>Repeat and point.</li>
+                <li>Match spoken words to pictures.</li>
+                <li>Invite children to share one family word.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ಇದು ಯಾರು?</strong><br><strong>ಇದು ಅಮ್ಮ</strong></p>
+              <p><strong>Quick check:</strong> child identifies <strong>ಅಮ್ಮ</strong> and <strong>ಅಪ್ಪ</strong>.</p>
+              <p><strong>Home practice:</strong> name 3 family members in Kannada.</p>
+            </section>
+          </div>
         </article>
 
         <article class="week-card">
           <span class="label">Week 4</span>
           <h3>Fruits We Know</h3>
-          <p><strong>Goal:</strong> name familiar fruits and use <strong>ನನಗೆ ... ಇಷ್ಟ</strong>.</p>
-          <p><strong>Vocabulary:</strong> ಸೇಬು, ಬಾಳೆಹಣ್ಣು, ದ್ರಾಕ್ಷಿ, ಮಾವು, ಕಿತ್ತಳೆ</p>
-          <p><strong>Home practice:</strong> name fruits during snack time.</p>
+          <p class="theme">Theme: favorite fruits and simple preferences</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Name 4-5 familiar fruits</li>
+                <li>Begin using <strong>ನನಗೆ ... ಇಷ್ಟ</strong></li>
+                <li>Answer simple choice questions</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Vocabulary</h4>
+              <p>ಸೇಬು, ಬಾಳೆಹಣ್ಣು, ದ್ರಾಕ್ಷಿ, ಮಾವು, ಕಿತ್ತಳೆ</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Review family words quickly.</li>
+                <li>Introduce fruits with pictures or toys.</li>
+                <li>Let children choose a fruit and name it.</li>
+                <li>Model <strong>ನನಗೆ ... ಇಷ್ಟ</strong>.</li>
+                <li>Do a favorite fruit circle share.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ನಿನಗೆ ಏನು ಇಷ್ಟ?</strong><br><strong>ನನಗೆ ಬಾಳೆಹಣ್ಣು ಇಷ್ಟ</strong></p>
+              <p><strong>Quick check:</strong> child names one fruit and completes the sentence with support.</p>
+              <p><strong>Home practice:</strong> name fruits during snack time.</p>
+            </section>
+          </div>
         </article>
 
         <article class="week-card">
           <span class="label">Week 5</span>
           <h3>Animals and Sounds</h3>
-          <p><strong>Goal:</strong> identify common animals and enjoy sound-based speaking games.</p>
-          <p><strong>Vocabulary:</strong> ನಾಯಿ, ಬೆಕ್ಕು, ಆನೆ, ಹಸು, ಹಕ್ಕಿ, ಮೀನು</p>
-          <p><strong>Home practice:</strong> point to animals in books and say the Kannada word.</p>
+          <p class="theme">Theme: common animals and playful sound cues</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Identify 4-6 common animals</li>
+                <li>Connect animal names with movement or sounds</li>
+                <li>Speak more freely through play</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Vocabulary</h4>
+              <p>ನಾಯಿ, ಬೆಕ್ಕು, ಆನೆ, ಹಸು, ಹಕ್ಕಿ, ಮೀನು</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Review fruit words.</li>
+                <li>Show and name each animal card.</li>
+                <li>Repeat with sound or movement.</li>
+                <li>Play "guess the animal."</li>
+                <li>Close with each child naming one animal.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ಇದು ಯಾವ ಪ್ರಾಣಿ?</strong><br><strong>ಇದು ನಾಯಿ</strong></p>
+              <p><strong>Quick check:</strong> child identifies at least 3 animals.</p>
+              <p><strong>Home practice:</strong> say Kannada animal words while reading books.</p>
+            </section>
+          </div>
         </article>
 
         <article class="week-card">
           <span class="label">Week 6</span>
           <h3>Body Parts</h3>
-          <p><strong>Goal:</strong> understand and say common body parts, and follow action instructions.</p>
-          <p><strong>Vocabulary:</strong> ಕಣ್ಣು, ಮೂಗು, ಬಾಯಿ, ಕಿವಿ, ಕೈ, ಕಾಲು</p>
-          <p><strong>Home practice:</strong> point to body parts and name them in Kannada.</p>
+          <p class="theme">Theme: body words through action</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Say common body parts</li>
+                <li>Follow action commands in Kannada</li>
+                <li>Join physically even if speech is limited</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Vocabulary</h4>
+              <p>ಕಣ್ಣು, ಮೂಗು, ಬಾಯಿ, ಕಿವಿ, ಕೈ, ಕಾಲು</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Review animals with a movement warm-up.</li>
+                <li>Model each body part by pointing.</li>
+                <li>Children touch and repeat.</li>
+                <li>Play a Kannada Simon Says game.</li>
+                <li>Finish with partner pointing commands.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ಕಣ್ಣು ತೋರಿಸು</strong><br><strong>ಕೈ ತಟ್ಟೋಣ</strong></p>
+              <p><strong>Quick check:</strong> child follows 2 commands and says 2 body-part words.</p>
+              <p><strong>Home practice:</strong> point and say body parts at home.</p>
+            </section>
+          </div>
         </article>
 
         <article class="week-card">
           <span class="label">Week 7</span>
           <h3>Food and Tastes</h3>
-          <p><strong>Goal:</strong> talk about favorite foods and begin expressing likes.</p>
-          <p><strong>Vocabulary:</strong> ಊಟ, ಹಾಲು, ಅನ್ನ, ದೋಸೆ, ಸಿಹಿ, ಖಾರ</p>
-          <p><strong>Home practice:</strong> say one Kannada food word during mealtime.</p>
+          <p class="theme">Theme: familiar foods and simple opinions</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Talk about favorite foods</li>
+                <li>Use simple taste or preference words</li>
+                <li>Answer personal questions with support</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Vocabulary</h4>
+              <p>ಊಟ, ಹಾಲು, ಅನ್ನ, ದೋಸೆ, ಸಿಹಿ, ಖಾರ</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Review body parts quickly.</li>
+                <li>Introduce food picture cards.</li>
+                <li>Model <strong>ನನಗೆ ... ಇಷ್ಟ</strong>.</li>
+                <li>Sort foods into simple groups.</li>
+                <li>Do a favorite food circle share.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ನಿನಗೆ ಏನು ಇಷ್ಟ?</strong><br><strong>ಇದು ಸಿಹಿ</strong></p>
+              <p><strong>Quick check:</strong> child names one food and attempts a preference sentence.</p>
+              <p><strong>Home practice:</strong> say one Kannada food word during mealtime.</p>
+            </section>
+          </div>
         </article>
 
         <article class="week-card">
           <span class="label">Week 8</span>
           <h3>Review and Celebration</h3>
-          <p><strong>Goal:</strong> celebrate progress and review greetings, colors, family, fruits, animals, body parts, and food.</p>
-          <p><strong>Home practice:</strong> ask the child to teach one song, one family word, and one favorite sentence from class.</p>
+          <p class="theme">Theme: confidence, recall, and joyful speaking</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>Objectives</h4>
+              <ul class="checklist">
+                <li>Review Weeks 1-7</li>
+                <li>Notice each child’s speaking comfort</li>
+                <li>Celebrate progress without pressure</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>Review Areas</h4>
+              <p>Greetings, colors, family, fruits, animals, body parts, and food</p>
+            </section>
+            <section class="lesson-block">
+              <h4>Class Flow</h4>
+              <ol>
+                <li>Begin with the hello song.</li>
+                <li>Set up mixed review stations.</li>
+                <li>Rotate children through naming and matching tasks.</li>
+                <li>Invite a tiny share from each child.</li>
+                <li>Make quick teacher notes after class.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>Teacher Prompts</h4>
+              <p><strong>ನನ್ನ ಹೆಸರು ...</strong><br><strong>ನನಗೆ ... ಇಷ್ಟ</strong></p>
+              <p><strong>Quick check:</strong> what can the child now say independently?</p>
+              <p><strong>Home practice:</strong> ask the child to teach one song and one sentence from class.</p>
+            </section>
+          </div>
         </article>
       </section>
     </main>

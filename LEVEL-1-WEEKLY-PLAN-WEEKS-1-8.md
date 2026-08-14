@@ -1,34 +1,51 @@
-# Level 1 Weekly Plan: Weeks 1-8
+# Level 1 Teacher-Ready Weekly Plan: Weeks 1-8
 
 Level: `ಮಾತು ಕಲಿ`
 
 Audience:
 - children new to Kannada
-- children who understand a little Kannada but are not yet speaking much
+- children who understand some Kannada but are hesitant to speak
 
-Teaching approach:
-- speaking first
-- movement, repetition, songs, and stories
-- no pressure on reading or writing
+Teaching goal:
+- build comfort speaking Kannada with parents and family
+- focus on listening first, speaking next
+- keep reading and writing out of the way for now
 
 Suggested class length: `45 minutes`
 
-Suggested class structure:
-- `10 min` welcome song, greetings, settling in
-- `10 min` theme vocabulary with actions or objects
-- `10 min` speaking practice through games
-- `10 min` story/song/rhyme
-- `5 min` goodbye review and parent handoff
+## Teacher Prep
+
+Materials to keep ready every week:
+- name tags
+- soft ball or bean bag
+- picture cards for the weekly theme
+- crayons and plain paper
+- speaker for songs if needed
+- sticker or stamp for encouragement
+
+Suggested weekly routine:
+- `5 min` arrival and welcome routine
+- `8 min` greeting song and spoken warm-up
+- `10 min` new vocabulary with gestures or objects
+- `10 min` guided speaking game
+- `7 min` story, rhyme, or movement activity
+- `5 min` quick check, goodbye, and parent handoff
+
+Teacher reminders:
+- model first, then ask children to repeat
+- accept one-word answers before expecting full sentences
+- keep corrections gentle and short
+- praise effort, volume, and participation
 
 ## Week 1: Hello Kannada
 
 Theme:
 - greetings and classroom comfort
 
-Goals:
-- feel safe and happy in class
-- hear and repeat basic greetings
-- respond to their own name
+Objectives:
+- children feel safe entering class
+- children respond to their own name
+- children repeat 2-3 Kannada greetings
 
 Vocabulary:
 - ನಮಸ್ಕಾರ
@@ -38,31 +55,43 @@ Vocabulary:
 - ಎದ್ದು ನಿಲ್ಲು
 - ಹೆಸರು
 
-Useful phrases:
+Teacher phrases:
 - ನಿನ್ನ ಹೆಸರು ಏನು?
 - ನನ್ನ ಹೆಸರು ...
-- ಹೇಗಿದ್ದೀಯ?
+- ಬಾ
+- ಕುಳಿತುಕೋ
+- ಎದ್ದು ನಿಲ್ಲು
 
-Activities:
-- welcome circle with name passing game
-- teacher says action, children copy
-- soft ball toss: say your name when you catch
+Materials:
+- name cards
+- soft ball
+- picture card with greeting visuals
 
-Song / rhyme:
-- simple hello or welcome song
+Lesson flow:
+1. Welcome each child by name and say `ನಮಸ್ಕಾರ`.
+2. Sing a simple hello song and wave to each child.
+3. Model `ನನ್ನ ಹೆಸರು ...` and have children repeat with their own names.
+4. Play a ball toss game. Whoever catches says their name.
+5. Give action commands like `ಬಾ`, `ಕುಳಿತುಕೋ`, and `ಎದ್ದು ನಿಲ್ಲು`.
+6. Close with a quick circle where each child says one greeting or repeats after the teacher.
+
+Quick check:
+- does the child respond when their name is called?
+- can the child repeat `ನಮಸ್ಕಾರ` or `ನನ್ನ ಹೆಸರು ...`?
 
 Home practice:
-- ask child to say their name in Kannada
-- greet family with `ನಮಸ್ಕಾರ`
+- greet family members with `ನಮಸ್ಕಾರ`
+- say `ನನ್ನ ಹೆಸರು ...` once a day
 
 ## Week 2: Colors Around Us
 
 Theme:
-- colors
+- colors in familiar objects
 
-Goals:
-- identify and say 4-5 colors
-- answer `ಇದು ಏನು ಬಣ್ಣ?`
+Objectives:
+- children say 4-5 colors
+- children answer `ಇದು ಯಾವ ಬಣ್ಣ?`
+- children connect color words to classroom objects
 
 Vocabulary:
 - ಕೆಂಪು
@@ -71,30 +100,41 @@ Vocabulary:
 - ಹಸಿರು
 - ಬಿಳಿ
 
-Useful phrases:
+Teacher phrases:
 - ಇದು ಯಾವ ಬಣ್ಣ?
 - ಇದು ಕೆಂಪು
 - ಇದು ನೀಲಿ
+- ಹಸಿರು ಹುಡುಕು
 
-Activities:
-- color hunt in the classroom
-- hold up object and say color
-- sorting colored cards into baskets
+Materials:
+- color cards
+- colored classroom objects
+- baskets or bowls for sorting
 
-Song / rhyme:
-- color song with actions
+Lesson flow:
+1. Review greetings from Week 1.
+2. Introduce one color at a time using real objects.
+3. Ask children to repeat each color with a pointing gesture.
+4. Play a classroom color hunt: "Find something red."
+5. Sort cards or objects into color groups.
+6. End with each child holding one object and saying its color with help if needed.
+
+Quick check:
+- can the child point to the correct color?
+- can the child say at least 2 color words independently?
 
 Home practice:
-- point to objects at home and ask the color in Kannada
+- ask the child to name colors of toys, clothes, or fruit at home
 
 ## Week 3: Family Words
 
 Theme:
-- close family
+- people children talk to most
 
-Goals:
-- learn family words children use often
-- answer simple family questions
+Objectives:
+- children identify close family members in Kannada
+- children answer simple family questions
+- children use `ನನ್ನ ...` with support
 
 Vocabulary:
 - ಅಮ್ಮ
@@ -104,31 +144,41 @@ Vocabulary:
 - ಅಜ್ಜಿ
 - ತಾತ
 
-Useful phrases:
+Teacher phrases:
 - ಇದು ಯಾರು?
 - ಇದು ಅಮ್ಮ
 - ನನ್ನ ಅಪ್ಪ
 - ನನ್ನ ಅಜ್ಜಿ
 
-Activities:
+Materials:
 - family picture cards
-- match family member names to photos
-- say one person from your family
+- sample family photos or drawn stick figures
+- chart paper
 
-Story:
-- short family story
+Lesson flow:
+1. Warm up with greetings and color review.
+2. Show one family picture at a time and name it clearly.
+3. Ask children to repeat the word and point.
+4. Use a matching game: picture to spoken word.
+5. Invite children to name one person from their family.
+6. Draw a simple family picture and review all six words.
+
+Quick check:
+- can the child identify `ಅಮ್ಮ` and `ಅಪ್ಪ` reliably?
+- can the child answer `ಇದು ಯಾರು?` with one word?
 
 Home practice:
-- ask child to name 3 family members in Kannada
+- ask the child to name 3 family members in Kannada
 
 ## Week 4: Fruits We Know
 
 Theme:
-- fruits
+- favorite fruits and preferences
 
-Goals:
-- name familiar fruits
-- use `ನನಗೆ ... ಇಷ್ಟ`
+Objectives:
+- children name 4-5 familiar fruits
+- children begin using `ನನಗೆ ... ಇಷ್ಟ`
+- children answer simple choice questions
 
 Vocabulary:
 - ಸೇಬು
@@ -137,15 +187,27 @@ Vocabulary:
 - ಮಾವು
 - ಕಿತ್ತಳೆ
 
-Useful phrases:
+Teacher phrases:
 - ಇದು ಏನು?
-- ನನಗೆ ಬಾಳೆಹಣ್ಣು ಇಷ್ಟ
 - ನಿನಗೆ ಏನು ಇಷ್ಟ?
+- ನನಗೆ ಬಾಳೆಹಣ್ಣು ಇಷ್ಟ
 
-Activities:
-- fruit flashcards
-- pretend shopping game
-- choose favorite fruit and say it aloud
+Materials:
+- fruit flashcards or toy fruits
+- pretend shopping basket
+- sticker dots
+
+Lesson flow:
+1. Quick review of family words.
+2. Introduce each fruit with picture, gesture, and repetition.
+3. Let children "buy" one fruit from the pretend basket and name it.
+4. Model `ನನಗೆ ... ಇಷ್ಟ` several times with different fruits.
+5. Do a favorite fruit circle share.
+6. End with a class vote: which fruit did most children choose?
+
+Quick check:
+- can the child name one fruit independently?
+- can the child complete `ನನಗೆ ... ಇಷ್ಟ` with support?
 
 Home practice:
 - name fruits during snack time
@@ -153,11 +215,12 @@ Home practice:
 ## Week 5: Animals and Sounds
 
 Theme:
-- common animals
+- common animals and playful sound cues
 
-Goals:
-- identify 4-6 animals
-- enjoy sound-based speaking
+Objectives:
+- children identify 4-6 common animals
+- children connect animal names with sounds or movement
+- children speak more freely through play
 
 Vocabulary:
 - ನಾಯಿ
@@ -167,18 +230,28 @@ Vocabulary:
 - ಹಕ್ಕಿ
 - ಮೀನು
 
-Useful phrases:
+Teacher phrases:
+- ಇದು ಯಾವ ಪ್ರಾಣಿ?
 - ಇದು ನಾಯಿ
-- ಇದು ಆನೆ
 - ಯಾರು ಇದು?
+- ನಾಯಿ ಹೇಗೆ ಮಾಡುತ್ತದೆ?
 
-Activities:
-- animal sound guessing game
-- animal movement action game
-- matching toy animals to names
+Materials:
+- animal toys or cards
+- animal sound clips if available
+- open floor space
 
-Song:
-- animal rhyme
+Lesson flow:
+1. Warm up with fruit review.
+2. Show animal cards one by one and name them.
+3. Ask children to repeat while doing a matching movement or sound.
+4. Play "Guess the animal" from sound or movement clues.
+5. Match toy animals to picture cards.
+6. Close with a fast review where each child picks one animal and names it.
+
+Quick check:
+- can the child identify at least 3 animals?
+- does the child attempt the animal word aloud?
 
 Home practice:
 - point to animals in books and say the Kannada word
@@ -186,11 +259,12 @@ Home practice:
 ## Week 6: Body Parts
 
 Theme:
-- body parts
+- body words through action
 
-Goals:
-- understand and say common body parts
-- follow action instructions
+Objectives:
+- children understand and say common body parts
+- children follow simple action commands in Kannada
+- children participate physically even if speaking is limited
 
 Vocabulary:
 - ಕಣ್ಣು
@@ -200,27 +274,41 @@ Vocabulary:
 - ಕೈ
 - ಕಾಲು
 
-Useful phrases:
-- ಇದು ಏನು?
+Teacher phrases:
 - ಕಣ್ಣು ತೋರಿಸು
+- ಮೂಗು ತೋರಿಸು
 - ಕೈ ತಟ್ಟೋಣ
+- ಇದು ಏನು?
 
-Activities:
-- touch and say game
-- Simon Says style listening activity
-- draw a face and label orally
+Materials:
+- mirror if available
+- face outline handout
+- crayons
+
+Lesson flow:
+1. Review animals with a quick movement game.
+2. Model each body part by pointing to yourself first.
+3. Ask children to touch and repeat.
+4. Play a Kannada version of Simon Says.
+5. Give children a face outline and ask them to point while saying the words orally.
+6. End with a fast partner game: "Point to ears," "Point to eyes."
+
+Quick check:
+- can the child follow 2 body-part commands?
+- can the child say at least 2 body-part words?
 
 Home practice:
-- ask child to point to body parts and name them
+- ask the child to point and say body parts at bedtime or bath time
 
 ## Week 7: Food and Tastes
 
 Theme:
-- familiar foods
+- familiar foods and simple opinions
 
-Goals:
-- talk about favorite foods
-- begin expressing likes
+Objectives:
+- children talk about favorite foods
+- children begin using taste or preference words
+- children answer simple personal questions
 
 Vocabulary:
 - ಊಟ
@@ -230,15 +318,28 @@ Vocabulary:
 - ಸಿಹಿ
 - ಖಾರ
 
-Useful phrases:
+Teacher phrases:
 - ನಿನಗೆ ಏನು ಇಷ್ಟ?
 - ನನಗೆ ದೋಸೆ ಇಷ್ಟ
 - ಇದು ಸಿಹಿ
+- ಇದು ಖಾರ
 
-Activities:
-- food picture sort
-- favorite food circle share
-- taste word matching with pretend foods
+Materials:
+- food picture cards
+- pretend plates
+- two sorting labels: `ಸಿಹಿ` and `ಖಾರ`
+
+Lesson flow:
+1. Review body parts with a quick touch-and-say game.
+2. Introduce food words with pictures.
+3. Model `ನನಗೆ ... ಇಷ್ಟ` and have children repeat with a chosen food.
+4. Sort food pictures into pretend groups.
+5. Run a circle share where each child says one favorite food.
+6. Close with the whole class repeating one full sentence together.
+
+Quick check:
+- can the child name one food word?
+- can the child use `ನನಗೆ ... ಇಷ್ಟ` with prompting?
 
 Home practice:
 - say one Kannada food word during mealtime
@@ -246,12 +347,12 @@ Home practice:
 ## Week 8: Review and Celebration
 
 Theme:
-- review of Weeks 1-7
+- confidence, recall, and joyful speaking
 
-Goals:
-- show confidence using familiar words
-- help teacher observe speaking growth
-- celebrate progress
+Objectives:
+- review Weeks 1-7
+- help the teacher notice each child’s speaking comfort
+- celebrate progress without pressure
 
 Review areas:
 - greetings
@@ -262,22 +363,33 @@ Review areas:
 - body parts
 - food
 
-Activities:
-- rotating review stations
-- show-and-tell with picture prompts
-- mini performance: greeting + one favorite word + one sentence
+Materials:
+- mixed review cards
+- simple station signs
+- stickers or certificates
 
-Useful phrases:
-- ನನ್ನ ಹೆಸರು ...
-- ನನಗೆ ... ಇಷ್ಟ
-- ಇದು ...
+Lesson flow:
+1. Start with the hello song and familiar routine.
+2. Set up 3-4 review stations with mixed picture prompts.
+3. Rotate small groups through naming, matching, and speaking tasks.
+4. Invite each child to do a tiny share: greeting, favorite word, or short sentence.
+5. Give encouragement and celebrate participation.
+6. Make brief teacher notes after class while memory is fresh.
+
+Quick check:
+- what can the child say independently now?
+- does the child respond more quickly than in Week 1?
+- which themes feel strongest and weakest?
 
 Home practice:
-- ask child to teach one song, one family word, and one favorite sentence from class
+- ask the child to teach one song, one family word, and one favorite sentence from class
 
-## Teacher Notes
+## End-of-Cycle Teacher Notes
 
-- Keep repetition high and correction gentle.
-- Use the same classroom routines every week.
-- If children are shy, allow group answers first before individual speaking.
-- Prioritize joyful participation over perfect recall.
+Use these 8 weeks to identify:
+- children who are ready to stay in `ಮಾತು ಕಲಿ`
+- children who may soon be ready for `ಅಕ್ಷರ ಕಲಿ`
+- children who need more listening confidence before more output is expected
+
+Placement signal:
+- if a child can understand routine Kannada, answer simple questions, and attempts short spoken responses, they are progressing well in this level
