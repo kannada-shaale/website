@@ -208,6 +208,23 @@ a {
   color: var(--muted);
 }
 
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-top: 16px;
+}
+
+.weekly-link {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #fff1d6;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .eyebrow {
   display: inline-block;
   margin-bottom: 12px;
@@ -299,6 +316,10 @@ blockquote {
         <div>
           <h1>Curriculum</h1>
           <p>A four-level in-person curriculum designed for expat Kannadiga children and community-based teaching.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="level-1-weekly-plan.html">Level 1 Weekly Plan</a>
+            <a class="button button-secondary" href="level-2-weekly-plan.html">Level 2 Weekly Plan</a>
+          </div>
         </div>
       </div>
     </header>
@@ -316,12 +337,18 @@ blockquote {
           <article class="card">
             <h3>Level 1 — ಮಾತು ಕಲಿ</h3>
             <p>No prior Kannada needed. Listening and speaking readiness through songs, routines, and story time.</p>
-            <a href="level-1.html">Open Level 1</a>
+            <div class="card-links">
+              <a href="level-1.html">Open Level 1</a>
+              <a class="weekly-link" href="level-1-weekly-plan.html">8-week plan →</a>
+            </div>
           </article>
           <article class="card">
             <h3>Level 2 — ಅಕ್ಷರ ಕಲಿ</h3>
             <p>Ready for letters, swaras, vyanjanas, and foundational vocabulary building.</p>
-            <a href="level-2.html">Open Level 2</a>
+            <div class="card-links">
+              <a href="level-2.html">Open Level 2</a>
+              <a class="weekly-link" href="level-2-weekly-plan.html">8-week plan →</a>
+            </div>
           </article>
           <article class="card">
             <h3>Level 3 — ಪದ ಕಲಿ</h3>

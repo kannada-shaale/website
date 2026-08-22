@@ -209,6 +209,23 @@ a {
   color: var(--muted);
 }
 
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-top: 16px;
+}
+
+.weekly-link {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #fff1d6;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .eyebrow {
   display: inline-block;
   margin-bottom: 12px;
@@ -324,12 +341,18 @@ blockquote {
           <article class="card">
             <h3>Level 1</h3>
             <p>Introduction to Kannada through sounds, simple words, songs, and everyday conversation.</p>
-            <a href="level-1.html">Explore Level 1</a>
+            <div class="card-links">
+              <a href="level-1.html">Explore Level 1</a>
+              <a class="weekly-link" href="level-1-weekly-plan.html">Weekly plan →</a>
+            </div>
           </article>
           <article class="card">
             <h3>Level 2</h3>
             <p>Building vocabulary, early literacy, and confidence in listening and speaking.</p>
-            <a href="level-2.html">Explore Level 2</a>
+            <div class="card-links">
+              <a href="level-2.html">Explore Level 2</a>
+              <a class="weekly-link" href="level-2-weekly-plan.html">Weekly plan →</a>
+            </div>
           </article>
           <article class="card">
             <h3>Level 3</h3>

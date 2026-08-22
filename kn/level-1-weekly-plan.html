@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="kn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ಹಂತ 1 ವಾರವಾರದ ಯೋಜನೆ | ಹೊಸ ಚಿಗುರು</title>
+    <style>
+:root {
+  --bg: #f6f7f8;
+  --panel: #ffffff;
+  --soft: #fffdfa;
+  --ink: #1f2933;
+  --muted: #5f6b76;
+  --accent: #d97706;
+  --accent-dark: #b45309;
+  --border: #d9dee3;
+  --hero-a: #1f2933;
+  --hero-b: #31424f;
+  --hero-c: #3b5362;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+}
+a { color: var(--accent-dark); }
+.site-header {
+  background:
+    linear-gradient(120deg, rgba(255,255,255,0.04) 15%, transparent 15%, transparent 45%, rgba(255,255,255,0.03) 45%, rgba(255,255,255,0.03) 60%, transparent 60%),
+    linear-gradient(135deg, var(--hero-a), var(--hero-b) 55%, var(--hero-c));
+  color: #fff7ed;
+}
+.nav-wrap, .page-wrap, .footer-wrap {
+  width: min(1100px, calc(100% - 48px));
+  margin: 0 auto;
+}
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0 12px;
+  gap: 20px;
+}
+.brand { font-size: 1.1rem; font-weight: 700; }
+.nav { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+.nav a { color: #fff7ed; text-decoration: none; font-weight: 600; }
+.hero { padding: 72px 0 96px; }
+.hero h1 { margin: 0 0 14px; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.15; }
+.hero p { margin: 0; max-width: 760px; font-size: 1.08rem; color: #f7efe3; }
+.page-wrap { padding: 48px 0 72px; }
+.section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 30px rgba(31,41,51,0.05);
+}
+.section h2 { margin: 0 0 14px; font-size: 1.6rem; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.mini-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  background: var(--soft);
+}
+.mini-card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+.mini-card p,
+.mini-card ul {
+  margin: 0;
+  color: var(--muted);
+}
+.mini-card ul,
+.checklist,
+.week-list {
+  padding-left: 20px;
+}
+.week-card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+  background: var(--soft);
+  margin-top: 18px;
+}
+.week-card h3 { margin: 0 0 10px; font-size: 1.3rem; }
+.label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-dark);
+}
+.theme {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.lesson-block {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  background: #ffffff;
+}
+.lesson-block h4 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+.lesson-block p,
+.lesson-block ul,
+.lesson-block ol {
+  margin: 0;
+}
+.lesson-block ul,
+.lesson-block ol {
+  padding-left: 20px;
+}
+.footer { border-top: 1px solid var(--border); color: var(--muted); }
+.footer-wrap { padding: 24px 0 40px; }
+@media (max-width: 760px) {
+  .nav-wrap { flex-direction: column; align-items: flex-start; }
+  .page-wrap, .hero { padding-top: 36px; }
+}
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html">ಹೊಸ ಚಿಗುರು</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">ಮುಖ್ಯಪುಟ</a>
+          <a href="curriculum.html">ಪಠ್ಯಕ್ರಮ</a>
+          <a href="resources.html">ಸಂಪನ್ಮೂಲಗಳು</a>
+          <a href="locations.html">ಸ್ಥಳಗಳು</a>
+          <a href="partner.html">ಸಹಭಾಗಿ</a>
+        </nav>
+      </div>
+      <div class="nav-wrap hero">
+        <div>
+          <h1>ಹಂತ 1 ವಾರವಾರದ ಯೋಜನೆ</h1>
+          <p>ಮಾತು ಕಲಿ ಹಂತದ ಮಕ್ಕಳಿಗೆ ಶಿಕ್ಷಕ-ಸಿದ್ಧ 8 ವಾರಗಳ ತರಗತಿ ಯೋಜನೆ. ಕೇಳುವಿಕೆ, ಮಾತನಾಡುವಿಕೆ, ಆಟ, ಹಾಡು, ಮತ್ತು ಆತ್ಮವಿಶ್ವಾಸದ ಮೇಲೆ ಒತ್ತು.</p>
+        </div>
+      </div>
+    </header>
+    <main class="page-wrap">
+      <section class="section">
+        <h2>ಶಿಕ್ಷಕರಿಗೆ ತ್ವರಿತ ನೋಟ</h2>
+        <div class="grid">
+          <article class="mini-card">
+            <h3>ಯಾರಿಗೆ ಸೂಕ್ತ</h3>
+            <ul class="week-list">
+              <li>ಕನ್ನಡಕ್ಕೆ ಹೊಸದಾಗಿ ಬರುತ್ತಿರುವ ಮಕ್ಕಳು</li>
+              <li>ಸ್ವಲ್ಪ ಅರ್ಥಮಾಡಿಕೊಂಡರೂ ಹೆಚ್ಚು ಮಾತನಾಡದ ಮಕ್ಕಳು</li>
+            </ul>
+          </article>
+          <article class="mini-card">
+            <h3>ಬೋಧನಾ ಕೇಂದ್ರೀಕರಣ</h3>
+            <ul class="week-list">
+              <li>ಮೊದಲು ಕೇಳುವಿಕೆ</li>
+              <li>ನಂತರ ಮಾತನಾಡುವಿಕೆ</li>
+              <li>ಪರಿಪೂರ್ಣತೆಗೆ ಬದಲು ಸಂತೋಷದ ಪುನರವಲೋಕನ</li>
+            </ul>
+          </article>
+          <article class="mini-card">
+            <h3>ತರಗತಿ ಹರಿವು</h3>
+            <ul class="week-list">
+              <li>5 ನಿಮಿಷ: ಆಗಮನ ಮತ್ತು ಸ್ವಾಗತ</li>
+              <li>8 ನಿಮಿಷ: ಹಾಡು ಮತ್ತು ಮಾತಿನ ಪುನರವಲೋಕನ</li>
+              <li>10 ನಿಮಿಷ: ಹೊಸ ಪದಗಳು</li>
+              <li>10 ನಿಮಿಷ: ಮಾತಿನ ಆಟ</li>
+              <li>7 ನಿಮಿಷ: ಕಥೆ, ಪದ್ಯ, ಅಥವಾ ಚಟುವಟಿಕೆ</li>
+              <li>5 ನಿಮಿಷ: ಸಮಾಪ್ತಿ ಮತ್ತು ಪೋಷಕರಿಗೆ ತಿಳಿವು</li>
+            </ul>
+          </article>
+          <article class="mini-card">
+            <h3>ಸಿದ್ಧವಾಗಿರಲಿ</h3>
+            <ul class="week-list">
+              <li>ಹೆಸರಿನ ಚೀಟಿಗಳು</li>
+              <li>ಚಿತ್ರಪಟಗಳು</li>
+              <li>ಮೃದುವಾದ ಬಾಲ್ ಅಥವಾ ಬೀನ್ ಬ್ಯಾಗ್</li>
+              <li>ಕ್ರೆಯಾನ್ ಮತ್ತು ಕಾಗದ</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>1ರಿಂದ 8ನೇ ವಾರ</h2>
+
+        <article class="week-card">
+          <span class="label">ವಾರ 1</span>
+          <h3>ಕನ್ನಡಕ್ಕೆ ಸ್ವಾಗತ</h3>
+          <p class="theme">ವಿಷಯ: ಶುಭಾಶಯಗಳು ಮತ್ತು ತರಗತಿ ಆರಾಮ</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>ಗುರಿಗಳು</h4>
+              <ul class="checklist">
+                <li>ಮಕ್ಕಳು ತರಗತಿಯಲ್ಲಿ ಆರಾಮವಾಗುವುದು</li>
+                <li>ತಮ್ಮ ಹೆಸರಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುವುದು</li>
+                <li>ಮೂಲಭೂತ ಶುಭಾಶಯಗಳನ್ನು ಪುನರಾವರ್ತಿಸುವುದು</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>ಪದಗಳು</h4>
+              <p>ನಮಸ್ಕಾರ, ಹಾಯ್, ಬಾ, ಕುಳಿತುಕೋ, ಎದ್ದು ನಿಲ್ಲು, ಹೆಸರು</p>
+            </section>
+            <section class="lesson-block">
+              <h4>ತರಗತಿ ಕ್ರಮ</h4>
+              <ol>
+                <li>ಪ್ರತಿ ಮಗುವಿಗೂ <strong>ನಮಸ್ಕಾರ</strong> ಹೇಳಿ ಸ್ವಾಗತಿಸಿ.</li>
+                <li>ಒಂದು ಸರಳ ಸ್ವಾಗತ ಹಾಡು ಹಾಡಿ.</li>
+                <li><strong>ನನ್ನ ಹೆಸರು ...</strong> ಮಾದರಿಯಾಗಿ ಹೇಳಿ.</li>
+                <li>ಬಾಲ್ ಎಸೆದು ಹೆಸರು ಹೇಳುವ ಆಟ ಆಡಿಸಿ.</li>
+                <li>ಸರಳ ಕ್ರಿಯಾಪದ ಸೂಚನೆಗಳನ್ನು ಕೊಡಿ.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>ಶಿಕ್ಷಕರ ಮಾತುಗಳು</h4>
+              <p><strong>ನಿನ್ನ ಹೆಸರು ಏನು?</strong><br><strong>ನನ್ನ ಹೆಸರು ...</strong></p>
+              <p><strong>ವೇಗದ ಪರಿಶೀಲನೆ:</strong> ಮಗು ಹೆಸರಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತದೆಯೇ? ಒಂದು ಶುಭಾಶಯವನ್ನಾದರೂ ಹೇಳುತ್ತದೆಯೇ?</p>
+              <p><strong>ಮನೆಗೆ ಅಭ್ಯಾಸ:</strong> ಮನೆಯವರನ್ನು <strong>ನಮಸ್ಕಾರ</strong> ಎಂದು ಬರಮಾಡಿಕೊಳ್ಳುವುದು.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <span class="label">ವಾರ 2</span>
+          <h3>ನಮ್ಮ ಸುತ್ತಲಿನ ಬಣ್ಣಗಳು</h3>
+          <p class="theme">ವಿಷಯ: ಪರಿಚಿತ ವಸ್ತುಗಳ ಬಣ್ಣಗಳು</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>ಗುರಿಗಳು</h4>
+              <ul class="checklist">
+                <li>4-5 ಬಣ್ಣಗಳನ್ನು ಹೇಳುವುದು</li>
+                <li><strong>ಇದು ಯಾವ ಬಣ್ಣ?</strong> ಗೆ ಉತ್ತರಿಸುವುದು</li>
+                <li>ಬಣ್ಣವನ್ನು ನಿಜವಾದ ವಸ್ತುವಿಗೆ ಹೊಂದಿಸುವುದು</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>ಪದಗಳು</h4>
+              <p>ಕೆಂಪು, ನೀಲಿ, ಹಳದಿ, ಹಸಿರು, ಬಿಳಿ</p>
+            </section>
+            <section class="lesson-block">
+              <h4>ತರಗತಿ ಕ್ರಮ</h4>
+              <ol>
+                <li>ಮೊದಲ ವಾರದ ಶುಭಾಶಯಗಳ ಪುನರವಲೋಕನ ಮಾಡಿ.</li>
+                <li>ಪ್ರತಿ ಬಣ್ಣವನ್ನು ಒಂದು ವಸ್ತುವಿನೊಂದಿಗೆ ಪರಿಚಯಿಸಿ.</li>
+                <li>ತರಗತಿಯಲ್ಲಿ ಬಣ್ಣ ಹುಡುಕುವ ಆಟ ಆಡಿಸಿ.</li>
+                <li>ವಸ್ತುಗಳನ್ನು ಬಣ್ಣದ ಪ್ರಕಾರ ಗುಂಪುಮಾಡಿ.</li>
+                <li>ಪ್ರತಿ ಮಗು ಒಂದು ಬಣ್ಣವನ್ನು ಹೇಳಿ ಮುಗಿಸಲಿ.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>ಶಿಕ್ಷಕರ ಮಾತುಗಳು</h4>
+              <p><strong>ಇದು ಯಾವ ಬಣ್ಣ?</strong><br><strong>ಇದು ಕೆಂಪು</strong></p>
+              <p><strong>ವೇಗದ ಪರಿಶೀಲನೆ:</strong> ಮಗು ಸರಿಯಾದ ಬಣ್ಣ ತೋರಿಸುತ್ತದೆಯೇ? ಕನಿಷ್ಠ 2 ಬಣ್ಣ ಹೇಳುತ್ತದೆಯೇ?</p>
+              <p><strong>ಮನೆಗೆ ಅಭ್ಯಾಸ:</strong> ಆಟಿಕೆ, ಬಟ್ಟೆ, ಹಣ್ಣುಗಳ ಬಣ್ಣಗಳನ್ನು ಹೇಳುವುದು.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <span class="label">ವಾರ 3</span>
+          <h3>ಕುಟುಂಬದ ಪದಗಳು</h3>
+          <p class="theme">ವಿಷಯ: ಮಕ್ಕಳು ಹೆಚ್ಚು ಮಾತನಾಡುವ ಮನೆಯವರು</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>ಗುರಿಗಳು</h4>
+              <ul class="checklist">
+                <li>ಕುಟುಂಬದ ಸದಸ್ಯರನ್ನು ಕನ್ನಡದಲ್ಲಿ ಗುರುತಿಸುವುದು</li>
+                <li>ಸರಳ ಕುಟುಂಬ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸುವುದು</li>
+                <li><strong>ನನ್ನ ...</strong> ಬಳಕೆ ಪ್ರಾರಂಭಿಸುವುದು</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>ಪದಗಳು</h4>
+              <p>ಅಮ್ಮ, ಅಪ್ಪ, ಅಣ್ಣ, ಅಕ್ಕ, ಅಜ್ಜಿ, ತಾತ</p>
+            </section>
+            <section class="lesson-block">
+              <h4>ತರಗತಿ ಕ್ರಮ</h4>
+              <ol>
+                <li>ಶುಭಾಶಯ ಮತ್ತು ಬಣ್ಣಗಳ ಪುನರವಲೋಕನ ಮಾಡಿ.</li>
+                <li>ಕುಟುಂಬದ ಚಿತ್ರಪಟಗಳನ್ನು ತೋರಿಸಿ ಹೆಸರು ಹೇಳಿ.</li>
+                <li>ಮಕ್ಕಳಿಂದ ಪುನರಾವರ್ತನೆ ಮಾಡಿಸಿ.</li>
+                <li>ಚಿತ್ರಕ್ಕೆ ಪದ ಹೊಂದಿಸುವ ಆಟ ಆಡಿಸಿ.</li>
+                <li>ಪ್ರತಿ ಮಗು ಒಂದು ಕುಟುಂಬ ಪದ ಹೇಳಲಿ.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>ಶಿಕ್ಷಕರ ಮಾತುಗಳು</h4>
+              <p><strong>ಇದು ಯಾರು?</strong><br><strong>ಇದು ಅಮ್ಮ</strong></p>
+              <p><strong>ವೇಗದ ಪರಿಶೀಲನೆ:</strong> ಮಗು <strong>ಅಮ್ಮ</strong>, <strong>ಅಪ್ಪ</strong> ಅನ್ನು ಗುರುತಿಸುತ್ತದೆಯೇ?</p>
+              <p><strong>ಮನೆಗೆ ಅಭ್ಯಾಸ:</strong> 3 ಕುಟುಂಬ ಸದಸ್ಯರ ಹೆಸರನ್ನು ಕನ್ನಡದಲ್ಲಿ ಹೇಳುವುದು.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <span class="label">ವಾರ 4</span>
+          <h3>ನಮಗೆ ಪರಿಚಿತ ಹಣ್ಣುಗಳು</h3>
+          <p class="theme">ವಿಷಯ: ಇಷ್ಟದ ಹಣ್ಣುಗಳು ಮತ್ತು ಆಯ್ಕೆಗಳು</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>ಗುರಿಗಳು</h4>
+              <ul class="checklist">
+                <li>4-5 ಪರಿಚಿತ ಹಣ್ಣುಗಳ ಹೆಸರು ಹೇಳುವುದು</li>
+                <li><strong>ನನಗೆ ... ಇಷ್ಟ</strong> ಬಳಕೆ ಆರಂಭಿಸುವುದು</li>
+                <li>ಸರಳ ಆಯ್ಕೆ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸುವುದು</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>ಪದಗಳು</h4>
+              <p>ಸೇಬು, ಬಾಳೆಹಣ್ಣು, ದ್ರಾಕ್ಷಿ, ಮಾವು, ಕಿತ್ತಳೆ</p>
+            </section>
+            <section class="lesson-block">
+              <h4>ತರಗತಿ ಕ್ರಮ</h4>
+              <ol>
+                <li>ಕುಟುಂಬದ ಪದಗಳ ಪುನರವಲೋಕನ ಮಾಡಿ.</li>
+                <li>ಚಿತ್ರ ಅಥವಾ ಆಟಿಕೆ ಹಣ್ಣುಗಳ ಮೂಲಕ ಪರಿಚಯಿಸಿ.</li>
+                <li>ಮಕ್ಕಳಿಗೆ ಒಂದು ಹಣ್ಣು ಆಯ್ಕೆ ಮಾಡಿ ಹೇಳಲು ಹೇಳಿ.</li>
+                <li><strong>ನನಗೆ ... ಇಷ್ಟ</strong> ಮಾದರಿ ನೀಡಿ.</li>
+                <li>ವೃತ್ತಾಕಾರ ಹಂಚಿಕೆಯಲ್ಲಿ ಎಲ್ಲರೂ ಹೇಳಲಿ.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>ಶಿಕ್ಷಕರ ಮಾತುಗಳು</h4>
+              <p><strong>ನಿನಗೆ ಏನು ಇಷ್ಟ?</strong><br><strong>ನನಗೆ ಬಾಳೆಹಣ್ಣು ಇಷ್ಟ</strong></p>
+              <p><strong>ವೇಗದ ಪರಿಶೀಲನೆ:</strong> ಮಗು ಒಂದು ಹಣ್ಣಿನ ಹೆಸರನ್ನಾದರೂ ಹೇಳುತ್ತದೆಯೇ?</p>
+              <p><strong>ಮನೆಗೆ ಅಭ್ಯಾಸ:</strong> ತಿಂಡಿವೇಳೆಯಲ್ಲಿ ಹಣ್ಣುಗಳ ಹೆಸರನ್ನು ಹೇಳುವುದು.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <span class="label">ವಾರ 5</span>
+          <h3>ಪ್ರಾಣಿಗಳು ಮತ್ತು ಅವುಗಳ ಧ್ವನಿಗಳು</h3>
+          <p class="theme">ವಿಷಯ: ಸಾಮಾನ್ಯ ಪ್ರಾಣಿಗಳು ಮತ್ತು ಆಟದ ಮೂಲಕ ಮಾತು</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>ಗುರಿಗಳು</h4>
+              <ul class="checklist">
+                <li>4-6 ಸಾಮಾನ್ಯ ಪ್ರಾಣಿಗಳನ್ನು ಗುರುತಿಸುವುದು</li>
+                <li>ಹೆಸರನ್ನು ಧ್ವನಿ ಅಥವಾ ಚಲನೆಗೆ ಹೊಂದಿಸುವುದು</li>
+                <li>ಆಟದ ಮೂಲಕ ಹೆಚ್ಚು ಮಾತನಾಡಲು ಪ್ರಯತ್ನಿಸುವುದು</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>ಪದಗಳು</h4>
+              <p>ನಾಯಿ, ಬೆಕ್ಕು, ಆನೆ, ಹಸು, ಹಕ್ಕಿ, ಮೀನು</p>
+            </section>
+            <section class="lesson-block">
+              <h4>ತರಗತಿ ಕ್ರಮ</h4>
+              <ol>
+                <li>ಹಣ್ಣುಗಳ ಪುನರವಲೋಕನ ಮಾಡಿ.</li>
+                <li>ಪ್ರತಿ ಪ್ರಾಣಿಯ ಚಿತ್ರವನ್ನು ತೋರಿಸಿ ಹೆಸರು ಹೇಳಿ.</li>
+                <li>ಧ್ವನಿ ಅಥವಾ ಚಲನೆಯೊಂದಿಗೆ ಪುನರಾವರ್ತಿಸಿ.</li>
+                <li>"ಯಾವ ಪ್ರಾಣಿ?" ಆಟ ಆಡಿಸಿ.</li>
+                <li>ಪ್ರತಿ ಮಗು ಒಂದು ಪ್ರಾಣಿಯ ಹೆಸರನ್ನು ಹೇಳಲಿ.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>ಶಿಕ್ಷಕರ ಮಾತುಗಳು</h4>
+              <p><strong>ಇದು ಯಾವ ಪ್ರಾಣಿ?</strong><br><strong>ಇದು ನಾಯಿ</strong></p>
+              <p><strong>ವೇಗದ ಪರಿಶೀಲನೆ:</strong> ಮಗು ಕನಿಷ್ಠ 3 ಪ್ರಾಣಿಗಳ ಹೆಸರು ಹೇಳುತ್ತದೆಯೇ?</p>
+              <p><strong>ಮನೆಗೆ ಅಭ್ಯಾಸ:</strong> ಪುಸ್ತಕದಲ್ಲಿರುವ ಪ್ರಾಣಿಗಳನ್ನು ಕನ್ನಡದಲ್ಲಿ ಹೇಳುವುದು.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <span class="label">ವಾರ 6</span>
+          <h3>ದೇಹದ ಭಾಗಗಳು</h3>
+          <p class="theme">ವಿಷಯ: ಕ್ರಿಯೆಗಳ ಮೂಲಕ ದೇಹದ ಪದಗಳು</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>ಗುರಿಗಳು</h4>
+              <ul class="checklist">
+                <li>ಸಾಮಾನ್ಯ ದೇಹದ ಭಾಗಗಳನ್ನು ಹೇಳುವುದು</li>
+                <li>ಕನ್ನಡ ಸೂಚನೆಗಳನ್ನು ಅನುಸರಿಸುವುದು</li>
+                <li>ಮಾತು ಕಡಿಮೆಯಿದ್ದರೂ ಭಾಗವಹಿಸುವುದು</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>ಪದಗಳು</h4>
+              <p>ಕಣ್ಣು, ಮೂಗು, ಬಾಯಿ, ಕಿವಿ, ಕೈ, ಕಾಲು</p>
+            </section>
+            <section class="lesson-block">
+              <h4>ತರಗತಿ ಕ್ರಮ</h4>
+              <ol>
+                <li>ಪ್ರಾಣಿಗಳ ಚಟುವಟಿಕೆಯಿಂದ ಆರಂಭಿಸಿ.</li>
+                <li>ದೇಹದ ಭಾಗಗಳನ್ನು ತೋರಿಸಿ ಹೆಸರು ಹೇಳಿ.</li>
+                <li>ಮಕ್ಕಳಿಂದ ತೋರಿಸಿ ಪುನರಾವರ್ತನೆ ಮಾಡಿಸಿ.</li>
+                <li>ಕನ್ನಡ Simon Says ಆಟ ಆಡಿಸಿ.</li>
+                <li>ಜೋಡಿಗಳಾಗಿ ತೋರಿಸುವ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಮುಗಿಸಿ.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>ಶಿಕ್ಷಕರ ಮಾತುಗಳು</h4>
+              <p><strong>ಕಣ್ಣು ತೋರಿಸು</strong><br><strong>ಕೈ ತಟ್ಟೋಣ</strong></p>
+              <p><strong>ವೇಗದ ಪರಿಶೀಲನೆ:</strong> ಮಗು 2 ಸೂಚನೆಗಳನ್ನು ಅನುಸರಿಸುತ್ತದೆಯೇ? 2 ಪದಗಳನ್ನು ಹೇಳುತ್ತದೆಯೇ?</p>
+              <p><strong>ಮನೆಗೆ ಅಭ್ಯಾಸ:</strong> ಮನೆಯಲ್ಲಿ ದೇಹದ ಭಾಗಗಳನ್ನು ತೋರಿಸಿ ಹೇಳುವುದು.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <span class="label">ವಾರ 7</span>
+          <h3>ಆಹಾರ ಮತ್ತು ರುಚಿಗಳು</h3>
+          <p class="theme">ವಿಷಯ: ಪರಿಚಿತ ಆಹಾರಗಳು ಮತ್ತು ಇಷ್ಟ-ಅನಿಷ್ಟಗಳು</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>ಗುರಿಗಳು</h4>
+              <ul class="checklist">
+                <li>ಇಷ್ಟದ ಆಹಾರಗಳ ಬಗ್ಗೆ ಮಾತನಾಡುವುದು</li>
+                <li>ಸರಳ ಅಭಿಪ್ರಾಯ ಪದಗಳನ್ನು ಬಳಸುವುದು</li>
+                <li>ವೈಯಕ್ತಿಕ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸಲು ಪ್ರಯತ್ನಿಸುವುದು</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>ಪದಗಳು</h4>
+              <p>ಊಟ, ಹಾಲು, ಅನ್ನ, ದೋಸೆ, ಸಿಹಿ, ಖಾರ</p>
+            </section>
+            <section class="lesson-block">
+              <h4>ತರಗತಿ ಕ್ರಮ</h4>
+              <ol>
+                <li>ದೇಹದ ಭಾಗಗಳ ತ್ವರಿತ ಪುನರವಲೋಕನ ಮಾಡಿ.</li>
+                <li>ಆಹಾರದ ಚಿತ್ರಪಟಗಳನ್ನು ಪರಿಚಯಿಸಿ.</li>
+                <li><strong>ನನಗೆ ... ಇಷ್ಟ</strong> ಮಾದರಿ ನೀಡಿ.</li>
+                <li>ಆಹಾರವನ್ನು ಗುಂಪುಮಾಡುವ ಆಟ ಆಡಿಸಿ.</li>
+                <li>ವೃತ್ತದಲ್ಲಿ ಇಷ್ಟದ ಆಹಾರ ಹಂಚಿಕೊಳ್ಳುವ ಮೂಲಕ ಮುಗಿಸಿ.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>ಶಿಕ್ಷಕರ ಮಾತುಗಳು</h4>
+              <p><strong>ನಿನಗೆ ಏನು ಇಷ್ಟ?</strong><br><strong>ಇದು ಸಿಹಿ</strong></p>
+              <p><strong>ವೇಗದ ಪರಿಶೀಲನೆ:</strong> ಮಗು ಒಂದು ಆಹಾರದ ಪದ ಹೇಳುತ್ತದೆಯೇ?</p>
+              <p><strong>ಮನೆಗೆ ಅಭ್ಯಾಸ:</strong> ಊಟ ಸಮಯದಲ್ಲಿ ಒಂದು ಕನ್ನಡ ಆಹಾರ ಪದ ಬಳಸುವುದು.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="week-card">
+          <span class="label">ವಾರ 8</span>
+          <h3>ಪುನರವಲೋಕನ ಮತ್ತು ಸಂಭ್ರಮ</h3>
+          <p class="theme">ವಿಷಯ: ಆತ್ಮವಿಶ್ವಾಸ, ನೆನಪು, ಮತ್ತು ಸಂತೋಷದ ಮಾತು</p>
+          <div class="lesson-grid">
+            <section class="lesson-block">
+              <h4>ಗುರಿಗಳು</h4>
+              <ul class="checklist">
+                <li>1ರಿಂದ 7ನೇ ವಾರಗಳ ಪದಗಳನ್ನು ಮರುಪರಿಶೀಲಿಸುವುದು</li>
+                <li>ಪ್ರತಿ ಮಗುವಿನ ಮಾತಿನ ಆರಾಮದ ಮಟ್ಟ ಗಮನಿಸುವುದು</li>
+                <li>ಒತ್ತಡವಿಲ್ಲದೆ ಪ್ರಗತಿಯನ್ನು ಸಂಭ್ರಮಿಸುವುದು</li>
+              </ul>
+            </section>
+            <section class="lesson-block">
+              <h4>ಪುನರವಲೋಕನ ಕ್ಷೇತ್ರಗಳು</h4>
+              <p>ಶುಭಾಶಯಗಳು, ಬಣ್ಣಗಳು, ಕುಟುಂಬ, ಹಣ್ಣುಗಳು, ಪ್ರಾಣಿಗಳು, ದೇಹದ ಭಾಗಗಳು, ಆಹಾರ</p>
+            </section>
+            <section class="lesson-block">
+              <h4>ತರಗತಿ ಕ್ರಮ</h4>
+              <ol>
+                <li>ಸ್ವಾಗತ ಹಾಡಿನಿಂದ ಆರಂಭಿಸಿ.</li>
+                <li>ಮಿಶ್ರಿತ ಪುನರವಲೋಕನ ಕೇಂದ್ರಗಳನ್ನು ಸಿದ್ಧಪಡಿಸಿ.</li>
+                <li>ಗುಂಪುಗಳನ್ನು ತಿರುಗಿಸುತ್ತಾ ಹೆಸರು ಹೇಳುವ ಮತ್ತು ಹೊಂದಿಸುವ ಚಟುವಟಿಕೆ ಮಾಡಿಸಿ.</li>
+                <li>ಪ್ರತಿ ಮಗುವಿನಿಂದ ಒಂದು ಸಣ್ಣ ಹಂಚಿಕೆ ಮಾಡಿಸಿ.</li>
+                <li>ತರಗತಿ ನಂತರ ಚಿಕ್ಕ ಶಿಕ್ಷಕರ ಟಿಪ್ಪಣಿಗಳನ್ನು ಬರೆದುಕೊಳ್ಳಿ.</li>
+              </ol>
+            </section>
+            <section class="lesson-block">
+              <h4>ಶಿಕ್ಷಕರ ಮಾತುಗಳು</h4>
+              <p><strong>ನನ್ನ ಹೆಸರು ...</strong><br><strong>ನನಗೆ ... ಇಷ್ಟ</strong></p>
+              <p><strong>ವೇಗದ ಪರಿಶೀಲನೆ:</strong> ಮಗು ಈಗ ಸ್ವತಂತ್ರವಾಗಿ ಏನು ಹೇಳಬಲ್ಲದು?</p>
+              <p><strong>ಮನೆಗೆ ಅಭ್ಯಾಸ:</strong> ಮಗು ಒಂದು ಹಾಡು ಮತ್ತು ಒಂದು ವಾಕ್ಯವನ್ನು ಮನೆಯಲ್ಲಿ ಕಲಿಸಲಿ.</p>
+            </section>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrap">ಹೊಸ ಚಿಗುರು</div>
+    </footer>
+  </body>
+</html>

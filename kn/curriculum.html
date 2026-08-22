@@ -208,6 +208,23 @@ a {
   color: var(--muted);
 }
 
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-top: 16px;
+}
+
+.weekly-link {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #fff1d6;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .eyebrow {
   display: inline-block;
   margin-bottom: 12px;
@@ -299,6 +316,10 @@ blockquote {
         <div>
           <h1>ಪಠ್ಯಕ್ರಮ</h1>
           <p>ವಿದೇಶದಲ್ಲಿನ ಕನ್ನಡಿಗ ಮಕ್ಕಳಿಗೂ ಸಮುದಾಯಾಧಾರಿತ ಬೋಧನೆಗೂ ವಿನ್ಯಾಸಗೊಳಿಸಿದ ನಾಲ್ಕು ಹಂತಗಳ ಸಮ್ಮುಖ ಪಠ್ಯಕ್ರಮ.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="level-1-weekly-plan.html">ಹಂತ 1 ವಾರದ ಯೋಜನೆ</a>
+            <a class="button button-secondary" href="level-2-weekly-plan.html">ಹಂತ 2 ವಾರದ ಯೋಜನೆ</a>
+          </div>
         </div>
       </div>
     </header>
@@ -316,12 +337,18 @@ blockquote {
           <article class="card">
             <h3>ಹಂತ 1 — ಮಾತು ಕಲಿ</h3>
             <p>ಹಿಂದಿನ ಕನ್ನಡ ಜ್ಞಾನ ಅಗತ್ಯವಿಲ್ಲ. ಹಾಡುಗಳು, ರೂಢಿಗಳು ಮತ್ತು ಕಥೆಗಳ ಮೂಲಕ ಕೇಳುವಿಕೆ ಮತ್ತು ಮಾತನಾಡುವಿಕೆಯ ಸಿದ್ಧತೆ.</p>
-            <a href="level-1.html">ಹಂತ 1 ತೆರೆಯಿರಿ</a>
+            <div class="card-links">
+              <a href="level-1.html">ಹಂತ 1 ತೆರೆಯಿರಿ</a>
+              <a class="weekly-link" href="level-1-weekly-plan.html">8 ವಾರಗಳ ಯೋಜನೆ →</a>
+            </div>
           </article>
           <article class="card">
             <h3>ಹಂತ 2 — ಅಕ್ಷರ ಕಲಿ</h3>
             <p>ಅಕ್ಷರಗಳು, ಸ್ವರಗಳು, ವ್ಯಂಜನಗಳು ಮತ್ತು ಮೂಲ ಪದಸಂಪತ್ತಿ ನಿರ್ಮಾಣಕ್ಕೆ ಸಿದ್ಧತೆ.</p>
-            <a href="level-2.html">ಹಂತ 2 ತೆರೆಯಿರಿ</a>
+            <div class="card-links">
+              <a href="level-2.html">ಹಂತ 2 ತೆರೆಯಿರಿ</a>
+              <a class="weekly-link" href="level-2-weekly-plan.html">8 ವಾರಗಳ ಯೋಜನೆ →</a>
+            </div>
           </article>
           <article class="card">
             <h3>ಹಂತ 3 — ಪದ ಕಲಿ</h3>
